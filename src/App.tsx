@@ -1,6 +1,9 @@
+import { FC, ReactElement } from 'react';
+
 import './stylesheets/css/main.css';
 
-function App() {
+const App: FC = (): ReactElement => {
+
   return (
     <div className='app'>
       Davin Jones
