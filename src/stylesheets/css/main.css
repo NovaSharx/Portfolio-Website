@@ -1,7 +1,25 @@
 * {
-  background-color: tan;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.app {
-  text-align: center;
+body {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  line-height: 1;
+}
+
+#navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: lightblue;
+  color: #000;
+}
+
+#home .hero-section {
+  height: 600px;
+  background-color: grey;
 }/*# sourceMappingURL=main.css.map */
