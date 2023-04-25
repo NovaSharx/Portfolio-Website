@@ -65,10 +65,26 @@ body {
   justify-content: center;
   align-items: center;
   height: 800px;
-  background-color: rgb(228, 228, 228);
+  background: url("/public/placeholder-background-mouse.jpg");
+  background-size: cover;
+  background-position: center;
   color: #183642;
+}
+#home #hero-section #spotlight-layer {
+  position: absolute;
+  background: url("/public/placeholder-background-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-clip: border-box;
+  height: inherit;
+  width: 100%;
+  mask-image: radial-gradient(100px at 20% 50%, transparent 95%, black 100%);
+  -webkit-mask-image: radial-gradient(100px at 20% 50%, transparent 95%, black 100%);
+}
+#home #hero-section #hero-section-content {
+  z-index: 1;
   font-size: 5rem;
 }
-#home #hero-section #davin-jones {
+#home #hero-section #hero-section-content #davin-jones {
   color: #ff5200;
 }/*# sourceMappingURL=main.css.map */
