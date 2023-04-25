@@ -1,6 +1,17 @@
 #home {
-    .hero-section {
-        height: 600px;
-        background-color: grey;
+    flex-grow: 1;
+
+    #hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        background-color: rgb(228, 228, 228);
+        color: $primary-color;
+        font-size: 5rem;
+
+        #davin-jones {
+            color: $secondary-color;
+        }
     }
 }

@@ -1,10 +1,10 @@
 // Makes sure that text is light on dark backgrounds, and dark on light backgrounds.
 @function text-color-picker($color) {
     @if(lightness($color) > 70) {
-        @return #000;
+        @return $text-color-dark;
     }
 
     @else {
-        @return #fff;
+        @return $text-color-light;
     }
 }

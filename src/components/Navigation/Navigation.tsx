@@ -3,7 +3,17 @@ import { FC, ReactElement } from 'react';
 const Navigation: FC = (): ReactElement => {
     return (
         <div id='navigation'>
-            Navigation
+            <ul id='nav-links'>
+                <li>
+                    <a href='/home'>HOME</a>
+                </li>
+                <li>
+                    <a href='/about'>ABOUT</a>
+                </li>
+                <li>
+                    <a href='/projects'>PROJECTS</a>
+                </li>
+            </ul>
         </div>
     )
 }

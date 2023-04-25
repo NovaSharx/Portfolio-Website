@@ -1,11 +1,11 @@
 import { FC, ReactElement } from 'react';
 
-const Home: FC = (): ReactElement => {
+const BoilerPlate: FC = (): ReactElement => {
     return (
-        <>
-            Home
-        </>
+        <div id=''>
+            BoilerPlate
+        </div>
     )
 }
 
-export default Home;
+export default BoilerPlate;
