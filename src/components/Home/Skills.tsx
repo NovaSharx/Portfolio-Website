@@ -1,13 +1,13 @@
 import { FC, ReactElement } from 'react';
 
-const About: FC = (): ReactElement => {
+const Skills: FC = (): ReactElement => {
     return (
-        <div id='about' className='section'>
+        <div id='skills' className='section'>
             <div className='section-title'>
-                <h2>About</h2>
+                <h2>Skills</h2>
             </div>
         </div>
     )
 }
 
-export default About;
+export default Skills;

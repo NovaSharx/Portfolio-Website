@@ -11,6 +11,9 @@ const Navigation: FC = (): ReactElement => {
                     <a href='/about'>ABOUT</a>
                 </li>
                 <li>
+                    <a href='/skills'>SKILLS</a>
+                </li>
+                <li>
                     <a href='/projects'>PROJECTS</a>
                 </li>
             </ul>

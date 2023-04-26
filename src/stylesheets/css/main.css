@@ -5,9 +5,33 @@
   text-align: center;
 }
 
-body {
+* {
   font-family: "Trebuchet MS", Arial, sans-serif;
   line-height: 1;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 70px;
+}
+
+h3 {
+  font-size: 60px;
+}
+
+h4 {
+  font-size: 50px;
+}
+
+h5 {
+  font-size: 40px;
+}
+
+h6 {
+  font-size: 30px;
 }
 
 #app {
@@ -59,8 +83,19 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 30px;
-  background-color: black;
+  background-color: #333;
   color: #fff;
+}
+
+.section .section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section .section-title h2 {
+  height: 70px;
+  color: #183642;
+  border-bottom: 30px solid #ff5200;
 }
 
 #home {
@@ -235,9 +270,11 @@ body {
 #home #hero-section #hero-section-content {
   position: absolute;
   z-index: 1;
-  font-size: 5rem;
   color: #183642;
 }
-#home #hero-section #hero-section-content #davin-jones {
+#home #hero-section #hero-section-content h1 {
+  font-weight: normal;
+}
+#home #hero-section #hero-section-content h1 #davin-jones {
   color: #ff5200;
 }/*# sourceMappingURL=main.css.map */

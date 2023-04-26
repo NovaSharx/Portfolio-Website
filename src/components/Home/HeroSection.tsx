@@ -9,7 +9,7 @@ const HeroSection: FC = (): ReactElement => {
         }
         return cellArray.map((cell: string, index: number) => {
             return (
-                <div key={index} className='cell'>{index + 1}</div>
+                <div key={index} className='cell'></div>
             )
         })
     }
@@ -25,7 +25,7 @@ const HeroSection: FC = (): ReactElement => {
             </div>
 
             <div id='hero-section-content'>
-                Hello there, I'm<span id='davin-jones'>&nbsp;Davin Jones</span>
+                <h1>Hello there, I'm<span id='davin-jones'>&nbsp;Davin Jones</span></h1>
             </div>
         </div>
     )
