@@ -83,8 +83,8 @@ body {
 #home #hero-section #grid .cell {
   width: 100%;
   height: 100%;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid rgba(128, 128, 128, 0);
+  color: rgba(128, 128, 128, 0);
   z-index: 2;
 }
 #home #hero-section #grid .cell:nth-child(20n+1):hover ~ #dark-layer {
@@ -207,33 +207,30 @@ body {
 #home #hero-section #grid .cell:nth-child(n+381):nth-child(-n+400):hover ~ #dark-layer {
   --positionY: 19;
 }
-#home #hero-section #grid .cell:nth-child(20n+21):hover ~ #dark-layer {
-  --positionX: 20;
-}
-#home #hero-section #grid .cell:nth-child(n+401):nth-child(-n+420):hover ~ #dark-layer {
-  --positionY: 20;
-}
 #home #hero-section #grid #dark-layer {
   --positionX: 10;
   --positionY: 10;
   position: absolute;
   width: inherit;
   height: inherit;
-  background: url("/public/placeholder-background-mouse.jpg");
+  background: url("/public/placeholder-background-img.jpg");
   background-size: cover;
   background-position: center;
   z-index: 1;
 }
 #home #hero-section #grid #dark-layer #light-layer {
   position: absolute;
-  background: url("/public/placeholder-background-img.jpg");
+  background: url("/public/placeholder-background-mouse.jpg");
   background-size: cover;
   background-position: center;
   background-clip: border-box;
   height: inherit;
   width: inherit;
-  mask-image: radial-gradient(50px at calc(5% * var(--positionX) + 2.5%) calc(5% * var(--positionY) + 2.5%), transparent 95%, black 100%);
-  transition: all 1s;
+  mask-image: url("/public/cursor-mask.svg");
+  mask-size: 60px 60px;
+  mask-repeat: no-repeat;
+  mask-position: calc(var(--positionX) * 5.27%) calc(var(--positionY) * 5.27%);
+  transition: all 0.25s ease-out;
 }
 #home #hero-section #hero-section-content {
   position: absolute;
