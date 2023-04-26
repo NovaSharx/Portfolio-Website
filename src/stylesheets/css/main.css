@@ -227,7 +227,7 @@ body {
   height: inherit;
   width: inherit;
   mask-image: url("/public/cursor-mask.svg");
-  mask-size: 60px 60px;
+  mask-size: 150px 150px;
   mask-repeat: no-repeat;
   mask-position: calc(var(--positionX) * 5.27%) calc(var(--positionY) * 5.27%);
   transition: all 0.25s ease-out;
