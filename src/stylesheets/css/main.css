@@ -6,7 +6,7 @@
 }
 
 * {
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: "Lato", "Trebuchet MS", Arial, sans-serif;
   line-height: 1;
 }
 
@@ -42,40 +42,59 @@ h6 {
 
 #navigation {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   height: 50px;
 }
+#navigation #nav-logo {
+  flex-grow: 1;
+  display: flex;
+  padding: 0px 10px;
+  width: 300px;
+}
 #navigation #nav-links {
+  width: 300px;
+  flex-grow: 1;
+}
+#navigation #nav-links ul {
   display: flex;
   justify-content: space-between;
-  min-width: 500px;
   list-style-type: none;
 }
-#navigation #nav-links li {
+#navigation #nav-links ul li {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
 }
-#navigation #nav-links a {
+#navigation #nav-links ul a {
   padding: 2px;
   color: inherit;
   text-decoration: none;
 }
-#navigation #nav-links a:after {
+#navigation #nav-links ul a:hover {
+  color: #777;
+}
+#navigation #nav-links ul a:after {
   display: block;
   content: "";
   border-bottom: 5px solid #ff5200;
   transform: scaleX(0);
   transition: 0.1s;
 }
-#navigation #nav-links a:hover:after {
-  margin-bottom: 3px;
+#navigation #nav-links ul a:hover:after {
+  margin-bottom: 5px;
   transform: scaleX(1);
 }
-#navigation #nav-links a:visited {
+#navigation #nav-links ul a:visited {
   text-decoration: none;
+}
+#navigation #light-mode-switch {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 10px;
+  width: 300px;
 }
 
 #footer {
@@ -87,194 +106,198 @@ h6 {
   color: #fff;
 }
 
-.section .section-title {
+#hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.section .section-title h2 {
-  height: 70px;
-  color: #183642;
-  border-bottom: 30px solid #ff5200;
-}
-
-#home {
-  flex-grow: 1;
-}
-#home #hero-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 800px;
+  height: 700px;
   background-color: rgb(228, 228, 228);
 }
-#home #hero-section #grid {
+#hero-section #hero-section-content {
+  color: #183642;
+}
+#hero-section #hero-section-content #greeting {
+  color: #ff5200;
+}
+#hero-section #hero-section-content #intro {
+  margin-top: 50px;
+}
+#hero-section #grid {
   display: grid;
   grid-template: repeat(20, 1fr)/repeat(20, 1fr);
   height: inherit;
   width: 800px;
   color: #183642;
 }
-#home #hero-section #grid .cell {
-  width: 100%;
+#hero-section #grid .cell {
+  width: 40px;
   height: 100%;
   border: 1px solid rgba(128, 128, 128, 0);
   color: rgba(128, 128, 128, 0);
   z-index: 2;
 }
-#home #hero-section #grid .cell:nth-child(20n+1):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+1):hover ~ #dark-layer {
   --positionX: 0;
 }
-#home #hero-section #grid .cell:nth-child(n+1):nth-child(-n+20):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+1):nth-child(-n+20):hover ~ #dark-layer {
   --positionY: 0;
 }
-#home #hero-section #grid .cell:nth-child(20n+2):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+2):hover ~ #dark-layer {
   --positionX: 1;
 }
-#home #hero-section #grid .cell:nth-child(n+21):nth-child(-n+40):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+21):nth-child(-n+40):hover ~ #dark-layer {
   --positionY: 1;
 }
-#home #hero-section #grid .cell:nth-child(20n+3):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+3):hover ~ #dark-layer {
   --positionX: 2;
 }
-#home #hero-section #grid .cell:nth-child(n+41):nth-child(-n+60):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+41):nth-child(-n+60):hover ~ #dark-layer {
   --positionY: 2;
 }
-#home #hero-section #grid .cell:nth-child(20n+4):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+4):hover ~ #dark-layer {
   --positionX: 3;
 }
-#home #hero-section #grid .cell:nth-child(n+61):nth-child(-n+80):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+61):nth-child(-n+80):hover ~ #dark-layer {
   --positionY: 3;
 }
-#home #hero-section #grid .cell:nth-child(20n+5):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+5):hover ~ #dark-layer {
   --positionX: 4;
 }
-#home #hero-section #grid .cell:nth-child(n+81):nth-child(-n+100):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+81):nth-child(-n+100):hover ~ #dark-layer {
   --positionY: 4;
 }
-#home #hero-section #grid .cell:nth-child(20n+6):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+6):hover ~ #dark-layer {
   --positionX: 5;
 }
-#home #hero-section #grid .cell:nth-child(n+101):nth-child(-n+120):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+101):nth-child(-n+120):hover ~ #dark-layer {
   --positionY: 5;
 }
-#home #hero-section #grid .cell:nth-child(20n+7):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+7):hover ~ #dark-layer {
   --positionX: 6;
 }
-#home #hero-section #grid .cell:nth-child(n+121):nth-child(-n+140):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+121):nth-child(-n+140):hover ~ #dark-layer {
   --positionY: 6;
 }
-#home #hero-section #grid .cell:nth-child(20n+8):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+8):hover ~ #dark-layer {
   --positionX: 7;
 }
-#home #hero-section #grid .cell:nth-child(n+141):nth-child(-n+160):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+141):nth-child(-n+160):hover ~ #dark-layer {
   --positionY: 7;
 }
-#home #hero-section #grid .cell:nth-child(20n+9):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+9):hover ~ #dark-layer {
   --positionX: 8;
 }
-#home #hero-section #grid .cell:nth-child(n+161):nth-child(-n+180):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+161):nth-child(-n+180):hover ~ #dark-layer {
   --positionY: 8;
 }
-#home #hero-section #grid .cell:nth-child(20n+10):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+10):hover ~ #dark-layer {
   --positionX: 9;
 }
-#home #hero-section #grid .cell:nth-child(n+181):nth-child(-n+200):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+181):nth-child(-n+200):hover ~ #dark-layer {
   --positionY: 9;
 }
-#home #hero-section #grid .cell:nth-child(20n+11):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+11):hover ~ #dark-layer {
   --positionX: 10;
 }
-#home #hero-section #grid .cell:nth-child(n+201):nth-child(-n+220):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+201):nth-child(-n+220):hover ~ #dark-layer {
   --positionY: 10;
 }
-#home #hero-section #grid .cell:nth-child(20n+12):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+12):hover ~ #dark-layer {
   --positionX: 11;
 }
-#home #hero-section #grid .cell:nth-child(n+221):nth-child(-n+240):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+221):nth-child(-n+240):hover ~ #dark-layer {
   --positionY: 11;
 }
-#home #hero-section #grid .cell:nth-child(20n+13):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+13):hover ~ #dark-layer {
   --positionX: 12;
 }
-#home #hero-section #grid .cell:nth-child(n+241):nth-child(-n+260):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+241):nth-child(-n+260):hover ~ #dark-layer {
   --positionY: 12;
 }
-#home #hero-section #grid .cell:nth-child(20n+14):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+14):hover ~ #dark-layer {
   --positionX: 13;
 }
-#home #hero-section #grid .cell:nth-child(n+261):nth-child(-n+280):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+261):nth-child(-n+280):hover ~ #dark-layer {
   --positionY: 13;
 }
-#home #hero-section #grid .cell:nth-child(20n+15):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+15):hover ~ #dark-layer {
   --positionX: 14;
 }
-#home #hero-section #grid .cell:nth-child(n+281):nth-child(-n+300):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+281):nth-child(-n+300):hover ~ #dark-layer {
   --positionY: 14;
 }
-#home #hero-section #grid .cell:nth-child(20n+16):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+16):hover ~ #dark-layer {
   --positionX: 15;
 }
-#home #hero-section #grid .cell:nth-child(n+301):nth-child(-n+320):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+301):nth-child(-n+320):hover ~ #dark-layer {
   --positionY: 15;
 }
-#home #hero-section #grid .cell:nth-child(20n+17):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+17):hover ~ #dark-layer {
   --positionX: 16;
 }
-#home #hero-section #grid .cell:nth-child(n+321):nth-child(-n+340):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+321):nth-child(-n+340):hover ~ #dark-layer {
   --positionY: 16;
 }
-#home #hero-section #grid .cell:nth-child(20n+18):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+18):hover ~ #dark-layer {
   --positionX: 17;
 }
-#home #hero-section #grid .cell:nth-child(n+341):nth-child(-n+360):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+341):nth-child(-n+360):hover ~ #dark-layer {
   --positionY: 17;
 }
-#home #hero-section #grid .cell:nth-child(20n+19):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+19):hover ~ #dark-layer {
   --positionX: 18;
 }
-#home #hero-section #grid .cell:nth-child(n+361):nth-child(-n+380):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+361):nth-child(-n+380):hover ~ #dark-layer {
   --positionY: 18;
 }
-#home #hero-section #grid .cell:nth-child(20n+20):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(20n+20):hover ~ #dark-layer {
   --positionX: 19;
 }
-#home #hero-section #grid .cell:nth-child(n+381):nth-child(-n+400):hover ~ #dark-layer {
+#hero-section #grid .cell:nth-child(n+381):nth-child(-n+400):hover ~ #dark-layer {
   --positionY: 19;
 }
-#home #hero-section #grid #dark-layer {
-  --positionX: 10;
-  --positionY: 10;
+#hero-section #grid #dark-layer {
+  --positionX: 0;
+  --positionY: 0;
   position: absolute;
   width: inherit;
   height: inherit;
-  background: url("/public/placeholder-background-img.jpg");
-  background-size: cover;
-  background-position: center;
+  background: url("/public/portrait-sketch.png");
+  background-size: 120%;
+  background-position: center 75%;
   z-index: 1;
 }
-#home #hero-section #grid #dark-layer #light-layer {
+#hero-section #grid #dark-layer #light-layer {
   position: absolute;
-  background: url("/public/placeholder-background-mouse.jpg");
-  background-size: cover;
-  background-position: center;
-  background-clip: border-box;
+  background: url("/public/portrait-color.png");
+  background-size: 120%;
+  background-position: center 75%;
   height: inherit;
   width: inherit;
   mask-image: url("/public/cursor-mask.svg");
+  -webkit-mask-image: url("/public/cursor-mask.svg");
   mask-size: 150px 150px;
   mask-repeat: no-repeat;
   mask-position: calc(var(--positionX) * 5.27%) calc(var(--positionY) * 5.27%);
   transition: all 0.25s ease-out;
 }
-#home #hero-section #hero-section-content {
-  position: absolute;
-  z-index: 1;
+
+.main-section .main-section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-section .main-section-title h2 {
+  height: 70px;
   color: #183642;
+  border-bottom: 25px solid #ff5200;
 }
-#home #hero-section #hero-section-content h1 {
-  font-weight: normal;
+
+.project-container {
+  padding: 5px;
 }
-#home #hero-section #hero-section-content h1 #davin-jones {
-  color: #ff5200;
+
+#home {
+  flex-grow: 1;
 }/*# sourceMappingURL=main.css.map */

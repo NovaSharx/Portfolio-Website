@@ -9,23 +9,25 @@ const HeroSection: FC = (): ReactElement => {
         }
         return cellArray.map((cell: string, index: number) => {
             return (
-                <div key={index} className='cell'></div>
+                <div key={index} className='cell'>{index}</div>
             )
         })
     }
 
     return (
         <div id='hero-section'>
+
+            <div id='hero-section-content'>
+                <h1>Hello there, I'm<span id='greeting'>&nbsp;Davin Jones</span></h1>
+                <h6 id='intro'>Software developer with a passion for learning and creativity.</h6>
+            </div>
+
             <div id='grid'>
                 {renderCells()}
 
                 <div id='dark-layer'>
                     <div id='light-layer'></div>
                 </div>
-            </div>
-
-            <div id='hero-section-content'>
-                <h1>Hello there, I'm<span id='davin-jones'>&nbsp;Davin Jones</span></h1>
             </div>
         </div>
     )

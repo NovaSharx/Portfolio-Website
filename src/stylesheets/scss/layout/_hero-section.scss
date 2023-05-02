@@ -1,0 +1,73 @@
+#hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    background-color: rgb(228, 228, 228);
+
+    #hero-section-content {
+        color: $primary-color;
+
+        #greeting {
+            color: $secondary-color;
+        }
+
+        #intro {
+            margin-top: 50px;
+        }
+    }
+
+    #grid {
+        display: grid;
+        grid-template: repeat(20, 1fr) / repeat(20, 1fr);
+        height: inherit;
+        width: 800px;
+        color: $primary-color;
+
+        .cell {
+            width: 40px;
+            height: 100%;
+            border: 1px solid rgba(128, 128, 128, 0);
+            color: rgba(128, 128, 128, 0);
+            z-index: 2;
+        }
+
+        @for $index from 0 through 19 {
+            .cell:nth-child(20n + #{$index + 1}):hover~#dark-layer {
+                --positionX: #{$index};
+            }
+
+            .cell:nth-child(n + #{20 * $index + 1}):nth-child(-n + #{20 * ($index + 1)}):hover~#dark-layer {
+                --positionY: #{$index};
+            }
+        }
+
+        #dark-layer {
+            --positionX: 0;
+            --positionY: 0;
+
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            background: url('/public/portrait-sketch.png');
+            background-size: 120%;
+            background-position: center 75%;
+            z-index: 1;
+
+            #light-layer {
+                position: absolute;
+                background: url('/public/portrait-color.png');
+                background-size: 120%;
+                background-position: center 75%;
+                height: inherit;
+                width: inherit;
+                mask-image: url('/public/cursor-mask.svg');
+                -webkit-mask-image: url('/public/cursor-mask.svg');
+                mask-size: 150px 150px;
+                mask-repeat: no-repeat;
+                mask-position: calc(var(--positionX) * 5.27%) calc(var(--positionY) * 5.27%);
+                transition: all 0.25s ease-out;
+            }
+        }
+    }
+}
