@@ -9,7 +9,7 @@ const HeroSection: FC = (): ReactElement => {
         }
         return cellArray.map((cell: string, index: number) => {
             return (
-                <div key={index} className='cell'>{index}</div>
+                <div key={index} className='cell'></div>
             )
         })
     }

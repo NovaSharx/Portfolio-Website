@@ -1,4 +1,5 @@
 import { FC, ReactElement } from 'react';
+import Switch from '@mui/material/Switch';
 
 const Navigation: FC = (): ReactElement => {
     return (
@@ -26,7 +27,7 @@ const Navigation: FC = (): ReactElement => {
             </div>
 
             <div id='light-mode-switch'>
-                <h6>Light Mode</h6>
+                <Switch />
             </div>
         </div>
     )
