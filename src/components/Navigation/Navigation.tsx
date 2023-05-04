@@ -6,7 +6,7 @@ const Navigation: FC = (): ReactElement => {
         <div id='navigation'>
 
             <div id='nav-logo'>
-                <h6>DJ</h6>
+                DJ
             </div>
 
             <div id='nav-links'>

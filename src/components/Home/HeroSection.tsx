@@ -25,8 +25,8 @@ const HeroSection: FC = (): ReactElement => {
             <div id='grid'>
                 {renderCells()}
 
-                <div id='dark-layer'>
-                    <div id='light-layer'></div>
+                <div id='base-layer'>
+                    <div id='mask-layer'></div>
                 </div>
             </div>
         </div>

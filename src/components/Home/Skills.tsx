@@ -7,7 +7,7 @@ const Skills: FC = (): ReactElement => {
                 <h2>Skills</h2>
             </div>
 
-            <div>
+            <div className='main-section-content'>
                 <div>
                     <h4>Frontend</h4>
 

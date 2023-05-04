@@ -7,12 +7,18 @@
     #nav-logo {
         flex-grow: 1;
         display: flex;
-        padding: 0px 10px;
-        width: 300px;
+        align-items: center;
+        padding-left: 10px;
+        width: 0px;
+        height: inherit;
+
+        font-size: 35px;
+        font-weight: 800;
+        color: $secondary-color;
     }
 
     #nav-links {
-        width: 300px;
+        width: 0px;
         flex-grow: 1;
 
         ul {
@@ -30,10 +36,11 @@
             a {
                 padding: 2px;
                 color: inherit;
+                font-weight: 600;
                 text-decoration: none;
 
                 &:hover {
-                    color: #777;
+                    color: $secondary-color;
                 }
 
                 &:after {
@@ -41,7 +48,7 @@
                     content: '';
                     border-bottom: 5px solid $secondary-color;
                     transform: scaleX(0);
-                    transition: 0.1s;
+                    transition: 0.2s;
                 }
 
                 &:hover:after {
@@ -62,6 +69,6 @@
         display: flex;
         justify-content: flex-end;
         padding: 0px 10px;
-        width: 300px;
+        width: 0px;
     }
 }

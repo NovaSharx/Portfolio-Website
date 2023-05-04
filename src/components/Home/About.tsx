@@ -7,7 +7,7 @@ const About: FC = (): ReactElement => {
                 <h2>About</h2>
             </div>
 
-            <div id='about-content'>
+            <div className='main-section-content'>
 
                 <p>
                     I have a deep love for creating media whether that is drawing, painting, 3D modeling, music, or developing interactive websites with the goal of leaving positive, lasting, and memorable experiences for others. As a result, I have developed a passion for fostering new skills and sharpening my current ones.
