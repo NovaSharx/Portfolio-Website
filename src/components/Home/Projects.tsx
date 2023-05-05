@@ -9,7 +9,6 @@ const Projects: FC = (): ReactElement => {
             name: 'TRIVINOVA',
             description: `Educational trivia web application for users to test their knowledge on a variety of different topics.`,
             image: '/trivinova_image.jpg',
-            imageAlt: '',
             techStack: [
                 {
                     name: 'React',
@@ -31,13 +30,14 @@ const Projects: FC = (): ReactElement => {
                     name: 'JSON Web Tokens',
                     icon: '/tech_stack_icons/json-web-token.svg'
                 }
-            ]
+            ],
+            livePreview: 'https://trivinova-9jqfd.ondigitalocean.app/',
+            sourceCode: 'https://github.com/NovaSharx/Trivinova.git'
         },
         {
             name: 'NOVABRATO',
             description: `A guitar music theory learning web application designed to aid beginner guitar players through interactive exercises.`,
             image: '/novabrato_image.jpg',
-            imageAlt: '',
             techStack: [
                 {
                     name: 'React',
@@ -63,13 +63,14 @@ const Projects: FC = (): ReactElement => {
                     name: 'JSON Web Tokens',
                     icon: '/tech_stack_icons/json-web-token.svg'
                 }
-            ]
+            ],
+            livePreview: 'https://novabrato-bh8y6.ondigitalocean.app/',
+            sourceCode: 'https://github.com/NovaSharx/Novabrato.git'
         },
         {
             name: 'SUPERNOVA',
             description: `A web based game application designed to challenge a user’s hand-eye coordination.`,
             image: '/supernova_image.jpg',
-            imageAlt: '',
             techStack: [
                 {
                     name: 'HMTL 5',
@@ -83,11 +84,15 @@ const Projects: FC = (): ReactElement => {
                     name: 'JavaScript',
                     icon: '/tech_stack_icons/javascript.svg'
                 }
-            ]
+            ],
+            livePreview: 'https://supernova-9xeo8.ondigitalocean.app/',
+            sourceCode: 'https://github.com/NovaSharx/Supernova.git'
         }
     ]
 
-
+    function openInNewTab(url: string) {
+        window.open(url, '_blank')
+    }
 
     return (
         <div id='projects' className='main-section'>
@@ -121,13 +126,13 @@ const Projects: FC = (): ReactElement => {
                                         </div>
 
                                         <div className='project-button-prompts'>
-                                            <div className='contained-button'>
+                                            <div className='contained-button' onClick={(): void => openInNewTab(project.livePreview)}>
                                                 <div>
                                                     Live Demo
                                                     <OpenInNewIcon sx={{ fontSize: '20px', ml: 1 }} />
                                                 </div>
                                             </div>
-                                            <div className='contained-button'>
+                                            <div className='contained-button' onClick={(): void => openInNewTab(project.sourceCode)}>
                                                 <div>
                                                     Source Code
                                                     <CodeIcon sx={{ fontSize: '20px', ml: 1 }} />
