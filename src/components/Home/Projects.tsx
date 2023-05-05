@@ -99,11 +99,11 @@ const Projects: FC = (): ReactElement => {
             <div className='main-section-title'>
                 <h2>PROJECTS</h2>
                 <div className='main-section-content'>
-                    {projectsArray.map((project, index) => {
+                    <div id='project-container'>
+                        {projectsArray.map((project, index) => {
 
-                        return (
-                            <div key={index} className='project-container'>
-                                <div className='project-content' style={{ flexDirection: index % 2 ? 'row' : 'row-reverse' }}>
+                            return (
+                                <div key={index} className='project-content' style={{ flexDirection: index % 2 ? 'row' : 'row-reverse' }}>
 
                                     <div className='project-image'>
                                         <div className='laptop-image' style={{ backgroundImage: `url('/laptop_transparent.png')` }}>
@@ -128,13 +128,13 @@ const Projects: FC = (): ReactElement => {
                                         <div className='project-button-prompts'>
                                             <div className='contained-button' onClick={(): void => openInNewTab(project.livePreview)}>
                                                 <div>
-                                                    Live Demo
+                                                    LIVE DEMO
                                                     <OpenInNewIcon sx={{ fontSize: '20px', ml: 1 }} />
                                                 </div>
                                             </div>
                                             <div className='contained-button' onClick={(): void => openInNewTab(project.sourceCode)}>
                                                 <div>
-                                                    Source Code
+                                                    SOURCE CODE
                                                     <CodeIcon sx={{ fontSize: '20px', ml: 1 }} />
                                                 </div>
                                             </div>
@@ -142,9 +142,9 @@ const Projects: FC = (): ReactElement => {
 
                                     </div>
                                 </div>
-                            </div>
-                        )
-                    })}
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         </div>

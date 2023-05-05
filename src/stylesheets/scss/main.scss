@@ -9,7 +9,6 @@
 
 // Base
 @import 'base/base';
-@import 'base/button';
 @import 'base/typography';
 
 
@@ -18,10 +17,13 @@
 @import 'layout/footer';
 @import 'layout/hero-section';
 @import 'layout/main-section';
+@import 'layout/project-container';
+@import 'layout/about-container';
+@import 'layout/skills-container';
 
 
 // Compontents
-@import 'components/project-container';
+@import 'components/button';
 
 
 // Pages

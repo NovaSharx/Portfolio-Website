@@ -8,19 +8,21 @@ const Skills: FC = (): ReactElement => {
             </div>
 
             <div className='main-section-content'>
-                <div>
-                    <h4>Frontend</h4>
+                <div id='skills-container'>
+                    <div className='skills-category'>
+                        <h4>Frontend</h4>
 
-                    <div>
-                        React, Sass
+                        <div>
+                            React, Sass
+                        </div>
                     </div>
-                </div>
 
-                <div>
-                    <h4>Backend</h4>
+                    <div className='skills-category'>
+                        <h4>Backend</h4>
 
-                    <div>
-                        Express.js
+                        <div>
+                            Express.js
+                        </div>
                     </div>
                 </div>
             </div>

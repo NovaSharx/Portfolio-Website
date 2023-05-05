@@ -1,5 +1,6 @@
-.project-container {
+#project-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
     .project-content {
@@ -61,7 +62,6 @@
                     transition: 0.2s ease-out;
 
                     &:hover {
-                        cursor: pointer;
                         transform: scale(1.1);
                     }
                 }

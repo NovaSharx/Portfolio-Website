@@ -8,24 +8,6 @@ body {
   background-color: #fff;
 }
 
-.contained-button {
-  display: inline-block;
-  border-radius: 5px;
-  padding: 8px 20px;
-  margin: 3px;
-  background-color: #183642;
-  color: #fff;
-}
-.contained-button:hover {
-  cursor: pointer;
-  transform: scale(0.95);
-}
-
-.contained-button div {
-  display: flex;
-  align-items: center;
-}
-
 * {
   font-family: "Lato", "Trebuchet MS", Arial, sans-serif;
   line-height: 1;
@@ -134,161 +116,161 @@ h6 {
   color: #fff;
 }
 
-#hero-section {
+#hero-section-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 700px;
   background-color: #eee;
 }
-#hero-section #hero-section-content {
+#hero-section-container #hero-section-content {
   padding: 30px;
   color: #183642;
 }
-#hero-section #hero-section-content #greeting {
+#hero-section-container #hero-section-content #greeting {
   color: #ff5200;
 }
-#hero-section #hero-section-content #intro {
+#hero-section-container #hero-section-content #intro {
   margin-top: 50px;
 }
-#hero-section #grid {
+#hero-section-container #grid {
   display: grid;
   grid-template: repeat(20, 1fr)/repeat(20, 1fr);
   height: inherit;
   width: 800px;
   color: #183642;
 }
-#hero-section #grid:hover {
+#hero-section-container #grid:hover {
   cursor: url("/public/paintbrush_white_cursor.svg"), pointer;
 }
-#hero-section #grid .cell {
+#hero-section-container #grid .cell {
   width: 40px;
   height: 100%;
   border: 1px solid rgba(128, 128, 128, 0);
   color: rgba(128, 128, 128, 0);
   z-index: 2;
 }
-#hero-section #grid .cell:nth-child(20n+1):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+1):hover ~ #base-layer {
   --positionX: 0;
 }
-#hero-section #grid .cell:nth-child(n+1):nth-child(-n+20):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+1):nth-child(-n+20):hover ~ #base-layer {
   --positionY: 0;
 }
-#hero-section #grid .cell:nth-child(20n+2):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+2):hover ~ #base-layer {
   --positionX: 1;
 }
-#hero-section #grid .cell:nth-child(n+21):nth-child(-n+40):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+21):nth-child(-n+40):hover ~ #base-layer {
   --positionY: 1;
 }
-#hero-section #grid .cell:nth-child(20n+3):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+3):hover ~ #base-layer {
   --positionX: 2;
 }
-#hero-section #grid .cell:nth-child(n+41):nth-child(-n+60):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+41):nth-child(-n+60):hover ~ #base-layer {
   --positionY: 2;
 }
-#hero-section #grid .cell:nth-child(20n+4):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+4):hover ~ #base-layer {
   --positionX: 3;
 }
-#hero-section #grid .cell:nth-child(n+61):nth-child(-n+80):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+61):nth-child(-n+80):hover ~ #base-layer {
   --positionY: 3;
 }
-#hero-section #grid .cell:nth-child(20n+5):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+5):hover ~ #base-layer {
   --positionX: 4;
 }
-#hero-section #grid .cell:nth-child(n+81):nth-child(-n+100):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+81):nth-child(-n+100):hover ~ #base-layer {
   --positionY: 4;
 }
-#hero-section #grid .cell:nth-child(20n+6):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+6):hover ~ #base-layer {
   --positionX: 5;
 }
-#hero-section #grid .cell:nth-child(n+101):nth-child(-n+120):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+101):nth-child(-n+120):hover ~ #base-layer {
   --positionY: 5;
 }
-#hero-section #grid .cell:nth-child(20n+7):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+7):hover ~ #base-layer {
   --positionX: 6;
 }
-#hero-section #grid .cell:nth-child(n+121):nth-child(-n+140):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+121):nth-child(-n+140):hover ~ #base-layer {
   --positionY: 6;
 }
-#hero-section #grid .cell:nth-child(20n+8):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+8):hover ~ #base-layer {
   --positionX: 7;
 }
-#hero-section #grid .cell:nth-child(n+141):nth-child(-n+160):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+141):nth-child(-n+160):hover ~ #base-layer {
   --positionY: 7;
 }
-#hero-section #grid .cell:nth-child(20n+9):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+9):hover ~ #base-layer {
   --positionX: 8;
 }
-#hero-section #grid .cell:nth-child(n+161):nth-child(-n+180):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+161):nth-child(-n+180):hover ~ #base-layer {
   --positionY: 8;
 }
-#hero-section #grid .cell:nth-child(20n+10):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+10):hover ~ #base-layer {
   --positionX: 9;
 }
-#hero-section #grid .cell:nth-child(n+181):nth-child(-n+200):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+181):nth-child(-n+200):hover ~ #base-layer {
   --positionY: 9;
 }
-#hero-section #grid .cell:nth-child(20n+11):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+11):hover ~ #base-layer {
   --positionX: 10;
 }
-#hero-section #grid .cell:nth-child(n+201):nth-child(-n+220):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+201):nth-child(-n+220):hover ~ #base-layer {
   --positionY: 10;
 }
-#hero-section #grid .cell:nth-child(20n+12):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+12):hover ~ #base-layer {
   --positionX: 11;
 }
-#hero-section #grid .cell:nth-child(n+221):nth-child(-n+240):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+221):nth-child(-n+240):hover ~ #base-layer {
   --positionY: 11;
 }
-#hero-section #grid .cell:nth-child(20n+13):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+13):hover ~ #base-layer {
   --positionX: 12;
 }
-#hero-section #grid .cell:nth-child(n+241):nth-child(-n+260):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+241):nth-child(-n+260):hover ~ #base-layer {
   --positionY: 12;
 }
-#hero-section #grid .cell:nth-child(20n+14):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+14):hover ~ #base-layer {
   --positionX: 13;
 }
-#hero-section #grid .cell:nth-child(n+261):nth-child(-n+280):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+261):nth-child(-n+280):hover ~ #base-layer {
   --positionY: 13;
 }
-#hero-section #grid .cell:nth-child(20n+15):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+15):hover ~ #base-layer {
   --positionX: 14;
 }
-#hero-section #grid .cell:nth-child(n+281):nth-child(-n+300):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+281):nth-child(-n+300):hover ~ #base-layer {
   --positionY: 14;
 }
-#hero-section #grid .cell:nth-child(20n+16):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+16):hover ~ #base-layer {
   --positionX: 15;
 }
-#hero-section #grid .cell:nth-child(n+301):nth-child(-n+320):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+301):nth-child(-n+320):hover ~ #base-layer {
   --positionY: 15;
 }
-#hero-section #grid .cell:nth-child(20n+17):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+17):hover ~ #base-layer {
   --positionX: 16;
 }
-#hero-section #grid .cell:nth-child(n+321):nth-child(-n+340):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+321):nth-child(-n+340):hover ~ #base-layer {
   --positionY: 16;
 }
-#hero-section #grid .cell:nth-child(20n+18):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+18):hover ~ #base-layer {
   --positionX: 17;
 }
-#hero-section #grid .cell:nth-child(n+341):nth-child(-n+360):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+341):nth-child(-n+360):hover ~ #base-layer {
   --positionY: 17;
 }
-#hero-section #grid .cell:nth-child(20n+19):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+19):hover ~ #base-layer {
   --positionX: 18;
 }
-#hero-section #grid .cell:nth-child(n+361):nth-child(-n+380):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+361):nth-child(-n+380):hover ~ #base-layer {
   --positionY: 18;
 }
-#hero-section #grid .cell:nth-child(20n+20):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(20n+20):hover ~ #base-layer {
   --positionX: 19;
 }
-#hero-section #grid .cell:nth-child(n+381):nth-child(-n+400):hover ~ #base-layer {
+#hero-section-container #grid .cell:nth-child(n+381):nth-child(-n+400):hover ~ #base-layer {
   --positionY: 19;
 }
-#hero-section #grid #base-layer {
+#hero-section-container #grid #base-layer {
   --positionX: 0;
   --positionY: 0;
   position: absolute;
@@ -299,7 +281,7 @@ h6 {
   background-position: center 75%;
   z-index: 1;
 }
-#hero-section #grid #base-layer #mask-layer {
+#hero-section-container #grid #base-layer #mask-layer {
   position: absolute;
   background: url("/public/portrait-color.png");
   background-size: 120%;
@@ -315,7 +297,7 @@ h6 {
 }
 
 .main-section {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 .main-section .main-section-content {
   margin-top: 50px;
@@ -332,34 +314,35 @@ h6 {
   border-bottom: 15px solid #ff5200;
 }
 
-.project-container {
+#project-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
-.project-container .project-content {
+#project-container .project-content {
   padding: 25px;
   width: 13 0px;
   height: 500px;
   display: flex;
 }
-.project-container .project-content .project-image {
+#project-container .project-content .project-image {
   width: 600px;
 }
-.project-container .project-content .project-image .laptop-image {
+#project-container .project-content .project-image .laptop-image {
   width: inherit;
   height: 100%;
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
 }
-.project-container .project-content .project-image .laptop-image .desktop-image {
+#project-container .project-content .project-image .laptop-image .desktop-image {
   width: inherit;
   height: inherit;
   background-size: 403px auto;
   background-position: 97px 86px;
   background-repeat: no-repeat;
 }
-.project-container .project-content .project-info {
+#project-container .project-content .project-info {
   padding: 10px 50px;
   width: 600px;
   display: flex;
@@ -368,16 +351,16 @@ h6 {
   justify-content: space-between;
   color: #183642;
 }
-.project-container .project-content .project-info .project-description {
+#project-container .project-content .project-info .project-description {
   font-size: 20px;
 }
-.project-container .project-content .project-info .project-tech-stack {
+#project-container .project-content .project-info .project-tech-stack {
   width: 300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.project-container .project-content .project-info .project-tech-stack .tech-stack-item {
+#project-container .project-content .project-info .project-tech-stack .tech-stack-item {
   margin: 10px 20px;
   width: 50px;
   height: 50px;
@@ -388,14 +371,43 @@ h6 {
   box-shadow: 0px 0px 15px 0px #ddd;
   transition: 0.2s ease-out;
 }
-.project-container .project-content .project-info .project-tech-stack .tech-stack-item:hover {
-  cursor: pointer;
+#project-container .project-content .project-info .project-tech-stack .tech-stack-item:hover {
   transform: scale(1.1);
 }
-.project-container .project-content .project-info .project-button-prompts {
+#project-container .project-content .project-info .project-button-prompts {
   width: 400px;
   display: flex;
   justify-content: space-between;
+}
+
+#about-container {
+  margin: 0px auto;
+  width: 1300px;
+}
+
+#skills-container {
+  margin: 0px auto;
+  width: 1300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contained-button {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 3px;
+  background-color: #183642;
+  color: #fff;
+}
+.contained-button:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+.contained-button div {
+  display: flex;
+  align-items: center;
 }
 
 #home {
