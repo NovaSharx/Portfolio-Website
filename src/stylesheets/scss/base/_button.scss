@@ -3,7 +3,7 @@
     border-radius: 5px;
     padding: 8px 20px;
     margin: 3px;
-    transition: 0.2s;
+    // transition: 0.1s;
     @include set-bg-color($primary-color);
 
     &:hover {
@@ -15,4 +15,8 @@
 .contained-button {
     @extend %btn;
 
+    div {
+        display: flex;
+        align-items: center;
+    }
 }

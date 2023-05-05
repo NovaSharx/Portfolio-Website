@@ -1,15 +1,17 @@
 .project-container {
     display: flex;
+    justify-content: center;
 
     .project-content {
         padding: 25px;
+        width: 13 00px;
         height: 500px;
         display: flex;
-        // border-radius: 50% 0% 0% 50%;
-        border-left: solid 10px $secondary-color;
+        // border-left: solid 10px $secondary-color;
 
         .project-image {
             width: 600px;
+            // background: linear-gradient($secondary-color 0%, rgba(0, 0, 0, 0) 100%);
 
             .laptop-image {
                 width: inherit;
@@ -29,19 +31,22 @@
         }
 
         .project-info {
-            padding: 10px;
+            padding: 10px 50px;
+            width: 600px;
             display: flex;
             flex-direction: column;
+            align-items: center;
             justify-content: space-between;
             color: $primary-color;
-            background-color: $secondary-background-color;
 
             .project-description {
                 font-size: 20px;
             }
 
             .project-tech-stack {
+                width: 300px;
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
 
                 .tech-stack-item {
@@ -53,7 +58,19 @@
                     background-repeat: no-repeat;
                     border-radius: 10px;
                     box-shadow: 0px 0px 15px 0px #ddd;
+                    transition: 0.2s ease-out;
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
                 }
+            }
+
+            .project-button-prompts {
+                width: 400px;
+                display: flex;
+                justify-content: space-between;
             }
         }
     }

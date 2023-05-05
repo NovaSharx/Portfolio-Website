@@ -4,7 +4,7 @@ const Skills: FC = (): ReactElement => {
     return (
         <div id='skills' className='main-section'>
             <div className='main-section-title'>
-                <h2>Skills</h2>
+                <h2>SKILLS</h2>
             </div>
 
             <div className='main-section-content'>

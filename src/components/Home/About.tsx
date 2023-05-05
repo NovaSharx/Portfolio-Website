@@ -4,7 +4,7 @@ const About: FC = (): ReactElement => {
     return (
         <div id='about' className='main-section'>
             <div className='main-section-title'>
-                <h2>About</h2>
+                <h2>ABOUT</h2>
             </div>
 
             <div className='main-section-content'>
