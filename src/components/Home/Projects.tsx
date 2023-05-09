@@ -120,7 +120,9 @@ const Projects: FC = (): ReactElement => {
                                         <div className='project-tech-stack'>
                                             {project.techStack.map((tech, idx) => {
                                                 return (
-                                                    <div key={idx} className='tech-stack-item' style={{ backgroundImage: `url(${tech.icon})` }} />
+                                                    <div key={idx} className='tech-stack-item' style={{ backgroundImage: `url(${tech.icon})` }}>
+                                                        <div className='tech-stack-popup'>{tech.name}</div>
+                                                    </div>
                                                 )
                                             })}
                                         </div>
