@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    background-color: $secondary-background-color;
+    height: 900px;
+    // background-color: $secondary-background-color;
 
     #hero-section-content {
         padding: 30px;
@@ -34,7 +34,7 @@
             height: 100%;
             border: 1px solid rgba(128, 128, 128, 0);
             color: rgba(128, 128, 128, 0);
-            z-index: 2;
+            z-index: 1;
         }
 
         @for $index from 0 through 19 {
@@ -57,7 +57,8 @@
             background: url('/public/portrait-sketch.png');
             background-size: 120%;
             background-position: center 75%;
-            z-index: 1;
+            background-repeat: no-repeat;
+            // z-index: 1;
 
             #mask-layer {
                 position: absolute;

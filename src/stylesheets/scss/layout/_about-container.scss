@@ -1,5 +1,17 @@
 #about-container {
     margin: 0px auto;
+    display: flex;
     width: 1300px;
     font-size: 24px;
+
+    #about-image {
+        height: 650px;
+        width: auto;
+        background-color: $secondary-background-color;
+        border-radius: 10px;
+    }
+
+    #about-content {
+        padding: 30px;
+    }
 }

@@ -4,7 +4,10 @@
   padding: 0;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
+html body {
   background-color: #fff;
 }
 
@@ -44,10 +47,16 @@ h6 {
 }
 
 #navigation {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   height: 50px;
+  background-color: #fff;
+  box-shadow: none;
+  z-index: 2;
+  transition: 1s;
 }
 #navigation #nav-logo {
   flex-grow: 1;
@@ -120,8 +129,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 700px;
-  background-color: #eee;
+  height: 900px;
 }
 #hero-section-container #hero-section-content {
   padding: 30px;
@@ -148,7 +156,7 @@ h6 {
   height: 100%;
   border: 1px solid rgba(128, 128, 128, 0);
   color: rgba(128, 128, 128, 0);
-  z-index: 2;
+  z-index: 1;
 }
 #hero-section-container #grid .cell:nth-child(20n+1):hover ~ #base-layer {
   --positionX: 0;
@@ -279,7 +287,7 @@ h6 {
   background: url("/public/portrait-sketch.png");
   background-size: 120%;
   background-position: center 75%;
-  z-index: 1;
+  background-repeat: no-repeat;
 }
 #hero-section-container #grid #base-layer #mask-layer {
   position: absolute;
@@ -297,7 +305,8 @@ h6 {
 }
 
 .main-section {
-  margin-top: 200px;
+  margin-top: 150px;
+  padding-top: 50px;
 }
 .main-section .main-section-content {
   margin-top: 50px;
@@ -380,7 +389,7 @@ h6 {
   display: flex;
   justify-content: center;
   font-weight: 600;
-  transition: 1s;
+  transition: 1.5s ease-out;
 }
 #project-container .project-content .project-info .project-tech-stack .tech-stack-item:hover {
   transform: scale(1.1);
@@ -396,8 +405,18 @@ h6 {
 
 #about-container {
   margin: 0px auto;
+  display: flex;
   width: 1300px;
   font-size: 24px;
+}
+#about-container #about-image {
+  height: 650px;
+  width: auto;
+  background-color: #eee;
+  border-radius: 10px;
+}
+#about-container #about-content {
+  padding: 30px;
 }
 
 #skills-container {
