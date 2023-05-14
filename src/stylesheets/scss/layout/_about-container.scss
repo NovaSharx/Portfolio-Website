@@ -1,11 +1,12 @@
 #about-container {
     margin: 0px auto;
     display: flex;
+    height: 650px;
     width: 1300px;
     font-size: 24px;
 
     #about-image {
-        height: 650px;
+        height: inherit;
         width: auto;
         background-color: $secondary-background-color;
         border-radius: 10px;

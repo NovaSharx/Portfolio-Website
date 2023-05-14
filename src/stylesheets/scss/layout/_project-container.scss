@@ -1,15 +1,13 @@
 #project-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     .project-content {
-        margin-top: 100px;
+        margin-top: 50px;
         padding: 25px;
-        width: 13 00px;
         height: 500px;
         display: flex;
-        // border-left: solid 10px $secondary-color;
+        justify-content: center;
 
         .project-image {
             width: 600px;
@@ -87,6 +85,18 @@
                 width: 400px;
                 display: flex;
                 justify-content: space-between;
+
+                .project-button {
+                    @extend %btn;
+                    border: 2px solid $primary-color;
+                    color: $primary-color;
+                    font-weight: 800;
+
+
+                    &:hover {
+                        @include set-bg-color(lighten($primary-color, 15%));
+                    }
+                }
             }
         }
     }

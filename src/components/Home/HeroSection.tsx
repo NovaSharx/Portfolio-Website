@@ -19,7 +19,8 @@ const HeroSection: FC = (): ReactElement => {
 
             <div id='hero-section-content'>
                 <h1>Hello, my name is<span id='greeting'>&nbsp;Davin Jones</span></h1>
-                <h6 id='intro'>I create functional web applications in the pursuit of exceptional user experience, convenience and productivity.</h6>
+                <h6 id='intro'>I build functional web applications in order to create exceptional user experience, convenience and productivity.</h6>
+                <div id='call-to-action'>My Resume</div>
             </div>
 
             <div id='grid'>

@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 html body {
-  background-color: #fff;
+  background-color: #f2f2f2;
 }
 
 * {
@@ -54,20 +54,24 @@ h6 {
   width: 100%;
   height: 50px;
   background-color: #fff;
+  border-bottom: 0px solid #ff5200;
   box-shadow: none;
   z-index: 2;
-  transition: 1s;
+  transition: 0.1s;
 }
 #navigation #nav-logo {
   flex-grow: 1;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 50px;
   width: 0px;
   height: inherit;
   font-size: 35px;
   font-weight: 800;
   color: #ff5200;
+  background: linear-gradient(0deg, #ff5200 25%, #183642 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #navigation #nav-links {
   width: 0px;
@@ -111,7 +115,7 @@ h6 {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
-  padding: 0px 10px;
+  margin-right: 50px;
   width: 0px;
 }
 
@@ -130,16 +134,30 @@ h6 {
   justify-content: center;
   align-items: center;
   height: 900px;
+  background-color: #fff;
 }
 #hero-section-container #hero-section-content {
-  padding: 30px;
+  padding: 50px;
   color: #183642;
 }
 #hero-section-container #hero-section-content #greeting {
   color: #ff5200;
+  background: linear-gradient(0deg, #ff5200 25%, #183642 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #hero-section-container #hero-section-content #intro {
   margin-top: 50px;
+}
+#hero-section-container #hero-section-content #call-to-action {
+  background-color: #ff5200;
+  color: #fff;
+  margin-top: 50px;
+  font-size: 30px;
+}
+#hero-section-container #hero-section-content #call-to-action:hover {
+  background-color: #b33900;
+  color: #fff;
 }
 #hero-section-container #grid {
   display: grid;
@@ -305,11 +323,14 @@ h6 {
 }
 
 .main-section {
-  margin-top: 150px;
+  margin: 100px 50px;
   padding-top: 50px;
 }
 .main-section .main-section-content {
   margin-top: 50px;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 10px;
 }
 .main-section .main-section-title {
   display: flex;
@@ -319,24 +340,25 @@ h6 {
 .main-section .main-section-title h2 {
   height: 70px;
   color: #183642;
-  border-bottom: 15px solid #ff5200;
+  background: linear-gradient(0deg, #ff5200 25%, #183642 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #project-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 #project-container .project-content {
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 25px;
-  width: 13 0px;
   height: 500px;
   display: flex;
+  justify-content: center;
 }
 #project-container .project-content .project-image {
   width: 600px;
-  background: linear-gradient(#eee 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(#f2f2f2 0%, rgba(0, 0, 0, 0) 100%);
 }
 #project-container .project-content .project-image .laptop-image {
   width: inherit;
@@ -402,17 +424,27 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
+#project-container .project-content .project-info .project-button-prompts .project-button {
+  border: 2px solid #183642;
+  color: #183642;
+  font-weight: 800;
+}
+#project-container .project-content .project-info .project-button-prompts .project-button:hover {
+  background-color: #2c647a;
+  color: #fff;
+}
 
 #about-container {
   margin: 0px auto;
   display: flex;
+  height: 650px;
   width: 1300px;
   font-size: 24px;
 }
 #about-container #about-image {
-  height: 650px;
+  height: inherit;
   width: auto;
-  background-color: #eee;
+  background-color: #f2f2f2;
   border-radius: 10px;
 }
 #about-container #about-content {
@@ -426,27 +458,21 @@ h6 {
   justify-content: space-around;
 }
 
-.contained-button {
+#hero-section-container #hero-section-content #call-to-action, #project-container .project-content .project-info .project-button-prompts .project-button {
   display: inline-block;
   border-radius: 5px;
   padding: 10px 20px;
-  margin: 3px;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-  background-color: #183642;
-  color: #fff;
   transition: background-color 0.5s;
 }
-.contained-button:hover {
-  cursor: pointer;
-  box-shadow: none;
-  background-color: #2c647a;
-  color: #fff;
-  transform: scale(0.98);
-}
-
-.contained-button div {
+#hero-section-container #hero-section-content #call-to-action .button-content, #project-container .project-content .project-info .project-button-prompts .project-button .button-content {
   display: flex;
   align-items: center;
+}
+#hero-section-container #hero-section-content #call-to-action:hover, #project-container .project-content .project-info .project-button-prompts .project-button:hover {
+  cursor: pointer;
+  box-shadow: none;
+  transform: scale(0.98);
 }
 
 #home {

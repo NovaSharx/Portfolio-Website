@@ -3,18 +3,33 @@
     justify-content: center;
     align-items: center;
     height: 900px;
-    // background-color: $secondary-background-color;
+    background-color: $primary-background-color;
 
     #hero-section-content {
-        padding: 30px;
+        padding: 50px;
         color: $primary-color;
 
         #greeting {
             color: $secondary-color;
+            background: linear-gradient(0deg, #ff5200 25%, #183642 60%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         #intro {
             margin-top: 50px;
+        }
+
+        #call-to-action {
+            @extend %btn;
+            @include set-bg-color($secondary-color);
+            margin-top: 50px;
+            font-size: 30px;
+            
+
+            &:hover {
+                @include set-bg-color(darken($secondary-color, 15%));
+            }
         }
     }
 
@@ -58,7 +73,6 @@
             background-size: 120%;
             background-position: center 75%;
             background-repeat: no-repeat;
-            // z-index: 1;
 
             #mask-layer {
                 position: absolute;

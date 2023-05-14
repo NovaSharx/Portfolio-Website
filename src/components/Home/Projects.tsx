@@ -98,58 +98,58 @@ const Projects: FC = (): ReactElement => {
         <div id='projects' className='main-section'>
             <div className='main-section-title'>
                 <h2>PROJECTS</h2>
-                <div className='main-section-content'>
-                    <div id='project-container'>
-                        {projectsArray.map((project, index) => {
+            </div>
+            <div className='main-section-content'>
+                <div id='project-container'>
+                    {projectsArray.map((project, index) => {
 
-                            return (
-                                <div key={index} className='project-content' style={{ flexDirection: index % 2 ? 'row' : 'row-reverse' }}>
+                        return (
+                            <div key={index} className='project-content' style={{ flexDirection: index % 2 ? 'row' : 'row-reverse' }}>
 
-                                    <div className='project-image'>
-                                        <div className='laptop-image' style={{ backgroundImage: `url('/laptop_transparent.png')` }}>
-                                            <div className='desktop-image' style={{ backgroundImage: `url(${project.image})` }} />
-                                        </div>
-                                    </div>
-
-                                    <div className='project-info'>
-
-                                        <h4 className='project-name'>{project.name}</h4>
-
-                                        <p className='project-description'>{project.description}</p>
-
-                                        <div className='project-tech-stack'>
-                                            {project.techStack.map((tech, idx) => {
-                                                return (
-                                                    <div key={idx} className='tech-stack-item' style={{ backgroundImage: `url(${tech.icon})` }}>
-                                                        <div className='tech-stack-popup'>{tech.name}</div>
-                                                    </div>
-                                                )
-                                            })}
-                                        </div>
-
-                                        <div className='project-button-prompts'>
-                                            <div className='contained-button' onClick={(): void => openInNewTab(project.livePreview)}>
-                                                <div>
-                                                    LIVE DEMO
-                                                    <OpenInNewIcon sx={{ fontSize: '20px', ml: 1 }} />
-                                                </div>
-                                            </div>
-                                            <div className='contained-button' onClick={(): void => openInNewTab(project.sourceCode)}>
-                                                <div>
-                                                    SOURCE CODE
-                                                    <CodeIcon sx={{ fontSize: '20px', ml: 1 }} />
-                                                </div>
-                                            </div>
-                                        </div>
-
+                                <div className='project-image'>
+                                    <div className='laptop-image' style={{ backgroundImage: `url('/laptop_transparent.png')` }}>
+                                        <div className='desktop-image' style={{ backgroundImage: `url(${project.image})` }} />
                                     </div>
                                 </div>
-                            )
-                        })}
-                    </div>
+
+                                <div className='project-info'>
+
+                                    <h4 className='project-name'>{project.name}</h4>
+
+                                    <p className='project-description'>{project.description}</p>
+
+                                    <div className='project-tech-stack'>
+                                        {project.techStack.map((tech, idx) => {
+                                            return (
+                                                <div key={idx} className='tech-stack-item' style={{ backgroundImage: `url(${tech.icon})` }}>
+                                                    <div className='tech-stack-popup'>{tech.name}</div>
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+
+                                    <div className='project-button-prompts'>
+                                        <div className='project-button' onClick={(): void => openInNewTab(project.livePreview)}>
+                                            <div className='button-content'>
+                                                LIVE DEMO
+                                                <OpenInNewIcon sx={{ fontSize: '20px', ml: 1 }} />
+                                            </div>
+                                        </div>
+                                        <div className='project-button' onClick={(): void => openInNewTab(project.sourceCode)}>
+                                            <div className='button-content'>
+                                                SOURCE CODE
+                                                <CodeIcon sx={{ fontSize: '20px', ml: 1 }} />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
