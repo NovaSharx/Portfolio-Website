@@ -1,6 +1,10 @@
 * {
     font-family: $font-stack;
-    line-height: 1;
+    line-height: 1.5;
+}
+
+p {
+    line-height: 1.75;
 }
 
 h1 {
@@ -8,23 +12,23 @@ h1 {
 }
 
 h2 {
-    font-size: 70px;
-}
-
-h3 {
-    font-size: 60px;
-}
-
-h4 {
     font-size: 50px;
 }
 
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
 h5 {
-    font-size: 40px;
+    font-size: 12px;
 }
 
 h6 {
-    font-size: 30px;
+    font-size: 8px;
 }
 
 #app {

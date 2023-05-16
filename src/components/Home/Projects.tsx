@@ -114,7 +114,7 @@ const Projects: FC = (): ReactElement => {
 
                                 <div className='project-info'>
 
-                                    <h4 className='project-name'>{project.name}</h4>
+                                    <h3 className='project-name'>{project.name}</h3>
 
                                     <p className='project-description'>{project.description}</p>
 
