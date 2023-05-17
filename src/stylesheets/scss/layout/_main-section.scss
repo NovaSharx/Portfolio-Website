@@ -1,12 +1,9 @@
 .main-section {
-    margin: 50px 0px;
     padding: 100px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // background-color: $primary-background-color;
     background: linear-gradient(0deg, $secondary-background-color 25%, $primary-background-color 60%);
-    // border-radius: 20px;
 
     .main-section-title {
         margin-bottom: 50px;

@@ -147,174 +147,186 @@ h6 {
   color: #fff;
 }
 
-#hero-section-container {
+#hero-section {
+  padding: 0px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 900px;
+  height: 1000px;
   background-color: #fff;
 }
-#hero-section-container #hero-section-content {
-  padding: 50px;
+#hero-section #hero-section-content {
+  width: 800px;
   color: #183642;
 }
-#hero-section-container #hero-section-content #greeting {
+#hero-section #hero-section-content h1 {
+  line-height: 0.5;
+}
+#hero-section #hero-section-content h1 #name {
+  font-size: 1.5em;
   color: #ff5200;
   background: linear-gradient(0deg, #ff5200 25%, #183642 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#hero-section-container #hero-section-content #intro {
+#hero-section #hero-section-content #intro {
   margin-top: 50px;
+  font-weight: 400;
 }
-#hero-section-container #hero-section-content #call-to-action {
+#hero-section #hero-section-content #call-to-action {
+  margin-top: 100px;
+}
+#hero-section #hero-section-content #call-to-action .call-to-action-button {
+  margin-right: 20px;
+  width: 200px;
+  text-align: center;
   background-color: #ff5200;
   color: #fff;
-  margin-top: 50px;
   font-size: 30px;
+  text-decoration: none;
 }
-#hero-section-container #hero-section-content #call-to-action:hover {
+#hero-section #hero-section-content #call-to-action .call-to-action-button:hover {
   background-color: #b33900;
   color: #fff;
 }
-#hero-section-container #grid {
+#hero-section #grid {
   display: grid;
   grid-template: repeat(20, 1fr)/repeat(20, 1fr);
-  height: inherit;
+  height: 800px;
   width: 800px;
   color: #183642;
 }
-#hero-section-container #grid:hover {
+#hero-section #grid:hover {
   cursor: url("/public/paintbrush_white_cursor.svg"), pointer;
 }
-#hero-section-container #grid .cell {
+#hero-section #grid .cell {
   width: 40px;
   height: 100%;
   border: 1px solid rgba(128, 128, 128, 0);
   color: rgba(128, 128, 128, 0);
   z-index: 1;
 }
-#hero-section-container #grid .cell:nth-child(20n+1):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+1):hover ~ #base-layer {
   --positionX: 0;
 }
-#hero-section-container #grid .cell:nth-child(n+1):nth-child(-n+20):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+1):nth-child(-n+20):hover ~ #base-layer {
   --positionY: 0;
 }
-#hero-section-container #grid .cell:nth-child(20n+2):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+2):hover ~ #base-layer {
   --positionX: 1;
 }
-#hero-section-container #grid .cell:nth-child(n+21):nth-child(-n+40):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+21):nth-child(-n+40):hover ~ #base-layer {
   --positionY: 1;
 }
-#hero-section-container #grid .cell:nth-child(20n+3):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+3):hover ~ #base-layer {
   --positionX: 2;
 }
-#hero-section-container #grid .cell:nth-child(n+41):nth-child(-n+60):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+41):nth-child(-n+60):hover ~ #base-layer {
   --positionY: 2;
 }
-#hero-section-container #grid .cell:nth-child(20n+4):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+4):hover ~ #base-layer {
   --positionX: 3;
 }
-#hero-section-container #grid .cell:nth-child(n+61):nth-child(-n+80):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+61):nth-child(-n+80):hover ~ #base-layer {
   --positionY: 3;
 }
-#hero-section-container #grid .cell:nth-child(20n+5):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+5):hover ~ #base-layer {
   --positionX: 4;
 }
-#hero-section-container #grid .cell:nth-child(n+81):nth-child(-n+100):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+81):nth-child(-n+100):hover ~ #base-layer {
   --positionY: 4;
 }
-#hero-section-container #grid .cell:nth-child(20n+6):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+6):hover ~ #base-layer {
   --positionX: 5;
 }
-#hero-section-container #grid .cell:nth-child(n+101):nth-child(-n+120):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+101):nth-child(-n+120):hover ~ #base-layer {
   --positionY: 5;
 }
-#hero-section-container #grid .cell:nth-child(20n+7):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+7):hover ~ #base-layer {
   --positionX: 6;
 }
-#hero-section-container #grid .cell:nth-child(n+121):nth-child(-n+140):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+121):nth-child(-n+140):hover ~ #base-layer {
   --positionY: 6;
 }
-#hero-section-container #grid .cell:nth-child(20n+8):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+8):hover ~ #base-layer {
   --positionX: 7;
 }
-#hero-section-container #grid .cell:nth-child(n+141):nth-child(-n+160):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+141):nth-child(-n+160):hover ~ #base-layer {
   --positionY: 7;
 }
-#hero-section-container #grid .cell:nth-child(20n+9):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+9):hover ~ #base-layer {
   --positionX: 8;
 }
-#hero-section-container #grid .cell:nth-child(n+161):nth-child(-n+180):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+161):nth-child(-n+180):hover ~ #base-layer {
   --positionY: 8;
 }
-#hero-section-container #grid .cell:nth-child(20n+10):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+10):hover ~ #base-layer {
   --positionX: 9;
 }
-#hero-section-container #grid .cell:nth-child(n+181):nth-child(-n+200):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+181):nth-child(-n+200):hover ~ #base-layer {
   --positionY: 9;
 }
-#hero-section-container #grid .cell:nth-child(20n+11):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+11):hover ~ #base-layer {
   --positionX: 10;
 }
-#hero-section-container #grid .cell:nth-child(n+201):nth-child(-n+220):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+201):nth-child(-n+220):hover ~ #base-layer {
   --positionY: 10;
 }
-#hero-section-container #grid .cell:nth-child(20n+12):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+12):hover ~ #base-layer {
   --positionX: 11;
 }
-#hero-section-container #grid .cell:nth-child(n+221):nth-child(-n+240):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+221):nth-child(-n+240):hover ~ #base-layer {
   --positionY: 11;
 }
-#hero-section-container #grid .cell:nth-child(20n+13):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+13):hover ~ #base-layer {
   --positionX: 12;
 }
-#hero-section-container #grid .cell:nth-child(n+241):nth-child(-n+260):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+241):nth-child(-n+260):hover ~ #base-layer {
   --positionY: 12;
 }
-#hero-section-container #grid .cell:nth-child(20n+14):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+14):hover ~ #base-layer {
   --positionX: 13;
 }
-#hero-section-container #grid .cell:nth-child(n+261):nth-child(-n+280):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+261):nth-child(-n+280):hover ~ #base-layer {
   --positionY: 13;
 }
-#hero-section-container #grid .cell:nth-child(20n+15):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+15):hover ~ #base-layer {
   --positionX: 14;
 }
-#hero-section-container #grid .cell:nth-child(n+281):nth-child(-n+300):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+281):nth-child(-n+300):hover ~ #base-layer {
   --positionY: 14;
 }
-#hero-section-container #grid .cell:nth-child(20n+16):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+16):hover ~ #base-layer {
   --positionX: 15;
 }
-#hero-section-container #grid .cell:nth-child(n+301):nth-child(-n+320):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+301):nth-child(-n+320):hover ~ #base-layer {
   --positionY: 15;
 }
-#hero-section-container #grid .cell:nth-child(20n+17):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+17):hover ~ #base-layer {
   --positionX: 16;
 }
-#hero-section-container #grid .cell:nth-child(n+321):nth-child(-n+340):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+321):nth-child(-n+340):hover ~ #base-layer {
   --positionY: 16;
 }
-#hero-section-container #grid .cell:nth-child(20n+18):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+18):hover ~ #base-layer {
   --positionX: 17;
 }
-#hero-section-container #grid .cell:nth-child(n+341):nth-child(-n+360):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+341):nth-child(-n+360):hover ~ #base-layer {
   --positionY: 17;
 }
-#hero-section-container #grid .cell:nth-child(20n+19):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+19):hover ~ #base-layer {
   --positionX: 18;
 }
-#hero-section-container #grid .cell:nth-child(n+361):nth-child(-n+380):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+361):nth-child(-n+380):hover ~ #base-layer {
   --positionY: 18;
 }
-#hero-section-container #grid .cell:nth-child(20n+20):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+20):hover ~ #base-layer {
   --positionX: 19;
 }
-#hero-section-container #grid .cell:nth-child(n+381):nth-child(-n+400):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+381):nth-child(-n+400):hover ~ #base-layer {
   --positionY: 19;
 }
-#hero-section-container #grid #base-layer {
+#hero-section #grid #base-layer {
   --positionX: 0;
   --positionY: 0;
   position: absolute;
@@ -325,7 +337,7 @@ h6 {
   background-position: center 75%;
   background-repeat: no-repeat;
 }
-#hero-section-container #grid #base-layer #mask-layer {
+#hero-section #grid #base-layer #mask-layer {
   position: absolute;
   background: url("/public/portrait-color.png");
   background-size: 120%;
@@ -341,7 +353,6 @@ h6 {
 }
 
 .main-section {
-  margin: 50px 0px;
   padding: 100px 0px;
   display: flex;
   flex-direction: column;
@@ -474,28 +485,88 @@ h6 {
   border-radius: 10px;
 }
 #about-container #about-content {
-  padding: 30px;
+  padding: 0px 30px;
 }
 
 #skills-container {
   margin: 0px auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
+#skills-container .skills-category {
+  padding: 5px;
+  border-radius: 20px;
+}
+#skills-container .skills-category h3 {
+  text-align: center;
+  font-weight: 300;
+}
+#skills-container .skills-category .skills-grid {
+  padding: 30px 0px;
+  display: grid;
+  grid-template: repeat(1, 1fr)/repeat(3, 1fr);
+}
+#skills-container .skills-category .skills-grid .skill-cell {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+#skills-container .skills-category .skills-grid .skill-cell .skill-chip {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #183642;
+  border-radius: 50px;
+  background-color: #183642;
+  color: #fff;
+  transition: 0.5s;
+}
+#skills-container .skills-category .skills-grid .skill-cell .skill-chip .skill-icon {
+  opacity: 0;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+#skills-container .skills-category .skills-grid .skill-cell .skill-chip .skill-name {
+  font-weight: 800;
+  text-align: center;
+  transition: 0.5s;
+}
+#skills-container .skills-category .skills-grid .skill-cell .skill-chip:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+#skills-container .skills-category .skills-grid .skill-cell .skill-chip:hover .skill-icon {
+  opacity: 1;
+  border: 1px solid #ff5200;
+  border-radius: 50px;
+}
+#skills-container .skills-category .skills-grid .skill-cell .skill-chip:hover .skill-name {
+  opacity: 0;
+}
 
-#hero-section-container #hero-section-content #call-to-action, #project-container .project-content .project-info .project-button-prompts .project-button {
+#hero-section #hero-section-content #call-to-action .call-to-action-button, #project-container .project-content .project-info .project-button-prompts .project-button {
   display: inline-block;
   border-radius: 5px;
   padding: 10px 20px;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
   transition: background-color 0.5s;
 }
-#hero-section-container #hero-section-content #call-to-action .button-content, #project-container .project-content .project-info .project-button-prompts .project-button .button-content {
+#hero-section #hero-section-content #call-to-action .call-to-action-button .button-content, #project-container .project-content .project-info .project-button-prompts .project-button .button-content {
   display: flex;
   align-items: center;
 }
-#hero-section-container #hero-section-content #call-to-action:hover, #project-container .project-content .project-info .project-button-prompts .project-button:hover {
+#hero-section #hero-section-content #call-to-action .call-to-action-button:hover, #project-container .project-content .project-info .project-button-prompts .project-button:hover {
   cursor: pointer;
   box-shadow: none;
   transform: scale(0.98);

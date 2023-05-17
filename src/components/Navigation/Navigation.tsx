@@ -17,36 +17,6 @@ const Navigation: FC = (): ReactElement => {
         }
     }
 
-    // function highlightScrollPosition() {
-    //     const home: HTMLElement = document.getElementById('home')!;
-    //     const about: HTMLElement = document.getElementById('about')!;
-    //     const skills: HTMLElement = document.getElementById('skills')!;
-    //     const projects: HTMLElement = document.getElementById('projects')!;
-    //     const navHome: HTMLElement = document.getElementById('nav-home')!;
-    //     const navAbout: HTMLElement = document.getElementById('nav-about')!;
-    //     const navSkills: HTMLElement = document.getElementById('nav-skills')!;
-    //     const navProjects: HTMLElement = document.getElementById('nav-projects')!;
-
-    //     // navHome.style.color = 'black';
-    //     // navAbout.style.color = 'black';
-    //     // navSkills.style.color = 'black';
-    //     // navProjects.style.color = 'black';
-
-    //     if (projects.getBoundingClientRect().top < 0) {
-    //         // navProjects.style.color = 'orange';
-    //         console.log('projects')
-    //     } else if (skills.getBoundingClientRect().top < 0) {
-    //         // navSkills.style.color = 'orange';
-    //         console.log('skills')
-    //     } else if (about.getBoundingClientRect().top < 0) {
-    //         // navAbout.style.color = 'orange';
-    //         console.log('about')
-    //     } else {
-    //         // navHome.style.color = 'orange';
-    //         console.log('home')
-    //     }
-    // }
-
     window.onscroll = function () {
         solidifyNavigation();
     }
