@@ -46,7 +46,7 @@ const Skills: FC = (): ReactElement => {
                 ,
                 {
                     name: 'Express',
-                    icon: '/tech_stack_icons/express.svg'
+                    icon: '/tech_stack_icons/express.png'
                 }
                 ,
                 {
@@ -65,7 +65,7 @@ const Skills: FC = (): ReactElement => {
             stacks: [
                 {
                     name: 'jQuery',
-                    icon: '/tech_stack_icons/jquery.svg'
+                    icon: '/tech_stack_icons/jquery.png'
                 }
                 ,
                 {
@@ -75,12 +75,12 @@ const Skills: FC = (): ReactElement => {
                 ,
                 {
                     name: 'Jest',
-                    icon: '/tech_stack_icons/jest.svg'
+                    icon: '/tech_stack_icons/jest.png'
                 }
                 ,
                 {
                     name: 'Tailwind UI',
-                    icon: '/tech_stack_icons/tailwind-ui.svg'
+                    icon: '/tech_stack_icons/tailwind.svg'
                 }
                 ,
                 {

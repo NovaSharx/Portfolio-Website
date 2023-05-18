@@ -31,7 +31,7 @@ const Navigation: FC = (): ReactElement => {
             <div id='nav-links'>
                 <ul>
                     <li>
-                        <a href='#hero-section-container' id='nav-home'>HOME</a>
+                        <a href='#hero-section' id='nav-home'>HOME</a>
                     </li>
                     <li>
                         <a href='#about' id='nav-about'>ABOUT</a>
