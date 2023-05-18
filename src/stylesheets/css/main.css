@@ -197,7 +197,7 @@ h6 {
   color: #183642;
 }
 #hero-section #grid:hover {
-  cursor: url("/public/paintbrush_white_cursor.svg"), pointer;
+  cursor: url("/public/paintbrush_color_cursor.png"), pointer;
 }
 #hero-section #grid .cell {
   width: 40px;
@@ -497,6 +497,7 @@ h6 {
 #skills-container .skills-category {
   padding: 40px;
   border-radius: 80px;
+  background-color: #fff;
   box-shadow: 0px 0px 50px 0px #ddd;
 }
 #skills-container .skills-category h3 {
