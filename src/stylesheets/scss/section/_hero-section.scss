@@ -1,9 +1,8 @@
 #hero-section {
-    padding: 0px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1000px;
+    height: 800px;
     background-color: $primary-background-color;
 
     #hero-section-content {
@@ -66,28 +65,28 @@
         }
 
         @for $index from 0 through 19 {
-            .cell:nth-child(20n + #{$index + 1}):hover~#base-layer {
+            .cell:nth-child(20n + #{$index + 1}):hover~#art-layer {
                 --positionX: #{$index};
             }
 
-            .cell:nth-child(n + #{20 * $index + 1}):nth-child(-n + #{20 * ($index + 1)}):hover~#base-layer {
+            .cell:nth-child(n + #{20 * $index + 1}):nth-child(-n + #{20 * ($index + 1)}):hover~#art-layer {
                 --positionY: #{$index};
             }
         }
 
-        #base-layer {
+        #art-layer {
             --positionX: 0;
             --positionY: 0;
 
             position: absolute;
             width: inherit;
             height: inherit;
-            background: url('/public/portrait-sketch.png');
+            background: url('/public/portrait-sketch.png'); // sketch
             background-size: 120%;
             background-position: center 75%;
             background-repeat: no-repeat;
 
-            #mask-layer {
+            #origin-layer {
                 position: absolute;
                 background: url('/public/portrait-color.png');
                 background-size: 120%;
@@ -102,5 +101,6 @@
                 transition: all 0.25s ease-out;
             }
         }
+
     }
 }

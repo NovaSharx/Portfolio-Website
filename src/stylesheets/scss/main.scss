@@ -13,13 +13,7 @@
 
 
 // Layout
-@import 'layout/navigation';
-@import 'layout/footer';
-@import 'layout/hero-section';
 @import 'layout/main-section';
-@import 'layout/project-container';
-@import 'layout/about-container';
-@import 'layout/skills-container';
 
 
 // Compontents
@@ -28,6 +22,15 @@
 
 // Pages
 @import 'pages/home';
+
+
+// Section
+@import 'section/navigation-section';
+@import 'section/footer-section';
+@import 'section/hero-section';
+@import 'section/project-section';
+@import 'section/about-section';
+@import 'section/skills-section';
 
 
 // Themes

@@ -93,13 +93,13 @@ const Skills: FC = (): ReactElement => {
     ]
 
     return (
-        <div id='skills' className='main-section'>
+        <div id='skills' className='main-section-container'>
             <div className='main-section-title'>
                 <h2>SKILLS</h2>
             </div>
 
             <div className='main-section-content'>
-                <div id='skills-container'>
+                <div id='skills-section'>
                     {skillsCategories.map((category, index) => {
                         return (
                             <div key={index} className='skills-category'>

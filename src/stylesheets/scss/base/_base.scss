@@ -1,5 +1,4 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -9,5 +8,11 @@ html {
 
   body {
     background-color: $primary-background-color;
+
+    #app {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

@@ -95,12 +95,12 @@ const Projects: FC = (): ReactElement => {
     }
 
     return (
-        <div id='projects' className='main-section'>
+        <div id='projects' className='main-section-container'>
             <div className='main-section-title'>
                 <h2>PROJECTS</h2>
             </div>
             <div className='main-section-content'>
-                <div id='project-container'>
+                <div id='projects-section'>
                     {projectsArray.map((project, index) => {
 
                         return (

@@ -19,7 +19,7 @@ const HeroSection: FC = (): ReactElement => {
     }
 
     return (
-        <div id='hero-section'>
+        <div id='hero-section' className='main-section-container'>
 
             <div id='hero-section-content'>
                 <h1 id='greeting'>Hello, my name is
@@ -36,9 +36,11 @@ const HeroSection: FC = (): ReactElement => {
             <div id='grid'>
                 {renderCells()}
 
-                <div id='base-layer'>
-                    <div id='mask-layer'></div>
+                <div id='art-layer'>
+                    <div id='origin-layer'>
+                    </div>
                 </div>
+
             </div>
         </div>
     )

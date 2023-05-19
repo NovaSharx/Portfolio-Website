@@ -1,5 +1,4 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -9,6 +8,11 @@ html {
 }
 html body {
   background-color: #fff;
+}
+html body #app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
@@ -44,13 +48,90 @@ h6 {
   font-size: 8px;
 }
 
-#app {
-  min-height: 100vh;
+.main-section-container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: linear-gradient(0deg, #f7f7f7 25%, #fff 60%);
+  border: 1px solid magenta;
+}
+.main-section-container .main-section-title {
+  margin-bottom: 50px;
+  width: 100%;
+}
+.main-section-container .main-section-title h2 {
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  color: #183642;
+}
+.main-section-container .main-section-title h2::after, .main-section-container .main-section-title h2::before {
+  content: "";
+  width: 100px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #ff5200;
+}
+.main-section-container .main-section-content {
+  padding: 50px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 1500px;
+}
+@media all and (max-width: 1536px) {
+  .main-section-container {
+    max-width: 1200px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .main-section-container {
+    max-width: 1024px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .main-section-container {
+    max-width: 768px;
+  }
+}
+@media all and (max-width: 768px) {
+  .main-section-container {
+    max-width: 480px;
+  }
+}
+@media all and (max-width: 480px) {
+  .main-section-container {
+    max-width: 100%;
+  }
 }
 
-#navigation {
+#projects-section .project-content .project-info .project-button-prompts .project-button, #hero-section #hero-section-content #call-to-action .call-to-action-button {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.5s;
+}
+#projects-section .project-content .project-info .project-button-prompts .project-button .button-content, #hero-section #hero-section-content #call-to-action .call-to-action-button .button-content {
+  display: flex;
+  align-items: center;
+}
+#projects-section .project-content .project-info .project-button-prompts .project-button:hover, #hero-section #hero-section-content #call-to-action .call-to-action-button:hover {
+  cursor: pointer;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+#home {
+  flex-grow: 1;
+}
+
+#navigation-section {
   padding-top: 20px;
   display: flex;
   align-items: center;
@@ -65,7 +146,7 @@ h6 {
   z-index: 2;
   transition: 0.2s;
 }
-#navigation #nav-logo {
+#navigation-section #nav-logo {
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -80,57 +161,57 @@ h6 {
   -webkit-text-fill-color: transparent;
   transition: 1s;
 }
-#navigation #nav-logo a::before {
+#navigation-section #nav-logo a::before {
   position: absolute;
   content: "";
   background-color: #ff5200;
 }
-#navigation #nav-logo a::before:hover {
+#navigation-section #nav-logo a::before:hover {
   cursor: pointer;
   color: #ff5200;
   background: linear-gradient(0deg, #ff5200 1005%, #183642 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#navigation #nav-links {
+#navigation-section #nav-links {
   width: 0px;
   flex-grow: 1;
 }
-#navigation #nav-links ul {
+#navigation-section #nav-links ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
-#navigation #nav-links ul li {
+#navigation-section #nav-links ul li {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
 }
-#navigation #nav-links ul a {
+#navigation-section #nav-links ul a {
   padding: 2px;
   color: inherit;
   font-weight: 600;
   text-decoration: none;
 }
-#navigation #nav-links ul a:hover {
+#navigation-section #nav-links ul a:hover {
   color: #ff5200;
 }
-#navigation #nav-links ul a:after {
+#navigation-section #nav-links ul a:after {
   display: block;
   content: "";
   border-bottom: 5px solid #ff5200;
   transform: scaleX(0);
   transition: 0.2s;
 }
-#navigation #nav-links ul a:hover:after {
+#navigation-section #nav-links ul a:hover:after {
   margin-bottom: 5px;
   transform: scaleX(1);
 }
-#navigation #nav-links ul a:visited {
+#navigation-section #nav-links ul a:visited {
   text-decoration: none;
 }
-#navigation #light-mode-switch {
+#navigation-section #light-mode-switch {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
@@ -138,7 +219,7 @@ h6 {
   width: 0px;
 }
 
-#footer {
+#footer-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,11 +229,10 @@ h6 {
 }
 
 #hero-section {
-  padding: 0px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1000px;
+  height: 800px;
   background-color: #fff;
 }
 #hero-section #hero-section-content {
@@ -206,127 +286,127 @@ h6 {
   color: rgba(128, 128, 128, 0);
   z-index: 1;
 }
-#hero-section #grid .cell:nth-child(20n+1):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+1):hover ~ #art-layer {
   --positionX: 0;
 }
-#hero-section #grid .cell:nth-child(n+1):nth-child(-n+20):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+1):nth-child(-n+20):hover ~ #art-layer {
   --positionY: 0;
 }
-#hero-section #grid .cell:nth-child(20n+2):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+2):hover ~ #art-layer {
   --positionX: 1;
 }
-#hero-section #grid .cell:nth-child(n+21):nth-child(-n+40):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+21):nth-child(-n+40):hover ~ #art-layer {
   --positionY: 1;
 }
-#hero-section #grid .cell:nth-child(20n+3):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+3):hover ~ #art-layer {
   --positionX: 2;
 }
-#hero-section #grid .cell:nth-child(n+41):nth-child(-n+60):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+41):nth-child(-n+60):hover ~ #art-layer {
   --positionY: 2;
 }
-#hero-section #grid .cell:nth-child(20n+4):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+4):hover ~ #art-layer {
   --positionX: 3;
 }
-#hero-section #grid .cell:nth-child(n+61):nth-child(-n+80):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+61):nth-child(-n+80):hover ~ #art-layer {
   --positionY: 3;
 }
-#hero-section #grid .cell:nth-child(20n+5):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+5):hover ~ #art-layer {
   --positionX: 4;
 }
-#hero-section #grid .cell:nth-child(n+81):nth-child(-n+100):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+81):nth-child(-n+100):hover ~ #art-layer {
   --positionY: 4;
 }
-#hero-section #grid .cell:nth-child(20n+6):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+6):hover ~ #art-layer {
   --positionX: 5;
 }
-#hero-section #grid .cell:nth-child(n+101):nth-child(-n+120):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+101):nth-child(-n+120):hover ~ #art-layer {
   --positionY: 5;
 }
-#hero-section #grid .cell:nth-child(20n+7):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+7):hover ~ #art-layer {
   --positionX: 6;
 }
-#hero-section #grid .cell:nth-child(n+121):nth-child(-n+140):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+121):nth-child(-n+140):hover ~ #art-layer {
   --positionY: 6;
 }
-#hero-section #grid .cell:nth-child(20n+8):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+8):hover ~ #art-layer {
   --positionX: 7;
 }
-#hero-section #grid .cell:nth-child(n+141):nth-child(-n+160):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+141):nth-child(-n+160):hover ~ #art-layer {
   --positionY: 7;
 }
-#hero-section #grid .cell:nth-child(20n+9):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+9):hover ~ #art-layer {
   --positionX: 8;
 }
-#hero-section #grid .cell:nth-child(n+161):nth-child(-n+180):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+161):nth-child(-n+180):hover ~ #art-layer {
   --positionY: 8;
 }
-#hero-section #grid .cell:nth-child(20n+10):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+10):hover ~ #art-layer {
   --positionX: 9;
 }
-#hero-section #grid .cell:nth-child(n+181):nth-child(-n+200):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+181):nth-child(-n+200):hover ~ #art-layer {
   --positionY: 9;
 }
-#hero-section #grid .cell:nth-child(20n+11):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+11):hover ~ #art-layer {
   --positionX: 10;
 }
-#hero-section #grid .cell:nth-child(n+201):nth-child(-n+220):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+201):nth-child(-n+220):hover ~ #art-layer {
   --positionY: 10;
 }
-#hero-section #grid .cell:nth-child(20n+12):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+12):hover ~ #art-layer {
   --positionX: 11;
 }
-#hero-section #grid .cell:nth-child(n+221):nth-child(-n+240):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+221):nth-child(-n+240):hover ~ #art-layer {
   --positionY: 11;
 }
-#hero-section #grid .cell:nth-child(20n+13):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+13):hover ~ #art-layer {
   --positionX: 12;
 }
-#hero-section #grid .cell:nth-child(n+241):nth-child(-n+260):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+241):nth-child(-n+260):hover ~ #art-layer {
   --positionY: 12;
 }
-#hero-section #grid .cell:nth-child(20n+14):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+14):hover ~ #art-layer {
   --positionX: 13;
 }
-#hero-section #grid .cell:nth-child(n+261):nth-child(-n+280):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+261):nth-child(-n+280):hover ~ #art-layer {
   --positionY: 13;
 }
-#hero-section #grid .cell:nth-child(20n+15):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+15):hover ~ #art-layer {
   --positionX: 14;
 }
-#hero-section #grid .cell:nth-child(n+281):nth-child(-n+300):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+281):nth-child(-n+300):hover ~ #art-layer {
   --positionY: 14;
 }
-#hero-section #grid .cell:nth-child(20n+16):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+16):hover ~ #art-layer {
   --positionX: 15;
 }
-#hero-section #grid .cell:nth-child(n+301):nth-child(-n+320):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+301):nth-child(-n+320):hover ~ #art-layer {
   --positionY: 15;
 }
-#hero-section #grid .cell:nth-child(20n+17):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+17):hover ~ #art-layer {
   --positionX: 16;
 }
-#hero-section #grid .cell:nth-child(n+321):nth-child(-n+340):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+321):nth-child(-n+340):hover ~ #art-layer {
   --positionY: 16;
 }
-#hero-section #grid .cell:nth-child(20n+18):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+18):hover ~ #art-layer {
   --positionX: 17;
 }
-#hero-section #grid .cell:nth-child(n+341):nth-child(-n+360):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+341):nth-child(-n+360):hover ~ #art-layer {
   --positionY: 17;
 }
-#hero-section #grid .cell:nth-child(20n+19):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+19):hover ~ #art-layer {
   --positionX: 18;
 }
-#hero-section #grid .cell:nth-child(n+361):nth-child(-n+380):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+361):nth-child(-n+380):hover ~ #art-layer {
   --positionY: 18;
 }
-#hero-section #grid .cell:nth-child(20n+20):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(20n+20):hover ~ #art-layer {
   --positionX: 19;
 }
-#hero-section #grid .cell:nth-child(n+381):nth-child(-n+400):hover ~ #base-layer {
+#hero-section #grid .cell:nth-child(n+381):nth-child(-n+400):hover ~ #art-layer {
   --positionY: 19;
 }
-#hero-section #grid #base-layer {
+#hero-section #grid #art-layer {
   --positionX: 0;
   --positionY: 0;
   position: absolute;
@@ -337,7 +417,7 @@ h6 {
   background-position: center 75%;
   background-repeat: no-repeat;
 }
-#hero-section #grid #base-layer #mask-layer {
+#hero-section #grid #art-layer #origin-layer {
   position: absolute;
   background: url("/public/portrait-color.png");
   background-size: 120%;
@@ -352,68 +432,34 @@ h6 {
   transition: all 0.25s ease-out;
 }
 
-.main-section {
-  padding: 100px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: linear-gradient(0deg, #f7f7f7 25%, #fff 60%);
-}
-.main-section .main-section-title {
-  margin-bottom: 50px;
-  width: 100%;
-}
-.main-section .main-section-title h2 {
-  margin: 0px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 500px;
-  color: #183642;
-}
-.main-section .main-section-title h2::after, .main-section .main-section-title h2::before {
-  content: "";
-  width: 100px;
-  height: 5px;
-  border-radius: 10px;
-  background-color: #ff5200;
-}
-.main-section .main-section-content {
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 1500px;
-}
-
-#project-container {
+#projects-section {
   display: flex;
   flex-direction: column;
 }
-#project-container .project-content {
+#projects-section .project-content {
   padding: 25px;
   height: 500px;
   display: flex;
   justify-content: center;
 }
-#project-container .project-content .project-image {
+#projects-section .project-content .project-image {
   width: 600px;
 }
-#project-container .project-content .project-image .laptop-image {
+#projects-section .project-content .project-image .laptop-image {
   width: inherit;
   height: 100%;
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
 }
-#project-container .project-content .project-image .laptop-image .desktop-image {
+#projects-section .project-content .project-image .laptop-image .desktop-image {
   width: inherit;
   height: inherit;
   background-size: 403px auto;
   background-position: 97px 86px;
   background-repeat: no-repeat;
 }
-#project-container .project-content .project-info {
+#projects-section .project-content .project-info {
   padding: 10px 50px;
   width: 600px;
   display: flex;
@@ -422,16 +468,16 @@ h6 {
   justify-content: space-between;
   color: #183642;
 }
-#project-container .project-content .project-info .project-description {
+#projects-section .project-content .project-info .project-description {
   font-size: 20px;
 }
-#project-container .project-content .project-info .project-tech-stack {
+#projects-section .project-content .project-info .project-tech-stack {
   width: 300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-#project-container .project-content .project-info .project-tech-stack .tech-stack-item {
+#projects-section .project-content .project-info .project-tech-stack .tech-stack-item {
   margin: 15px 20px;
   width: 50px;
   height: 50px;
@@ -442,7 +488,7 @@ h6 {
   box-shadow: 0px 0px 15px 0px #ddd;
   transition: 0.2s ease-out;
 }
-#project-container .project-content .project-info .project-tech-stack .tech-stack-item .tech-stack-popup {
+#projects-section .project-content .project-info .project-tech-stack .tech-stack-item .tech-stack-popup {
   opacity: 0;
   position: relative;
   bottom: 18px;
@@ -452,70 +498,70 @@ h6 {
   font-weight: 600;
   transition: 1.5s ease-out;
 }
-#project-container .project-content .project-info .project-tech-stack .tech-stack-item:hover {
+#projects-section .project-content .project-info .project-tech-stack .tech-stack-item:hover {
   transform: scale(1.1);
 }
-#project-container .project-content .project-info .project-tech-stack .tech-stack-item:hover .tech-stack-popup {
+#projects-section .project-content .project-info .project-tech-stack .tech-stack-item:hover .tech-stack-popup {
   opacity: 1;
 }
-#project-container .project-content .project-info .project-button-prompts {
+#projects-section .project-content .project-info .project-button-prompts {
   width: 400px;
   display: flex;
   justify-content: space-between;
 }
-#project-container .project-content .project-info .project-button-prompts .project-button {
+#projects-section .project-content .project-info .project-button-prompts .project-button {
   border: 2px solid #183642;
   color: #183642;
   font-weight: 800;
 }
-#project-container .project-content .project-info .project-button-prompts .project-button:hover {
+#projects-section .project-content .project-info .project-button-prompts .project-button:hover {
   background-color: #2c647a;
   color: #fff;
 }
 
-#about-container {
+#about-section {
   margin: 0px auto;
   display: flex;
   font-size: 24px;
 }
-#about-container #about-image {
+#about-section #about-image {
   height: 650px;
   width: auto;
   background-color: #f7f7f7;
   border-radius: 10px;
 }
-#about-container #about-content {
+#about-section #about-content {
   padding: 0px 30px;
 }
 
-#skills-container {
+#skills-section {
   margin: 0px auto;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-#skills-container .skills-category {
+#skills-section .skills-category {
   padding: 40px;
   border-radius: 80px;
   background-color: #fff;
   box-shadow: 0px 0px 50px 0px #ddd;
 }
-#skills-container .skills-category h3 {
+#skills-section .skills-category h3 {
   text-align: center;
   font-weight: 300;
 }
-#skills-container .skills-category .skills-grid {
+#skills-section .skills-category .skills-grid {
   padding: 30px 0px;
   display: grid;
   grid-template: repeat(1, 1fr)/repeat(3, 1fr);
   column-gap: 10px;
   row-gap: 10px;
 }
-#skills-container .skills-category .skills-grid .skill-cell {
+#skills-section .skills-category .skills-grid .skill-cell {
   display: flex;
   justify-content: center;
 }
-#skills-container .skills-category .skills-grid .skill-cell .skill-chip {
+#skills-section .skills-category .skills-grid .skill-cell .skill-chip {
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -529,7 +575,7 @@ h6 {
   color: #fff;
   transition: 0.5s;
 }
-#skills-container .skills-category .skills-grid .skill-cell .skill-chip .skill-icon {
+#skills-section .skills-category .skills-grid .skill-cell .skill-chip .skill-icon {
   opacity: 0;
   position: absolute;
   width: inherit;
@@ -539,42 +585,21 @@ h6 {
   background-repeat: no-repeat;
   transition: 1s;
 }
-#skills-container .skills-category .skills-grid .skill-cell .skill-chip .skill-name {
+#skills-section .skills-category .skills-grid .skill-cell .skill-chip .skill-name {
   font-weight: 800;
   text-align: center;
   transition: 0.5s;
 }
-#skills-container .skills-category .skills-grid .skill-cell .skill-chip:hover {
+#skills-section .skills-category .skills-grid .skill-cell .skill-chip:hover {
   cursor: pointer;
   background-color: transparent;
   border: 1px solid transparent;
 }
-#skills-container .skills-category .skills-grid .skill-cell .skill-chip:hover .skill-icon {
+#skills-section .skills-category .skills-grid .skill-cell .skill-chip:hover .skill-icon {
   opacity: 1;
   border: 1px solid #ff5200;
   border-radius: 50px;
 }
-#skills-container .skills-category .skills-grid .skill-cell .skill-chip:hover .skill-name {
+#skills-section .skills-category .skills-grid .skill-cell .skill-chip:hover .skill-name {
   opacity: 0;
-}
-
-#hero-section #hero-section-content #call-to-action .call-to-action-button, #project-container .project-content .project-info .project-button-prompts .project-button {
-  display: inline-block;
-  border-radius: 5px;
-  padding: 10px 20px;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.5s;
-}
-#hero-section #hero-section-content #call-to-action .call-to-action-button .button-content, #project-container .project-content .project-info .project-button-prompts .project-button .button-content {
-  display: flex;
-  align-items: center;
-}
-#hero-section #hero-section-content #call-to-action .call-to-action-button:hover, #project-container .project-content .project-info .project-button-prompts .project-button:hover {
-  cursor: pointer;
-  box-shadow: none;
-  transform: scale(0.98);
-}
-
-#home {
-  flex-grow: 1;
 }/*# sourceMappingURL=main.css.map */

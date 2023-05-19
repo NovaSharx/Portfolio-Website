@@ -2,14 +2,14 @@ import { FC, ReactElement } from 'react';
 
 const About: FC = (): ReactElement => {
     return (
-        <div id='about' className='main-section'>
+        <div id='about' className='main-section-container'>
             <div className='main-section-title'>
                 <h2>ABOUT</h2>
             </div>
 
             <div className='main-section-content'>
 
-                <div id='about-container'>
+                <div id='about-section'>
                     <img src='portrait-color.png' alt='about_section_image' id='about-image' />
                     <div id='about-content'>
                         <p>

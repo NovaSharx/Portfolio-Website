@@ -4,7 +4,7 @@ import Switch from '@mui/material/Switch';
 const Navigation: FC = (): ReactElement => {
 
     function solidifyNavigation(): void {
-        const navigation = document.getElementById('navigation');
+        const navigation = document.getElementById('navigation-section');
 
         if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
             navigation!.style.paddingTop = '0px';
@@ -22,7 +22,7 @@ const Navigation: FC = (): ReactElement => {
     }
 
     return (
-        <div id='navigation'>
+        <div id='navigation-section'>
 
             <div id='nav-logo'>
                 <a href='/' id='nav-logo-link'>DJ</a>
