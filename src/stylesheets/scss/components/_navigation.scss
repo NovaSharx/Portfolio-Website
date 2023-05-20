@@ -1,14 +1,14 @@
-#navigation-section {
-    padding-top: 20px;
+#navigation {
+    padding-top: 1.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 3rem;
     box-sizing: content-box;
     background-color: $primary-background-color;
-    border-bottom: 0px solid $secondary-color;
+    border-bottom: 0rem solid $secondary-color;
     box-shadow: none;
     z-index: 2;
     transition: 0.2s;
@@ -17,16 +17,15 @@
         flex-grow: 1;
         display: flex;
         align-items: center;
-        padding-left: 50px;
-        width: 0px;
+        padding-left: 3rem;
+        width: 0rem;
         height: inherit;
-        font-size: 35px;
+        font-size: 2.2rem;
         font-weight: 800;
         color: $primary-color;
         background: linear-gradient(0deg, $secondary-color 25%, $primary-color 60%);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        transition: 1s;
 
         a::before {
             position: absolute;
@@ -45,7 +44,7 @@
     }
 
     #nav-links {
-        width: 0px;
+        width: 0rem;
         flex-grow: 1;
 
         ul {
@@ -57,11 +56,10 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 40px;
+                height: 2.5rem;
             }
 
             a {
-                padding: 2px;
                 color: inherit;
                 font-weight: 600;
                 text-decoration: none;
@@ -73,13 +71,13 @@
                 &:after {
                     display: block;
                     content: '';
-                    border-bottom: 5px solid $secondary-color;
+                    border-bottom: 0.3rem solid $secondary-color;
                     transform: scaleX(0);
                     transition: 0.2s;
                 }
 
                 &:hover:after {
-                    margin-bottom: 5px;
+                    margin-bottom: 0.3rem;
                     transform: scaleX(1);
                 }
 
@@ -92,10 +90,10 @@
     }
 
     #light-mode-switch {
+        width: 0rem;
         flex-grow: 1;
         display: flex;
         justify-content: flex-end;
-        margin-right: 50px;
-        width: 0px;
+        margin-right: 3rem;
     }
 }

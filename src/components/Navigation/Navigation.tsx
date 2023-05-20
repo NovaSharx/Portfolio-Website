@@ -4,15 +4,15 @@ import Switch from '@mui/material/Switch';
 const Navigation: FC = (): ReactElement => {
 
     function solidifyNavigation(): void {
-        const navigation = document.getElementById('navigation-section');
+        const navigation = document.getElementById('navigation');
 
         if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-            navigation!.style.paddingTop = '0px';
-            navigation!.style.borderWidth = '3px';
-            navigation!.style.boxShadow = '0px 15px 25px 0px rgba(0, 0, 0, 0.1)';
+            navigation!.style.paddingTop = '0rem';
+            navigation!.style.borderWidth = '0.2rem';
+            navigation!.style.boxShadow = '0rem 0.9rem 1.6rem 0rem rgba(0, 0, 0, 0.1)';
         } else {
-            navigation!.style.paddingTop = '20px';
-            navigation!.style.borderWidth = '0px';
+            navigation!.style.paddingTop = '1.25rem';
+            navigation!.style.borderWidth = '0rem';
             navigation!.style.boxShadow = 'none';
         }
     }
@@ -22,7 +22,7 @@ const Navigation: FC = (): ReactElement => {
     }
 
     return (
-        <div id='navigation-section'>
+        <div id='navigation'>
 
             <div id='nav-logo'>
                 <a href='/' id='nav-logo-link'>DJ</a>

@@ -1,7 +1,7 @@
-#footer-section {
+#footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 30px;
+    min-height: 1.8rem;
     @include set-bg-color(#333)
 }

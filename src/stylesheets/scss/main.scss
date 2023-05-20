@@ -17,6 +17,8 @@
 
 
 // Compontents
+@import 'components/navigation';
+@import 'components/footer';
 @import 'components/button';
 
 
@@ -25,8 +27,6 @@
 
 
 // Section
-@import 'section/navigation-section';
-@import 'section/footer-section';
 @import 'section/hero-section';
 @import 'section/project-section';
 @import 'section/about-section';

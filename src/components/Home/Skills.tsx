@@ -93,33 +93,35 @@ const Skills: FC = (): ReactElement => {
     ]
 
     return (
-        <div id='skills' className='main-section-container'>
-            <div className='main-section-title'>
-                <h2>SKILLS</h2>
-            </div>
+        <div className='main-section-container'>
+            <div id='skills' className='main-section'>
+                <div className='main-section-title'>
+                    <h2>SKILLS</h2>
+                </div>
 
-            <div className='main-section-content'>
-                <div id='skills-section'>
-                    {skillsCategories.map((category, index) => {
-                        return (
-                            <div key={index} className='skills-category'>
-                                <h3>{category.name}</h3>
+                <div className='main-section-content'>
+                    <div id='skills-section'>
+                        {skillsCategories.map((category, index) => {
+                            return (
+                                <div key={index} className='skills-category'>
+                                    <h3>{category.name}</h3>
 
-                                <div className='skills-grid'>
-                                    {category.stacks.map((stack, idx) => {
-                                        return (
-                                            <div className='skill-cell' key={idx}>
-                                                <span className='skill-chip'>
-                                                    <span className='skill-icon' style={{ backgroundImage: `url(${stack.icon})` }}></span>
-                                                    <span className='skill-name'>{stack.name}</span>
-                                                </span>
-                                            </div>
-                                        )
-                                    })}
+                                    <div className='skills-grid'>
+                                        {category.stacks.map((stack, idx) => {
+                                            return (
+                                                <div className='skill-cell' key={idx}>
+                                                    <span className='skill-chip'>
+                                                        <span className='skill-icon' style={{ backgroundImage: `url(${stack.icon})` }}></span>
+                                                        <span className='skill-name'>{stack.name}</span>
+                                                    </span>
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
                                 </div>
-                            </div>
-                        )
-                    })}
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         </div>

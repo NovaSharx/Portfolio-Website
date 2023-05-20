@@ -95,61 +95,63 @@ const Projects: FC = (): ReactElement => {
     }
 
     return (
-        <div id='projects' className='main-section-container'>
-            <div className='main-section-title'>
-                <h2>PROJECTS</h2>
-            </div>
-            <div className='main-section-content'>
-                <div id='projects-section'>
-                    {projectsArray.map((project, index) => {
-
-                        return (
-                            <div key={index} className='project-content' style={{ flexDirection: index % 2 ? 'row' : 'row-reverse' }}>
-
-                                <div className='project-image'>
-                                    <div className='laptop-image' style={{ backgroundImage: `url('/laptop_transparent.png')` }}>
-                                        <div className='desktop-image' style={{ backgroundImage: `url(${project.image})` }} />
-                                    </div>
-                                </div>
-
-                                <div className='project-info'>
-
-                                    <h3 className='project-name'>{project.name}</h3>
-
-                                    <p className='project-description'>{project.description}</p>
-
-                                    <div className='project-tech-stack'>
-                                        {project.techStack.map((tech, idx) => {
-                                            return (
-                                                <div key={idx} className='tech-stack-item' style={{ backgroundImage: `url(${tech.icon})` }}>
-                                                    <div className='tech-stack-popup'>{tech.name}</div>
-                                                </div>
-                                            )
-                                        })}
-                                    </div>
-
-                                    <div className='project-button-prompts'>
-                                        <div className='project-button' onClick={(): void => openInNewTab(project.livePreview)}>
-                                            <div className='button-content'>
-                                                LIVE DEMO
-                                                <OpenInNewIcon sx={{ fontSize: '20px', ml: 1 }} />
-                                            </div>
-                                        </div>
-                                        <div className='project-button' onClick={(): void => openInNewTab(project.sourceCode)}>
-                                            <div className='button-content'>
-                                                SOURCE CODE
-                                                <CodeIcon sx={{ fontSize: '20px', ml: 1 }} />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        )
-                    })}
+        <div className='main-section-container'>
+            <div id='projects' className='main-section'>
+                <div className='main-section-title'>
+                    <h2>PROJECTS</h2>
                 </div>
-            </div>
-        </div >
+                <div className='main-section-content'>
+                    <div id='projects-section'>
+                        {projectsArray.map((project, index) => {
+
+                            return (
+                                <div key={index} className='project-content' style={{ flexDirection: index % 2 ? 'row' : 'row-reverse' }}>
+
+                                    <div className='project-image'>
+                                        <div className='laptop-image' style={{ backgroundImage: `url('/laptop_transparent.png')` }}>
+                                            <div className='desktop-image' style={{ backgroundImage: `url(${project.image})` }} />
+                                        </div>
+                                    </div>
+
+                                    <div className='project-info'>
+
+                                        <h3 className='project-name'>{project.name}</h3>
+
+                                        <p className='project-description'>{project.description}</p>
+
+                                        <div className='project-tech-stack'>
+                                            {project.techStack.map((tech, idx) => {
+                                                return (
+                                                    <div key={idx} className='tech-stack-item' style={{ backgroundImage: `url(${tech.icon})` }}>
+                                                        <div className='tech-stack-popup'>{tech.name}</div>
+                                                    </div>
+                                                )
+                                            })}
+                                        </div>
+
+                                        <div className='project-button-prompts'>
+                                            <div className='project-button' onClick={(): void => openInNewTab(project.livePreview)}>
+                                                <div className='button-content'>
+                                                    LIVE DEMO
+                                                    <OpenInNewIcon sx={{ fontSize: '20px', ml: 1 }} />
+                                                </div>
+                                            </div>
+                                            <div className='project-button' onClick={(): void => openInNewTab(project.sourceCode)}>
+                                                <div className='button-content'>
+                                                    SOURCE CODE
+                                                    <CodeIcon sx={{ fontSize: '20px', ml: 1 }} />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+            </div >
+        </div>
     )
 }
 

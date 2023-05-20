@@ -1,41 +1,41 @@
 #skills-section {
-    margin: 0px auto;
+    margin: 0rem auto;
     display: flex;
     justify-content: space-between;
     width: 100%;
 
     .skills-category {
-        padding: 40px;
-        border-radius: 80px;
+        padding: 2rem;
+        border-radius: 5rem;
         background-color: $primary-background-color;
-        box-shadow: 0px 0px 50px 0px #ddd;
+        box-shadow: 0rem 0rem 3rem 0rem #ddd;
 
         h3 {
             text-align: center;
             font-weight: 300;
+            font-size: 1.8rem;
         }
 
         .skills-grid {
-            padding: 30px 0px;
+            padding: 1.8rem 0rem;
             display: grid;
             grid-template: repeat(1, 1fr) / repeat(3, 1fr);
-            column-gap: 10px;
-            row-gap: 10px;
+            column-gap: 0.6rem;
+            row-gap: 0.6rem;
 
             .skill-cell {
                 display: flex;
                 justify-content: center;
 
                 .skill-chip {
-                    padding: 10px;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 100px;
-                    height: 100px;
+                    width: 6rem;
+                    height: 6rem;
                     border: 1px solid $primary-color;
-                    border-radius: 50px;
+                    border-radius: 3rem;
                     @include set-bg-color($primary-color);
                     transition: 0.5s;
 
@@ -64,7 +64,7 @@
                         .skill-icon {
                             opacity: 1;
                             border: 1px solid $secondary-color;
-                            border-radius: 50px;
+                            border-radius: 3rem;
                         }
 
                         .skill-name {

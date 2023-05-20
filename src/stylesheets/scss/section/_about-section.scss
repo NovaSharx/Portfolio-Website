@@ -1,16 +1,16 @@
 #about-section {
-    margin: 0px auto;
+    margin: 0rem auto;
     display: flex;
-    font-size: 24px;
+    font-size: 1.5rem;
 
     #about-image {
-        height: 650px;
+        height: 40rem;
         width: auto;
         background-color: $secondary-background-color;
-        border-radius: 10px;
+        border-radius: 0.6rem;
     }
 
     #about-content {
-        padding: 0px 30px;
+        padding: 0rem 2rem;
     }
 }
