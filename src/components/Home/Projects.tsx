@@ -90,10 +90,6 @@ const Projects: FC = (): ReactElement => {
         }
     ]
 
-    function openInNewTab(url: string) {
-        window.open(url, '_blank')
-    }
-
     return (
         <div className='main-section-container'>
             <div id='projects' className='main-section'>
@@ -130,18 +126,18 @@ const Projects: FC = (): ReactElement => {
                                         </div>
 
                                         <div className='project-button-prompts'>
-                                            <div className='project-button' onClick={(): void => openInNewTab(project.livePreview)}>
+                                            <a className='project-button' href={project.livePreview} target='_blank'>
                                                 <div className='button-content'>
                                                     LIVE DEMO
                                                     <OpenInNewIcon sx={{ fontSize: '20px', ml: 1 }} />
                                                 </div>
-                                            </div>
-                                            <div className='project-button' onClick={(): void => openInNewTab(project.sourceCode)}>
+                                            </a>
+                                            <a className='project-button' href={project.sourceCode} target='_blank'>
                                                 <div className='button-content'>
                                                     SOURCE CODE
                                                     <CodeIcon sx={{ fontSize: '20px', ml: 1 }} />
                                                 </div>
-                                            </div>
+                                            </a>
                                         </div>
 
                                     </div>
