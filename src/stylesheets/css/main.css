@@ -110,7 +110,6 @@ p {
   padding-top: 1.25rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   position: fixed;
   width: 100%;
   height: 3rem;
@@ -128,24 +127,31 @@ p {
   padding-left: 3rem;
   width: 0rem;
   height: inherit;
+}
+#navigation #nav-logo a {
+  position: relative;
   font-size: 2.2rem;
   font-weight: 800;
-  color: #183642;
-  background: linear-gradient(0deg, #ff5200 25%, #183642 60%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#navigation #nav-logo a::before {
-  position: absolute;
-  content: "";
-  background-color: #ff5200;
-}
-#navigation #nav-logo a::before:hover {
-  cursor: pointer;
   color: #ff5200;
-  background: linear-gradient(0deg, #ff5200 1005%, #183642 60%);
+  background: #ff5200;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+#navigation #nav-logo a::after {
+  position: absolute;
+  content: attr(text-attr);
+  color: #183642;
+  background: linear-gradient(180deg, #183642 30%, rgba(0, 0, 0, 0) 70%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  transition: 1s;
+}
+#navigation #nav-logo a:hover::after {
+  height: 0%;
 }
 #navigation #nav-links {
   width: 0rem;
@@ -191,7 +197,6 @@ p {
   justify-content: flex-end;
   margin-right: 3rem;
 }
-
 #footer {
   display: flex;
   justify-content: center;

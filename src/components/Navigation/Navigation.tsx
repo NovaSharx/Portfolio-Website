@@ -3,7 +3,7 @@ import Switch from '@mui/material/Switch';
 
 const Navigation: FC = (): ReactElement => {
 
-    function solidifyNavigation(): void {
+    function updateNavigationState(): void {
         const navigation = document.getElementById('navigation');
 
         if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -18,14 +18,16 @@ const Navigation: FC = (): ReactElement => {
     }
 
     window.onscroll = function () {
-        solidifyNavigation();
+        updateNavigationState();
     }
 
     return (
         <div id='navigation'>
 
             <div id='nav-logo'>
-                <a href='/' id='nav-logo-link'>DJ</a>
+                <a href='/' id='nav-logo-link' text-attr='DJ'>
+                    DJ
+                </a>
             </div>
 
             <div id='nav-links'>
@@ -47,6 +49,10 @@ const Navigation: FC = (): ReactElement => {
 
             <div id='light-mode-switch'>
                 <Switch />
+            </div>
+
+            <div>
+
             </div>
         </div>
     )

@@ -77,4 +77,37 @@
             }
         }
     }
+
+    @media (max-width: $tv-width) {
+        .skills-category {
+
+            h3 {}
+
+            .skills-grid {
+
+                .skill-cell {
+
+                    .skill-chip {
+
+                        .skill-icon {}
+
+                        .skill-name {}
+
+                        &:hover {
+
+                            .skill-icon {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: $desktop-width) {}
+
+    @media (max-width: $laptop-width) {}
+
+    @media (max-width: $tablet-width) {}
+
+    @media (max-width: $mobile-width) {}
 }
