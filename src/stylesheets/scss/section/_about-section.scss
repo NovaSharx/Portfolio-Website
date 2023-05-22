@@ -5,12 +5,54 @@
 
     #about-image {
         height: 40rem;
-        width: auto;
+        width: 40rem;
         background-color: $secondary-background-color;
         border-radius: 0.6rem;
     }
 
     #about-content {
         padding: 0rem 2rem;
+    }
+
+    @media (max-width: $tv-width) {
+
+        #about-image {
+            height: 35rem;
+            width: 35rem;
+        }
+    }
+
+    @media (max-width: $desktop-width) {
+        flex-direction: column;
+
+        #about-image {
+            margin: 0 auto;
+        }
+
+        #about-content {
+            padding: 2rem 0rem;
+        }
+    }
+
+    @media (max-width: $laptop-width) {
+        font-size: 1.4rem;
+    }
+
+    @media (max-width: $tablet-width) {
+        font-size: 1.2rem;
+
+        #about-image {
+            height: 20rem;
+            width: 20rem;
+        }
+    }
+
+    @media (max-width: $mobile-width) {
+        font-size: 1rem;
+
+        #about-image {
+            height: auto;
+            width: 100%
+        }
     }
 }

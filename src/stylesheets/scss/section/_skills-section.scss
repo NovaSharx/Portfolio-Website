@@ -1,10 +1,12 @@
 #skills-section {
     margin: 0rem auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
 
     .skills-category {
+        margin: 2rem;
         padding: 2rem;
         border-radius: 5rem;
         background-color: $primary-background-color;

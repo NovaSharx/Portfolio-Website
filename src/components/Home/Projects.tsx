@@ -105,7 +105,7 @@ const Projects: FC = (): ReactElement => {
                         {projectsArray.map((project, index) => {
 
                             return (
-                                <div key={index} className='project-content' style={{ flexDirection: index % 2 ? 'row' : 'row-reverse' }}>
+                                <div key={index} className='project-content'>
 
                                     <div className='project-image'>
                                         <div className='laptop-image' style={{ backgroundImage: `url('/laptop_transparent.png')` }}>

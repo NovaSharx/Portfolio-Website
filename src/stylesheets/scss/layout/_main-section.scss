@@ -20,7 +20,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 30rem;
+                max-width: 30rem;
                 color: $primary-color;
                 font-size: 3rem;
 
@@ -36,7 +36,7 @@
         }
 
         .main-section-content {
-            padding: 3rem;
+            padding: 1rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -56,10 +56,40 @@
 
         @media (max-width: $tablet-width) {
             max-width: $mobile-width;
+
+            .main-section-title {
+    
+                h2 {
+                    max-width: 20rem;
+                    font-size: 2rem;
+    
+                    &::after,
+                    &::before {
+                        content: '';
+                        width: 4.2rem;
+                        height: 0.2rem;
+                    }
+                }
+            }
         }
 
         @media (max-width: $mobile-width) {
             max-width: 100%;
+
+            .main-section-title {
+    
+                h2 {
+                    max-width: 16rem;
+                    font-size: 1.5rem;
+    
+                    &::after,
+                    &::before {
+                        content: '';
+                        width: 4rem;
+                        height: 0.2rem;
+                    }
+                }
+            }
         }
     }
 }
