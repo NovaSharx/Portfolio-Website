@@ -51,8 +51,10 @@ const Navigation: FC = (): ReactElement => {
                 <Switch />
             </div>
 
-            <div>
-
+            <div id='nav-hamburger'>
+                <div id='hamburger-button'>
+                    <span></span><span></span><span></span>
+                </div>
             </div>
         </div>
     )

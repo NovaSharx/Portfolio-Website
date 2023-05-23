@@ -8,7 +8,7 @@ const Projects: FC = (): ReactElement => {
         {
             name: 'TRIVINOVA',
             description: `Educational trivia web application for users to test their knowledge on a variety of different topics.`,
-            image: '/trivinova_image.jpg',
+            image: '/trivinova_laptop_image.png',
             techStack: [
                 {
                     name: 'React',
@@ -37,7 +37,7 @@ const Projects: FC = (): ReactElement => {
         {
             name: 'NOVABRATO',
             description: `A guitar music theory learning web application designed to aid beginner guitar players through interactive exercises.`,
-            image: '/novabrato_image.jpg',
+            image: '/novabrato_laptop_image.png',
             techStack: [
                 {
                     name: 'React',
@@ -70,7 +70,7 @@ const Projects: FC = (): ReactElement => {
         {
             name: 'SUPERNOVA',
             description: `A web based game application designed to challenge a user’s hand-eye coordination.`,
-            image: '/supernova_image.jpg',
+            image: '/supernova_laptop_image.png',
             techStack: [
                 {
                     name: 'HMTL 5',
@@ -104,9 +104,7 @@ const Projects: FC = (): ReactElement => {
                                 <div key={index} className='project-content'>
 
                                     <div className='project-image'>
-                                        <div className='laptop-image' style={{ backgroundImage: `url('/laptop_transparent.png')` }}>
-                                            <div className='desktop-image' style={{ backgroundImage: `url(${project.image})` }} />
-                                        </div>
+                                        <div className='project-laptop-image' style={{ backgroundImage: `url('${project.image}')` }}></div>
                                     </div>
 
                                     <div className='project-info'>

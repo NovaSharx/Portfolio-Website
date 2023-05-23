@@ -17,20 +17,12 @@
             height: 30rem;
             width: 38rem;
 
-            .laptop-image {
+            .project-laptop-image {
                 width: inherit;
-                height: 100%;
-                background-size: 100%;
+                height: 110%;
+                background-size: 110%;
                 background-position: center center;
                 background-repeat: no-repeat;
-
-                .desktop-image {
-                    width: inherit;
-                    height: inherit;
-                    background-size: 25.5rem auto;
-                    background-position: 6.2rem 6.2rem;
-                    background-repeat: no-repeat;
-                }
             }
         }
 
@@ -91,16 +83,17 @@
             }
 
             .project-button-prompts {
-                width: 25rem;
+                width: 100%;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-evenly;
 
                 .project-button {
                     @extend %btn;
+
                     border: 2px solid $primary-color;
                     color: $primary-color;
                     font-weight: 800;
-
+                    white-space: nowrap;
 
                     &:hover {
                         @include set-bg-color(lighten($primary-color, 15%));
@@ -110,7 +103,19 @@
         }
     }
 
-    @media (max-width: $tv-width) {}
+    @media (max-width: $tv-width) {
+        .project-content {
+
+            .project-image {
+                width: 30rem;
+                height: 25rem;
+            }
+
+            .project-info {
+                height: 25rem;
+            }
+        }
+    }
 
     @media (max-width: $desktop-width) {
         .project-content {
@@ -127,31 +132,94 @@
 
             .project-info {
                 padding: 0rem;
+                width: 100%;
+            }
+        }
+    }
 
-                .project-name {}
+    @media (max-width: $laptop-width) {
+        .project-content {
 
-                .project-description {}
+            .project-image {
+                width: 35rem;
+                height: 25rem;
+            }
+
+            .project-info {
+                height: 25rem;
+            }
+        }
+    }
+
+    @media (max-width: $tablet-width) {
+        .project-content {
+
+            .project-image {
+                width: 100%;
+                height: 20rem;
+            }
+
+            .project-info {}
+        }
+    }
+
+    @media (max-width: $mobile-width) {
+
+        .project-content {
+            padding: 0rem 1rem;
+
+            .project-image {
+                height: 15rem;
+            }
+
+            .project-info {
+                .project-name {
+                    font-size: 1.2rem;
+                }
+
+                .project-description {
+                    font-size: 0.8rem;
+                }
 
                 .project-tech-stack {
+                    width: 18.75rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
 
                     .tech-stack-item {
+                        margin: 0.9rem 1.25rem;
+                        width: 3.5rem;
+                        height: 3.5rem;
+                        background-size: 80%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        border-radius: 0.6rem;
+                        box-shadow: 0rem 0rem 0.9rem 0rem #ddd;
+                        transition: 0.2s ease-out;
 
-                        .tech-stack-popup {}
+                        .tech-stack-popup {
+                            opacity: 0;
+                            position: relative;
+                            bottom: 1.5rem;
+                            white-space: nowrap;
+                            display: flex;
+                            justify-content: center;
+                            font-weight: 600;
+                            transition: 1.5s ease-out;
+                        }
 
                     }
                 }
 
                 .project-button-prompts {
 
-                    .project-button {}
+                    .project-button {
+                        font-size: 0.7rem;
+                        padding: 0.3rem 0.6rem;
+                    }
                 }
             }
         }
     }
-
-    @media (max-width: $laptop-width) {}
-
-    @media (max-width: $tablet-width) {}
-
-    @media (max-width: $mobile-width) {}
 }
