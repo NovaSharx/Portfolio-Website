@@ -107,7 +107,38 @@
 
     @media (max-width: $laptop-width) {}
 
-    @media (max-width: $tablet-width) {}
+    @media (max-width: $tablet-width) {
+        .skills-category {
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 3rem;
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            .skills-grid {
+                padding: 1rem 0rem;
+                column-gap: 0.6rem;
+                row-gap: 0.6rem;
+
+                .skill-cell {
+
+                    .skill-chip {
+                        width: 3rem;
+                        height: 3rem;
+                        border-radius: 3rem;
+
+                        .skill-icon {}
+
+                        .skill-name {
+                            font-size: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     @media (max-width: $mobile-width) {}
 }

@@ -728,15 +728,15 @@ p {
     font-size: 0.8rem;
   }
   #projects-section .project-content .project-info .project-tech-stack {
-    width: 18.75rem;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
   #projects-section .project-content .project-info .project-tech-stack .tech-stack-item {
-    margin: 0.9rem 1.25rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    margin: 0.6rem 1rem;
+    width: 3rem;
+    height: 3rem;
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -885,4 +885,27 @@ p {
 }
 #skills-section .skills-category .skills-grid .skill-cell .skill-chip:hover .skill-name {
   opacity: 0;
+}
+@media (max-width: 768px) {
+  #skills-section .skills-category {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 3rem;
+  }
+  #skills-section .skills-category h3 {
+    font-size: 1.2rem;
+  }
+  #skills-section .skills-category .skills-grid {
+    padding: 1rem 0rem;
+    column-gap: 0.6rem;
+    row-gap: 0.6rem;
+  }
+  #skills-section .skills-category .skills-grid .skill-cell .skill-chip {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+  }
+  #skills-section .skills-category .skills-grid .skill-cell .skill-chip .skill-name {
+    font-size: 0.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -182,15 +182,15 @@
                 }
 
                 .project-tech-stack {
-                    width: 18.75rem;
+                    width: 100%;
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
 
                     .tech-stack-item {
-                        margin: 0.9rem 1.25rem;
-                        width: 3.5rem;
-                        height: 3.5rem;
+                        margin: 0.6rem 1rem;
+                        width: 3rem;
+                        height: 3rem;
                         background-size: 80%;
                         background-position: center;
                         background-repeat: no-repeat;
