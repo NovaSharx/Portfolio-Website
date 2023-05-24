@@ -3,7 +3,7 @@ import Switch from '@mui/material/Switch';
 
 const Navigation: FC = (): ReactElement => {
 
-    const [navMenuOpen, setavMenuOpen] = useState(false)
+    const [navMenuOpen, setNavMenuOpen] = useState(false)
 
     const navMenuList = (
         <ul>
@@ -42,11 +42,11 @@ const Navigation: FC = (): ReactElement => {
         if (!navMenuOpen) {
             navMenu.style.height = '15rem';
             navMenu.style.opacity = '1';
-            setavMenuOpen(true)
+            setNavMenuOpen(true)
         } else {
             navMenu.style.height = '0rem';
             navMenu.style.opacity = '0';
-            setavMenuOpen(false)
+            setNavMenuOpen(false)
         }
 
     }

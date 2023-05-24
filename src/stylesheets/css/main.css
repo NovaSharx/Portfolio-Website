@@ -246,7 +246,7 @@ p {
   overflow: hidden;
   border-bottom: 0.2rem solid #ff5200;
   opacity: 0;
-  transition: 1s;
+  transition: 0.5s;
 }
 #navigation #nav-dropdown-menu ul {
   display: flex;
@@ -756,9 +756,6 @@ p {
   }
 }
 @media (max-width: 480px) {
-  #projects-section .project-content {
-    padding: 0rem 1rem;
-  }
   #projects-section .project-content .project-image {
     height: 15rem;
   }
