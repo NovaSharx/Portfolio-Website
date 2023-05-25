@@ -226,19 +226,48 @@ p {
   width: 1.5rem;
   height: 50%;
   border-radius: 2rem;
-  transition: 1s;
 }
 #navigation #nav-items-container #nav-hamburger #hamburger-button span {
   background-color: #183642;
   width: 100%;
   height: 2px;
   border-radius: 5rem;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+#navigation #nav-items-container #nav-hamburger #hamburger-button span:nth-child(2) {
+  animation-duration: 0.2s;
 }
 #navigation #nav-items-container #nav-hamburger #hamburger-button:hover {
   cursor: pointer;
 }
 #navigation #nav-items-container #nav-hamburger #hamburger-button:hover span {
   height: 4px;
+}
+@keyframes top {
+  from {
+    transform: rotate(0deg) translate(0px);
+  }
+  to {
+    transform: rotate(45deg) translate(0.38rem, 0.38rem);
+  }
+}
+@keyframes middle {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+@keyframes bottom {
+  from {
+    transform: rotate(0deg) translate(0px);
+  }
+  to {
+    transform: rotate(-45deg) translate(0.38rem, -0.38rem);
+  }
 }
 #navigation #nav-dropdown-menu {
   height: 0rem;
@@ -756,6 +785,10 @@ p {
   }
 }
 @media (max-width: 480px) {
+  #projects-section .project-content {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
   #projects-section .project-content .project-image {
     height: 15rem;
   }

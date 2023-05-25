@@ -38,14 +38,23 @@ const Navigation: FC = (): ReactElement => {
 
     function toggleNavMenu(): void {
         const navMenu = document.getElementById('nav-dropdown-menu')!;
+        const hamburgerTop = document.getElementById('hamburger-top')!;
+        const hamburgerMiddle = document.getElementById('hamburger-middle')!;
+        const hamburgerBottom = document.getElementById('hamburger-bottom')!;
 
         if (!navMenuOpen) {
             navMenu.style.height = '15rem';
             navMenu.style.opacity = '1';
+            hamburgerTop.style.animationName = 'top';
+            hamburgerMiddle.style.animationName = 'middle';
+            hamburgerBottom.style.animationName = 'bottom';
             setNavMenuOpen(true)
         } else {
             navMenu.style.height = '0rem';
             navMenu.style.opacity = '0';
+            hamburgerTop.style.animationName = '';
+            hamburgerMiddle.style.animationName = '';
+            hamburgerBottom.style.animationName = '';
             setNavMenuOpen(false)
         }
 
@@ -74,7 +83,9 @@ const Navigation: FC = (): ReactElement => {
 
                 <div id='nav-hamburger'>
                     <div id='hamburger-button' onClick={toggleNavMenu}>
-                        <span></span><span></span><span></span>
+                        <span id='hamburger-top'></span>
+                        <span id='hamburger-middle'></span>
+                        <span id='hamburger-bottom'></span>
                     </div>
                 </div>
             </div>
