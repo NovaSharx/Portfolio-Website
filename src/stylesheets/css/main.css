@@ -903,6 +903,8 @@ p {
   border-radius: 5rem;
   background-color: #fff;
   box-shadow: 0rem 0rem 3rem 0rem #ddd;
+  border: 0.1rem solid #183642;
+  background: linear-gradient(0deg, #ddd 25%, #eee 60%);
 }
 #skills-section .skills-category h3 {
   text-align: center;
@@ -961,7 +963,7 @@ p {
 #skills-section .skills-category .skills-grid .skill-cell .skill-chip:hover .skill-name {
   opacity: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   #skills-section .skills-category {
     margin: 1rem;
     padding: 1rem;

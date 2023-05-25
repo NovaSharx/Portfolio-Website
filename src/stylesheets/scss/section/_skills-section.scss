@@ -11,6 +11,8 @@
         border-radius: 5rem;
         background-color: $primary-background-color;
         box-shadow: 0rem 0rem 3rem 0rem #ddd;
+        border: 0.1rem solid $primary-color;
+        background: linear-gradient(0deg, #ddd 25%, #eee 60%);
 
         h3 {
             text-align: center;
@@ -107,7 +109,9 @@
 
     @media (max-width: $laptop-width) {}
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $tablet-width) {}
+
+    @media (max-width: $mobile-width) {
         .skills-category {
             margin: 1rem;
             padding: 1rem;
@@ -139,6 +143,4 @@
             }
         }
     }
-
-    @media (max-width: $mobile-width) {}
 }
