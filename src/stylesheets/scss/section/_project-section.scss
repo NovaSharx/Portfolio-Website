@@ -19,7 +19,7 @@
 
             .project-laptop-image {
                 width: inherit;
-                height: 110%;
+                height: 100%;
                 background-size: 110%;
                 background-position: center center;
                 background-repeat: no-repeat;
@@ -119,6 +119,8 @@
 
     @media (max-width: $desktop-width) {
         .project-content {
+            padding-top: 0rem;
+            padding-bottom: 6rem;
             flex-wrap: wrap;
 
             .project-image {

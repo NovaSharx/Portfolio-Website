@@ -87,12 +87,12 @@ p {
   }
   .main-section-container .main-section .main-section-title h2 {
     max-width: 20rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .main-section-container .main-section .main-section-title h2::after, .main-section-container .main-section .main-section-title h2::before {
     content: "";
     width: 4.2rem;
-    height: 0.2rem;
+    height: 0.25rem;
   }
 }
 @media (max-width: 480px) {
@@ -103,8 +103,8 @@ p {
     margin-bottom: 1rem;
   }
   .main-section-container .main-section .main-section-title h2 {
-    max-width: 16rem;
-    font-size: 1.5rem;
+    width: 100%;
+    font-size: 1.8rem;
   }
   .main-section-container .main-section .main-section-title h2::after, .main-section-container .main-section .main-section-title h2::before {
     content: "";
@@ -270,6 +270,7 @@ p {
   }
 }
 #navigation #nav-dropdown-menu {
+  display: none;
   height: 0rem;
   width: 100%;
   overflow: hidden;
@@ -329,6 +330,9 @@ p {
   #navigation #nav-items-container #nav-hamburger {
     flex-grow: 1;
     padding-right: 1rem;
+  }
+  #navigation #nav-dropdown-menu {
+    display: block;
   }
 }
 #footer {
@@ -624,7 +628,7 @@ p {
     font-size: 2rem;
   }
   #hero-section #hero-section-content #intro {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   #hero-section #hero-section-content #call-to-action .call-to-action-button {
     font-size: 1.2rem;
@@ -646,6 +650,9 @@ p {
   }
   #hero-section #hero-section-content #greeting #name {
     line-height: normal;
+  }
+  #hero-section #hero-section-content #intro {
+    font-size: 1rem;
   }
   #hero-section #hero-section-content #call-to-action .call-to-action-button {
     font-size: 0.8rem;
@@ -679,7 +686,7 @@ p {
 }
 #projects-section .project-content .project-image .project-laptop-image {
   width: inherit;
-  height: 110%;
+  height: 100%;
   background-size: 110%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -759,6 +766,8 @@ p {
 }
 @media (max-width: 1200px) {
   #projects-section .project-content {
+    padding-top: 0rem;
+    padding-bottom: 6rem;
     flex-wrap: wrap;
   }
   #projects-section .project-content .project-image {
