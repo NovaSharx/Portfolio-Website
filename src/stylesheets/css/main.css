@@ -427,127 +427,127 @@ p {
   color: rgba(128, 128, 128, 0);
   z-index: 1;
 }
-#hero-section #grid .cell:nth-child(20n+1):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+1):hover ~ #top-layer {
   --positionX: 0;
 }
-#hero-section #grid .cell:nth-child(n+1):nth-child(-n+20):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+1):nth-child(-n+20):hover ~ #top-layer {
   --positionY: 0;
 }
-#hero-section #grid .cell:nth-child(20n+2):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+2):hover ~ #top-layer {
   --positionX: 1;
 }
-#hero-section #grid .cell:nth-child(n+21):nth-child(-n+40):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+21):nth-child(-n+40):hover ~ #top-layer {
   --positionY: 1;
 }
-#hero-section #grid .cell:nth-child(20n+3):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+3):hover ~ #top-layer {
   --positionX: 2;
 }
-#hero-section #grid .cell:nth-child(n+41):nth-child(-n+60):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+41):nth-child(-n+60):hover ~ #top-layer {
   --positionY: 2;
 }
-#hero-section #grid .cell:nth-child(20n+4):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+4):hover ~ #top-layer {
   --positionX: 3;
 }
-#hero-section #grid .cell:nth-child(n+61):nth-child(-n+80):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+61):nth-child(-n+80):hover ~ #top-layer {
   --positionY: 3;
 }
-#hero-section #grid .cell:nth-child(20n+5):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+5):hover ~ #top-layer {
   --positionX: 4;
 }
-#hero-section #grid .cell:nth-child(n+81):nth-child(-n+100):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+81):nth-child(-n+100):hover ~ #top-layer {
   --positionY: 4;
 }
-#hero-section #grid .cell:nth-child(20n+6):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+6):hover ~ #top-layer {
   --positionX: 5;
 }
-#hero-section #grid .cell:nth-child(n+101):nth-child(-n+120):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+101):nth-child(-n+120):hover ~ #top-layer {
   --positionY: 5;
 }
-#hero-section #grid .cell:nth-child(20n+7):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+7):hover ~ #top-layer {
   --positionX: 6;
 }
-#hero-section #grid .cell:nth-child(n+121):nth-child(-n+140):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+121):nth-child(-n+140):hover ~ #top-layer {
   --positionY: 6;
 }
-#hero-section #grid .cell:nth-child(20n+8):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+8):hover ~ #top-layer {
   --positionX: 7;
 }
-#hero-section #grid .cell:nth-child(n+141):nth-child(-n+160):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+141):nth-child(-n+160):hover ~ #top-layer {
   --positionY: 7;
 }
-#hero-section #grid .cell:nth-child(20n+9):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+9):hover ~ #top-layer {
   --positionX: 8;
 }
-#hero-section #grid .cell:nth-child(n+161):nth-child(-n+180):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+161):nth-child(-n+180):hover ~ #top-layer {
   --positionY: 8;
 }
-#hero-section #grid .cell:nth-child(20n+10):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+10):hover ~ #top-layer {
   --positionX: 9;
 }
-#hero-section #grid .cell:nth-child(n+181):nth-child(-n+200):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+181):nth-child(-n+200):hover ~ #top-layer {
   --positionY: 9;
 }
-#hero-section #grid .cell:nth-child(20n+11):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+11):hover ~ #top-layer {
   --positionX: 10;
 }
-#hero-section #grid .cell:nth-child(n+201):nth-child(-n+220):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+201):nth-child(-n+220):hover ~ #top-layer {
   --positionY: 10;
 }
-#hero-section #grid .cell:nth-child(20n+12):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+12):hover ~ #top-layer {
   --positionX: 11;
 }
-#hero-section #grid .cell:nth-child(n+221):nth-child(-n+240):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+221):nth-child(-n+240):hover ~ #top-layer {
   --positionY: 11;
 }
-#hero-section #grid .cell:nth-child(20n+13):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+13):hover ~ #top-layer {
   --positionX: 12;
 }
-#hero-section #grid .cell:nth-child(n+241):nth-child(-n+260):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+241):nth-child(-n+260):hover ~ #top-layer {
   --positionY: 12;
 }
-#hero-section #grid .cell:nth-child(20n+14):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+14):hover ~ #top-layer {
   --positionX: 13;
 }
-#hero-section #grid .cell:nth-child(n+261):nth-child(-n+280):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+261):nth-child(-n+280):hover ~ #top-layer {
   --positionY: 13;
 }
-#hero-section #grid .cell:nth-child(20n+15):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+15):hover ~ #top-layer {
   --positionX: 14;
 }
-#hero-section #grid .cell:nth-child(n+281):nth-child(-n+300):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+281):nth-child(-n+300):hover ~ #top-layer {
   --positionY: 14;
 }
-#hero-section #grid .cell:nth-child(20n+16):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+16):hover ~ #top-layer {
   --positionX: 15;
 }
-#hero-section #grid .cell:nth-child(n+301):nth-child(-n+320):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+301):nth-child(-n+320):hover ~ #top-layer {
   --positionY: 15;
 }
-#hero-section #grid .cell:nth-child(20n+17):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+17):hover ~ #top-layer {
   --positionX: 16;
 }
-#hero-section #grid .cell:nth-child(n+321):nth-child(-n+340):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+321):nth-child(-n+340):hover ~ #top-layer {
   --positionY: 16;
 }
-#hero-section #grid .cell:nth-child(20n+18):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+18):hover ~ #top-layer {
   --positionX: 17;
 }
-#hero-section #grid .cell:nth-child(n+341):nth-child(-n+360):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+341):nth-child(-n+360):hover ~ #top-layer {
   --positionY: 17;
 }
-#hero-section #grid .cell:nth-child(20n+19):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+19):hover ~ #top-layer {
   --positionX: 18;
 }
-#hero-section #grid .cell:nth-child(n+361):nth-child(-n+380):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+361):nth-child(-n+380):hover ~ #top-layer {
   --positionY: 18;
 }
-#hero-section #grid .cell:nth-child(20n+20):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(20n+20):hover ~ #top-layer {
   --positionX: 19;
 }
-#hero-section #grid .cell:nth-child(n+381):nth-child(-n+400):hover ~ #art-layer {
+#hero-section #grid .cell:nth-child(n+381):nth-child(-n+400):hover ~ #top-layer {
   --positionY: 19;
 }
-#hero-section #grid #art-layer {
+#hero-section #grid #top-layer {
   --positionX: 0;
   --positionY: 0;
   position: absolute;
@@ -558,7 +558,7 @@ p {
   background-position: center 75%;
   background-repeat: no-repeat;
 }
-#hero-section #grid #art-layer #origin-layer {
+#hero-section #grid #top-layer #bottom-layer {
   position: absolute;
   background: url("/public/portrait-color.png");
   background-size: 120%;
@@ -637,7 +637,7 @@ p {
     width: 28rem;
     height: 28rem;
   }
-  #hero-section #grid #art-layer #origin-layer {
+  #hero-section #grid #top-layer #bottom-layer {
     mask-size: 8.5rem;
   }
 }
@@ -661,7 +661,7 @@ p {
     width: 20rem;
     height: 20rem;
   }
-  #hero-section #grid #art-layer #origin-layer {
+  #hero-section #grid #top-layer #bottom-layer {
     mask-size: 6rem;
   }
 }

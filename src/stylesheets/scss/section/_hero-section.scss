@@ -69,16 +69,16 @@
         }
 
         @for $index from 0 through 19 {
-            .cell:nth-child(20n + #{$index + 1}):hover~#art-layer {
+            .cell:nth-child(20n + #{$index + 1}):hover~#top-layer {
                 --positionX: #{$index};
             }
 
-            .cell:nth-child(n + #{20 * $index + 1}):nth-child(-n + #{20 * ($index + 1)}):hover~#art-layer {
+            .cell:nth-child(n + #{20 * $index + 1}):nth-child(-n + #{20 * ($index + 1)}):hover~#top-layer {
                 --positionY: #{$index};
             }
         }
 
-        #art-layer {
+        #top-layer {
             --positionX: 0;
             --positionY: 0;
 
@@ -90,7 +90,7 @@
             background-position: center 75%;
             background-repeat: no-repeat;
 
-            #origin-layer {
+            #bottom-layer {
                 position: absolute;
                 background: url('/public/portrait-color.png');
                 background-size: 120%;
@@ -180,9 +180,9 @@
 
             .cell {}
 
-            #art-layer {
+            #top-layer {
 
-                #origin-layer {}
+                #bottom-layer {}
             }
         }
     }
@@ -213,9 +213,9 @@
             width: 28rem;
             height: 28rem;
 
-            #art-layer {
+            #top-layer {
 
-                #origin-layer {
+                #bottom-layer {
                     mask-size: 8.5rem;
                 }
             }
@@ -251,9 +251,9 @@
             width: 20rem;
             height: 20rem;
 
-            #art-layer {
+            #top-layer {
 
-                #origin-layer {
+                #bottom-layer {
                     mask-size: 6rem;
                 }
             }

@@ -1,4 +1,4 @@
-import { FC, ReactElement } from 'react';
+import { FC, ReactElement, useState } from 'react';
 
 const HeroSection: FC = (): ReactElement => {
 
@@ -9,9 +9,19 @@ const HeroSection: FC = (): ReactElement => {
         }
         return cellArray.map((cell: string, index: number) => {
             return (
-                <div key={index} className='cell'></div>
+                <div key={index} className='cell' onClick={swapLayerImage}></div>
             )
         })
+    }
+
+    function swapLayerImage(): void {
+        const topLayer = document.getElementById('top-layer')!;
+        const bottomLayer = document.getElementById('bottom-layer')!;
+
+        [topLayer.style.background, bottomLayer.style.background] = [window.getComputedStyle(bottomLayer).background, window.getComputedStyle(topLayer).background];
+
+        topLayer.style.backgroundPosition = 'center 75%';
+        bottomLayer.style.backgroundPosition = 'center 75%';
     }
 
     return (
@@ -33,8 +43,8 @@ const HeroSection: FC = (): ReactElement => {
                 <div id='grid'>
                     {renderCells()}
 
-                    <div id='art-layer'>
-                        <div id='origin-layer'>
+                    <div id='top-layer'>
+                        <div id='bottom-layer'>
                         </div>
                     </div>
 
