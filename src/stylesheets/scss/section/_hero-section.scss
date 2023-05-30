@@ -13,11 +13,13 @@
         color: $primary-color;
 
         #greeting {
+            font-family: $font-stack;
             line-height: 0.5;
-            font-size: 3.5rem;
+            font-size: 3rem;
 
             #name {
-                font-size: 2em;
+                font-family: 'Bungee Shade';
+                font-size: 4rem;
                 color: $secondary-color;
                 background: linear-gradient(0deg, #ff5200 25%, #183642 60%);
                 background-clip: text;
@@ -195,6 +197,10 @@
 
             #greeting {
                 font-size: 2rem;
+
+                #name {
+                    font-size: 3rem;
+                }
             }
 
             #intro {
@@ -232,6 +238,7 @@
 
                 #name {
                     line-height: normal;
+                    font-size: 2.2rem;
                 }
             }
 

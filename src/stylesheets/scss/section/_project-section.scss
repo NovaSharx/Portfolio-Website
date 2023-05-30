@@ -161,7 +161,19 @@
                 height: 20rem;
             }
 
-            .project-info {}
+            .project-info {
+
+                .project-tech-stack {
+
+                    .tech-stack-item {
+
+                        .tech-stack-popup {
+                            bottom: 1.2rem;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
         }
     }
 
