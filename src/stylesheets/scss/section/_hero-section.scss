@@ -15,7 +15,8 @@
         #greeting {
             font-family: $font-stack;
             line-height: 0.5;
-            font-size: 3rem;
+            font-size: 2.5rem;
+            font-weight: 800;
 
             #name {
                 font-family: 'Bungee Shade';
@@ -27,6 +28,11 @@
             }
         }
 
+        #role {
+            font-size: 2.5rem;
+            color: $secondary-color
+        }
+
         #intro {
             font-size: 1.5rem;
         }
@@ -36,7 +42,7 @@
             padding: 3rem 0rem;
 
             .call-to-action-button {
-                margin-right: 1.25rem;
+                margin-right: 2.5rem;
                 width: 12.5rem;
                 text-align: center;
                 @include set-bg-color($secondary-color);
@@ -151,6 +157,10 @@
                 text-align: center;
             }
 
+            #role {
+                text-align: center;
+            }
+
             #intro {
                 text-align: center;
             }
@@ -159,6 +169,7 @@
                 justify-content: center;
 
                 .call-to-action-button {
+                    margin: 0rem 1.25rem;
                     font-size: 1.8rem;
                 }
             }
@@ -203,6 +214,10 @@
                 }
             }
 
+            #role {
+                font-size: 2rem;
+            }
+
             #intro {
                 font-size: 1.2rem;
             }
@@ -240,6 +255,10 @@
                     line-height: normal;
                     font-size: 2.2rem;
                 }
+            }
+
+            #role {
+                font-size: 1.5rem;
             }
 
             #intro {

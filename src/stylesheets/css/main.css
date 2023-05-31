@@ -471,7 +471,8 @@ p {
 #hero-section #hero-section-content #greeting {
   font-family: "Lato", "Trebuchet MS", Arial, sans-serif;
   line-height: 0.5;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 #hero-section #hero-section-content #greeting #name {
   font-family: "Bungee Shade";
@@ -481,6 +482,10 @@ p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+#hero-section #hero-section-content #role {
+  font-size: 2.5rem;
+  color: #ff5200;
+}
 #hero-section #hero-section-content #intro {
   font-size: 1.5rem;
 }
@@ -489,7 +494,7 @@ p {
   padding: 3rem 0rem;
 }
 #hero-section #hero-section-content #call-to-action .call-to-action-button {
-  margin-right: 1.25rem;
+  margin-right: 2.5rem;
   width: 12.5rem;
   text-align: center;
   background-color: #ff5200;
@@ -700,6 +705,9 @@ p {
   #hero-section #hero-section-content #greeting {
     text-align: center;
   }
+  #hero-section #hero-section-content #role {
+    text-align: center;
+  }
   #hero-section #hero-section-content #intro {
     text-align: center;
   }
@@ -707,6 +715,7 @@ p {
     justify-content: center;
   }
   #hero-section #hero-section-content #call-to-action .call-to-action-button {
+    margin: 0rem 1.25rem;
     font-size: 1.8rem;
   }
 }
@@ -720,6 +729,9 @@ p {
   }
   #hero-section #hero-section-content #greeting #name {
     font-size: 3rem;
+  }
+  #hero-section #hero-section-content #role {
+    font-size: 2rem;
   }
   #hero-section #hero-section-content #intro {
     font-size: 1.2rem;
@@ -745,6 +757,9 @@ p {
   #hero-section #hero-section-content #greeting #name {
     line-height: normal;
     font-size: 2.2rem;
+  }
+  #hero-section #hero-section-content #role {
+    font-size: 1.5rem;
   }
   #hero-section #hero-section-content #intro {
     font-size: 1rem;
