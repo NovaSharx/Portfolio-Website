@@ -21,7 +21,7 @@ html body #app {
 }
 
 * {
-  font-family: "Lato", "Trebuchet MS", Arial, sans-serif;
+  font-family: "Montserrat", "Trebuchet MS", Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -469,14 +469,14 @@ p {
   color: #183642;
 }
 #hero-section #hero-section-content #greeting {
-  font-family: "Lato", "Trebuchet MS", Arial, sans-serif;
-  line-height: 0.5;
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-family: "Montserrat", "Trebuchet MS", Arial, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 400;
 }
 #hero-section #hero-section-content #greeting #name {
   font-family: "Bungee Shade";
   font-size: 4rem;
+  font-weight: 800;
   color: #ff5200;
   background: linear-gradient(0deg, #ff5200 25%, #183642 60%);
   background-clip: text;
@@ -755,7 +755,6 @@ p {
     font-size: 1.5rem;
   }
   #hero-section #hero-section-content #greeting #name {
-    line-height: normal;
     font-size: 2.2rem;
   }
   #hero-section #hero-section-content #role {
