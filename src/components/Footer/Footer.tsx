@@ -36,25 +36,25 @@ const Footer: FC = (): ReactElement => {
                 <div id='footer-links'>
                     <ul>
                         <li>
-                            <a href='https://docs.google.com/document/d/1RcIVHV-dAAyiSzs0fhLJ5zLtfAZ-nw0VpKtgFeve2dU/edit?usp=sharing' target='_blank'>Resume</a>
+                            <a href='https://docs.google.com/document/d/1RcIVHV-dAAyiSzs0fhLJ5zLtfAZ-nw0VpKtgFeve2dU/edit?usp=sharing' target='_blank' rel='noreferrer'>Resume</a>
                         </li>
 
                         <li>
-                            <a href='mailto:davin-dj@hotmail.com' target='_blank'>Email</a>
+                            <a href='mailto:davin-dj@hotmail.com' target='_blank' rel='noreferrer'>Email</a>
                         </li>
 
                         <li>
-                            <a href='https://www.linkedin.com/in/davinjones/' target='_blank'>LinkedIn</a>
+                            <a href='https://www.linkedin.com/in/davinjones/' target='_blank' rel='noreferrer'>LinkedIn</a>
                         </li>
 
                         <li>
-                            <a href='https://github.com/NovaSharx?tab=overview&from=2023-05-01&to=2023-05-17' target='_blank'>Github</a>
+                            <a href='https://github.com/NovaSharx?tab=overview&from=2023-05-01&to=2023-05-17' target='_blank' rel='noreferrer'>Github</a>
                         </li>
                     </ul>
                 </div>
 
                 <div id='footer-attributions'>
-                    Tech stack icons by <a href='https://icons8.com/' target='_blank'>Icons8</a>
+                    Tech stack icons by <a href='https://icons8.com/' target='_blank' rel='noreferrer'>Icons8</a>
                 </div>
 
                 <div id='footer-bottom'>

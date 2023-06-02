@@ -1,4 +1,4 @@
-import { FC, ReactElement, useState } from 'react';
+import { FC, ReactElement } from 'react';
 
 const HeroSection: FC = (): ReactElement => {
 
@@ -35,13 +35,19 @@ const HeroSection: FC = (): ReactElement => {
                         <span id='name'>Davin Jones</span>
                     </h1>
 
-                    <h2 id='role'>Web Developer</h2>
+                    <h2 id='role'> &lt; Web Developer &gt; </h2>
 
                     <p id='intro'>I build functional web applications in order to create exceptional user experience, convenience and productivity.</p>
-                    
+
                     <div id='call-to-action'>
-                        <a className='call-to-action-button' href='https://docs.google.com/document/d/1RcIVHV-dAAyiSzs0fhLJ5zLtfAZ-nw0VpKtgFeve2dU/edit?usp=sharing' target='_blank'>My Resume</a>
-                        <a className='call-to-action-button' href='https://github.com/NovaSharx?tab=overview&from=2023-05-01&to=2023-05-17' target='_blank'>Github</a>
+                        <span>
+
+                        </span>
+                        <a id='call-to-action-button' href='#projects'>
+                            <span className='button-content'>
+                                View My Projects
+                            </span>
+                        </a>
                     </div>
                 </div>
 

@@ -35,23 +35,38 @@
 
         #intro {
             font-size: 1.5rem;
+            color: #000;
         }
 
         #call-to-action {
             display: flex;
             padding: 3rem 0rem;
 
-            .call-to-action-button {
-                margin-right: 2.5rem;
-                width: 12.5rem;
-                text-align: center;
+            #call-to-action-button {
                 @include set-bg-color($secondary-color);
                 @extend %btn;
-                font-size: 1.8rem;
-                text-decoration: none;
+
+                padding: 0.3rem;
+                transition: 1s;
+
+                .button-content {
+                    padding: 0.8rem;
+                    border: 0.2rem solid #fff;
+                    border-radius: 0.3rem;
+                    // font-family: 'Bungee Shade';
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                    white-space: nowrap;
+                    transition: 1s;
+                }
 
                 &:hover {
-                    @include set-bg-color(darken($secondary-color, 15%));
+                    padding: 0.8rem;
+
+                    .button-content {
+                        padding: 0.3rem;
+                    }
                 }
             }
         }
@@ -133,8 +148,11 @@
             #call-to-action {
                 padding: 2rem 0rem;
 
-                .call-to-action-button {
-                    font-size: 1.5rem;
+                #call-to-action-button {
+
+                    .button-content {
+                        font-size: 1.6rem;
+                    }
                 }
             }
         }
@@ -168,9 +186,8 @@
             #call-to-action {
                 justify-content: center;
 
-                .call-to-action-button {
-                    margin: 0rem 1.25rem;
-                    font-size: 1.8rem;
+                #call-to-action-button {
+                    .button-content {}
                 }
             }
         }
@@ -185,7 +202,10 @@
 
             #call-to-action {
 
-                .call-to-action-button {}
+                #call-to-action-button {
+
+                    .button-content {}
+                }
             }
         }
 
@@ -224,8 +244,10 @@
 
             #call-to-action {
 
-                .call-to-action-button {
-                    font-size: 1.2rem;
+                #call-to-action-button {
+                    .button-content {
+                        font-size: 1.4rem;
+                    }
                 }
             }
         }
@@ -266,8 +288,8 @@
 
             #call-to-action {
 
-                .call-to-action-button {
-                    font-size: 0.8rem;
+                #call-to-action-button {
+                    .button-content {}
                 }
             }
         }

@@ -1,5 +1,4 @@
 import { FC, ReactElement, useState } from 'react';
-import Switch from '@mui/material/Switch';
 
 const Navigation: FC = (): ReactElement => {
 
@@ -77,8 +76,10 @@ const Navigation: FC = (): ReactElement => {
                     {navMenuList}
                 </div>
 
-                <div id='light-mode-switch'>
-                    <Switch />
+                <div id='nav-socials'>
+                    <ul>
+                        <li></li>
+                    </ul>
                 </div>
 
                 <div id='nav-hamburger'>

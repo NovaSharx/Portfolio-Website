@@ -206,7 +206,7 @@ p {
 #navigation #nav-items-container #nav-links ul a:visited {
   text-decoration: none;
 }
-#navigation #nav-items-container #light-mode-switch {
+#navigation #nav-items-container #nav-socials {
   width: 0rem;
   height: inherit;
   flex-grow: 1;
@@ -324,7 +324,7 @@ p {
     flex-grow: 0;
     overflow: hidden;
   }
-  #navigation #nav-items-container #light-mode-switch {
+  #navigation #nav-items-container #nav-socials {
     padding: 0rem;
     flex-grow: 0;
     overflow: hidden;
@@ -433,7 +433,7 @@ p {
   }
 }
 
-#projects-section .project-content .project-info .project-button-prompts .project-button, #hero-section #hero-section-content #call-to-action .call-to-action-button {
+#projects-section .project-content .project-info .project-button-prompts .project-button, #hero-section #hero-section-content #call-to-action #call-to-action-button {
   display: inline-block;
   border-radius: 0.3rem;
   padding: 0.6rem 1.2rem;
@@ -441,11 +441,11 @@ p {
   text-decoration: none;
   transition: background-color 0.5s;
 }
-#projects-section .project-content .project-info .project-button-prompts .project-button .button-content, #hero-section #hero-section-content #call-to-action .call-to-action-button .button-content {
+#projects-section .project-content .project-info .project-button-prompts .project-button .button-content, #hero-section #hero-section-content #call-to-action #call-to-action-button .button-content {
   display: flex;
   align-items: center;
 }
-#projects-section .project-content .project-info .project-button-prompts .project-button:hover, #hero-section #hero-section-content #call-to-action .call-to-action-button:hover {
+#projects-section .project-content .project-info .project-button-prompts .project-button:hover, #hero-section #hero-section-content #call-to-action #call-to-action-button:hover {
   cursor: pointer;
   box-shadow: none;
   transform: scale(0.98);
@@ -488,23 +488,33 @@ p {
 }
 #hero-section #hero-section-content #intro {
   font-size: 1.5rem;
+  color: #000;
 }
 #hero-section #hero-section-content #call-to-action {
   display: flex;
   padding: 3rem 0rem;
 }
-#hero-section #hero-section-content #call-to-action .call-to-action-button {
-  margin-right: 2.5rem;
-  width: 12.5rem;
-  text-align: center;
+#hero-section #hero-section-content #call-to-action #call-to-action-button {
   background-color: #ff5200;
   color: #fff;
-  font-size: 1.8rem;
-  text-decoration: none;
+  padding: 0.3rem;
+  transition: 1s;
 }
-#hero-section #hero-section-content #call-to-action .call-to-action-button:hover {
-  background-color: #b33900;
-  color: #fff;
+#hero-section #hero-section-content #call-to-action #call-to-action-button .button-content {
+  padding: 0.8rem;
+  border: 0.2rem solid #fff;
+  border-radius: 0.3rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 1s;
+}
+#hero-section #hero-section-content #call-to-action #call-to-action-button:hover {
+  padding: 0.8rem;
+}
+#hero-section #hero-section-content #call-to-action #call-to-action-button:hover .button-content {
+  padding: 0.3rem;
 }
 #hero-section #grid {
   display: grid;
@@ -685,8 +695,8 @@ p {
   #hero-section #hero-section-content #call-to-action {
     padding: 2rem 0rem;
   }
-  #hero-section #hero-section-content #call-to-action .call-to-action-button {
-    font-size: 1.5rem;
+  #hero-section #hero-section-content #call-to-action #call-to-action-button .button-content {
+    font-size: 1.6rem;
   }
   #hero-section #grid {
     height: 40rem;
@@ -714,10 +724,6 @@ p {
   #hero-section #hero-section-content #call-to-action {
     justify-content: center;
   }
-  #hero-section #hero-section-content #call-to-action .call-to-action-button {
-    margin: 0rem 1.25rem;
-    font-size: 1.8rem;
-  }
 }
 @media (max-width: 768px) {
   #hero-section #hero-section-content {
@@ -736,8 +742,8 @@ p {
   #hero-section #hero-section-content #intro {
     font-size: 1.2rem;
   }
-  #hero-section #hero-section-content #call-to-action .call-to-action-button {
-    font-size: 1.2rem;
+  #hero-section #hero-section-content #call-to-action #call-to-action-button .button-content {
+    font-size: 1.4rem;
   }
   #hero-section #grid {
     width: 28rem;
@@ -762,9 +768,6 @@ p {
   }
   #hero-section #hero-section-content #intro {
     font-size: 1rem;
-  }
-  #hero-section #hero-section-content #call-to-action .call-to-action-button {
-    font-size: 0.8rem;
   }
   #hero-section #grid {
     width: 20rem;
