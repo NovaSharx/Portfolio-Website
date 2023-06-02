@@ -415,11 +415,23 @@ p {
   margin: 2rem 0rem;
 }
 #footer #footer-content #footer-links ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
   text-decoration: none;
   color: #fff;
 }
+#footer #footer-content #footer-links ul li a svg {
+  width: 1.6rem;
+  height: auto;
+  margin-right: 0.5rem;
+  transition: 0.3s;
+}
 #footer #footer-content #footer-links ul li a:hover {
   color: #ff5200;
+}
+#footer #footer-content #footer-links ul li a:hover svg {
+  margin-right: 1rem;
 }
 #footer #footer-content #footer-attributions {
   text-align: center;
