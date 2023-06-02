@@ -404,33 +404,33 @@ p {
 #footer #footer-content #footer-nav ul li a:hover {
   color: #ff5200;
 }
-#footer #footer-content #footer-links {
+#footer #footer-content #footer-social-links {
   width: 100%;
 }
-#footer #footer-content #footer-links ul {
+#footer #footer-content #footer-social-links ul {
   padding: 5rem 0rem;
 }
-#footer #footer-content #footer-links ul li {
+#footer #footer-content #footer-social-links ul li {
   list-style: none;
   margin: 2rem 0rem;
 }
-#footer #footer-content #footer-links ul li a {
+#footer #footer-content #footer-social-links ul li a {
   display: flex;
   align-items: center;
   font-size: 1.3rem;
   text-decoration: none;
   color: #fff;
 }
-#footer #footer-content #footer-links ul li a svg {
+#footer #footer-content #footer-social-links ul li a svg {
   width: 1.6rem;
   height: auto;
   margin-right: 0.5rem;
   transition: 0.3s;
 }
-#footer #footer-content #footer-links ul li a:hover {
+#footer #footer-content #footer-social-links ul li a:hover {
   color: #ff5200;
 }
-#footer #footer-content #footer-links ul li a:hover svg {
+#footer #footer-content #footer-social-links ul li a:hover svg {
   margin-right: 1rem;
 }
 #footer #footer-content #footer-attributions {
@@ -460,7 +460,7 @@ p {
   #footer #footer-content #footer-nav ul li a {
     font-size: 0.8rem;
   }
-  #footer #footer-content #footer-links ul {
+  #footer #footer-content #footer-social-links ul {
     padding: 3rem 0rem;
   }
 }

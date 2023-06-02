@@ -37,7 +37,7 @@ const Footer: FC = (): ReactElement => {
                     {navMenuList}
                 </div>
 
-                <div id='footer-links'>
+                <div id='footer-social-links'>
                     <ul>
                         <li>
                             <a href='https://docs.google.com/document/d/1RcIVHV-dAAyiSzs0fhLJ5zLtfAZ-nw0VpKtgFeve2dU/edit?usp=sharing' target='_blank' rel='noreferrer'>
