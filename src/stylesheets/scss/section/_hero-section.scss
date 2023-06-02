@@ -43,32 +43,56 @@
             padding: 3rem 0rem;
 
             #call-to-action-button {
-                @include set-bg-color($secondary-color);
-                @extend %btn;
-
-                padding: 0.3rem;
-                transition: 1s;
+                position: relative;
+                padding: 0.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $secondary-color;
+                text-decoration: none;
+                border: 0.3rem solid $secondary-color;
+                border-radius: 0.3rem;
 
                 .button-content {
-                    padding: 0.8rem;
-                    border: 0.2rem solid #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1rem;
+                    border: 0.15rem solid $secondary-color;
                     border-radius: 0.3rem;
-                    // font-family: 'Bungee Shade';
                     font-size: 1.8rem;
-                    font-weight: 600;
+                    font-weight: 500;
                     text-decoration: none;
                     white-space: nowrap;
+                    z-index: 1;
+                    transition: 0.5s;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 0%;
+                    height: 100%;
+                    background-color: #fff;
                     transition: 1s;
                 }
 
                 &:hover {
-                    padding: 0.8rem;
+                    color: #fff;
+                    background-color: $secondary-color;
 
                     .button-content {
-                        padding: 0.3rem;
+                        border: 0.15rem solid #fff;
+                    }
+
+                    &::before {
+                        width: 100%;
+                        height: 100%;
+                        background-color: $secondary-color;
                     }
                 }
             }
+
         }
     }
 

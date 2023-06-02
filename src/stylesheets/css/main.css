@@ -227,7 +227,7 @@ p {
   color: #183642;
   text-decoration: none;
 }
-#navigation #nav-items-container #nav-social-links ul li a .social-button {
+#navigation #nav-items-container #nav-social-links ul li a .social-icon {
   padding: 0.5rem;
   display: flex;
   align-items: center;
@@ -476,7 +476,7 @@ p {
   }
 }
 
-#projects-section .project-content .project-info .project-button-prompts .project-button, #hero-section #hero-section-content #call-to-action #call-to-action-button {
+#projects-section .project-content .project-info .project-button-prompts .project-button {
   display: inline-block;
   border-radius: 0.3rem;
   padding: 0.6rem 1.2rem;
@@ -484,15 +484,16 @@ p {
   text-decoration: none;
   transition: background-color 0.5s;
 }
-#projects-section .project-content .project-info .project-button-prompts .project-button .button-content, #hero-section #hero-section-content #call-to-action #call-to-action-button .button-content {
+#projects-section .project-content .project-info .project-button-prompts .project-button .button-content {
   display: flex;
   align-items: center;
 }
-#projects-section .project-content .project-info .project-button-prompts .project-button:hover, #hero-section #hero-section-content #call-to-action #call-to-action-button:hover {
+#projects-section .project-content .project-info .project-button-prompts .project-button:hover {
   cursor: pointer;
   box-shadow: none;
   transform: scale(0.98);
 }
+
 #home {
   flex-grow: 1;
 }
@@ -538,26 +539,49 @@ p {
   padding: 3rem 0rem;
 }
 #hero-section #hero-section-content #call-to-action #call-to-action-button {
-  background-color: #ff5200;
-  color: #fff;
-  padding: 0.3rem;
-  transition: 1s;
+  position: relative;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff5200;
+  text-decoration: none;
+  border: 0.3rem solid #ff5200;
+  border-radius: 0.3rem;
 }
 #hero-section #hero-section-content #call-to-action #call-to-action-button .button-content {
-  padding: 0.8rem;
-  border: 0.2rem solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 0.15rem solid #ff5200;
   border-radius: 0.3rem;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
+  z-index: 1;
+  transition: 0.5s;
+}
+#hero-section #hero-section-content #call-to-action #call-to-action-button::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
   transition: 1s;
 }
 #hero-section #hero-section-content #call-to-action #call-to-action-button:hover {
-  padding: 0.8rem;
+  color: #fff;
+  background-color: #ff5200;
 }
 #hero-section #hero-section-content #call-to-action #call-to-action-button:hover .button-content {
-  padding: 0.3rem;
+  border: 0.15rem solid #fff;
+}
+#hero-section #hero-section-content #call-to-action #call-to-action-button:hover::before {
+  width: 100%;
+  height: 100%;
+  background-color: #ff5200;
 }
 #hero-section #grid {
   display: grid;

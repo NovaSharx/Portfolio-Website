@@ -29,21 +29,21 @@ const Navigation: FC = (): ReactElement => {
         <ul>
             <li>
                 <a href='https://www.linkedin.com/in/davinjones/' target='_blank' rel='noreferrer'>
-                    <span className='social-button'>
+                    <span className='social-icon'>
                         <LinkedInIcon />
                     </span>
                 </a>
             </li>
             <li>
                 <a href='https://github.com/NovaSharx?tab=overview&from=2023-05-01&to=2023-05-17' target='_blank' rel='noreferrer'>
-                    <span className='social-button'>
+                    <span className='social-icon'>
                         <GitHubIcon />
                     </span>
                 </a>
             </li>
             <li>
                 <a href='https://docs.google.com/document/d/1RcIVHV-dAAyiSzs0fhLJ5zLtfAZ-nw0VpKtgFeve2dU/edit?usp=sharing' target='_blank' rel='noreferrer'>
-                    <span className='social-button'>
+                    <span className='social-icon'>
                         <FolderSharedIcon />
                     </span>
                 </a>
