@@ -30,7 +30,7 @@
 
         #role {
             font-size: 2.5rem;
-            color: $secondary-color
+            color: $primary-color
         }
 
         #intro {
@@ -132,15 +132,15 @@
             position: absolute;
             width: inherit;
             height: inherit;
-            background: url('/public/portrait-sketch.png'); // sketch
-            background-size: 120%;
+            background: url('/public/portrait-crop-sketch4.png'); // sketch
+            background-size: 100%;
             background-position: center 75%;
             background-repeat: no-repeat;
 
             #bottom-layer {
                 position: absolute;
-                background: url('/public/portrait-color.png');
-                background-size: 120%;
+                background: url('/public/portrait-crop-color4.png');
+                background-size: 100%;
                 background-position: center 75%;
                 height: inherit;
                 width: inherit;

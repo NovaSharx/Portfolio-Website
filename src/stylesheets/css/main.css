@@ -528,7 +528,7 @@ p {
 }
 #hero-section #hero-section-content #role {
   font-size: 2.5rem;
-  color: #ff5200;
+  color: #183642;
 }
 #hero-section #hero-section-content #intro {
   font-size: 1.5rem;
@@ -726,15 +726,15 @@ p {
   position: absolute;
   width: inherit;
   height: inherit;
-  background: url("/public/portrait-sketch.png");
-  background-size: 120%;
+  background: url("/public/portrait-crop-sketch4.png");
+  background-size: 100%;
   background-position: center 75%;
   background-repeat: no-repeat;
 }
 #hero-section #grid #top-layer #bottom-layer {
   position: absolute;
-  background: url("/public/portrait-color.png");
-  background-size: 120%;
+  background: url("/public/portrait-crop-color4.png");
+  background-size: 100%;
   background-position: center 75%;
   height: inherit;
   width: inherit;
