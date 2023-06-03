@@ -1,7 +1,6 @@
 #about-section {
     margin: 0rem auto;
     display: flex;
-    font-size: 1.5rem;
 
     #about-image {
         height: 40rem;
@@ -15,16 +14,16 @@
     }
 
     @media (max-width: $tv-width) {
-        font-size: 1.4rem;
 
         #about-image {
             height: 35rem;
             width: 35rem;
         }
+
+        #about-content {}
     }
 
     @media (max-width: $desktop-width) {
-        font-size: 1.3rem;
         flex-direction: column;
 
         #about-image {
@@ -37,24 +36,29 @@
     }
 
     @media (max-width: $laptop-width) {
-        font-size: 1.2rem;
+
+        #about-image {}
+
+        #about-content {}
     }
 
     @media (max-width: $tablet-width) {
-        font-size: 1rem;
 
         #about-image {
             height: 20rem;
             width: 20rem;
         }
+
+        #about-content {}
     }
 
     @media (max-width: $mobile-width) {
-        font-size: 0.8rem;
 
         #about-image {
             height: auto;
             width: 100%
         }
+
+        #about-content {}
     }
 }

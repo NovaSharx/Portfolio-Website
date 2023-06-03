@@ -1,5 +1,5 @@
 .main-section-container {
-    background: linear-gradient(0deg, $secondary-background-color 25%, $primary-background-color 60%);
+    background: linear-gradient(0deg, $secondary-background-color 0%, $primary-background-color 5%);
 
     .main-section {
         max-width: $tv-width;
@@ -20,17 +20,19 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: $primary-color;
+                background: linear-gradient(0deg, $secondary-color 25%, $primary-color 60%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
                 font-size: 3rem;
 
                 &::after,
                 &::before {
                     content: '';
                     margin: 1rem;
-                    width: 6.25rem;
-                    height: 0.3rem;
+                    width: 100%;
+                    height: 2px;
                     border-radius: 0.6rem;
-                    background-color: $secondary-color;
+                    background-color: #eee;
                 }
             }
         }

@@ -101,26 +101,40 @@ const Skills: FC = (): ReactElement => {
 
                 <div className='main-section-content'>
                     <div id='skills-section'>
-                        {skillsCategories.map((category, index) => {
-                            return (
-                                <div key={index} className='skills-category'>
-                                    <h3>{category.name}</h3>
 
-                                    <div className='skills-grid'>
-                                        {category.stacks.map((stack, idx) => {
-                                            return (
-                                                <div className='skill-cell' key={idx}>
-                                                    <span className='skill-chip'>
-                                                        <span className='skill-icon' style={{ backgroundImage: `url(${stack.icon})` }}></span>
-                                                        <span className='skill-name'>{stack.name}</span>
-                                                    </span>
-                                                </div>
-                                            )
-                                        })}
+                        <div id='skills-description'>
+                            <p>
+                                I <b>thrive</b> in this ever evolving coding environment by my sheer <b>love of learning</b> new technologies and seek to explore <b>new inovative</b> ways of getting the job done.
+                            </p>
+
+                            <p>
+                                Here are some of relevant skills I've attained along my journey as a web developer.
+                            </p>
+                        </div>
+
+                        <div id='skills-categories'>
+                            {skillsCategories.map((category, index) => {
+                                return (
+                                    <div key={index} className='skills-category'>
+                                        <h3>{category.name}</h3>
+
+                                        <div className='skills-grid'>
+                                            {category.stacks.map((stack, idx) => {
+                                                return (
+                                                    <div className='skill-cell' key={idx}>
+                                                        <span className='skill-chip'>
+                                                            <span className='skill-icon' style={{ backgroundImage: `url(${stack.icon})` }}></span>
+                                                            <span className='skill-name'>{stack.name}</span>
+                                                        </span>
+                                                    </div>
+                                                )
+                                            })}
+                                        </div>
                                     </div>
-                                </div>
-                            )
-                        })}
+                                )
+                            })}
+                        </div>
+
                     </div>
                 </div>
             </div>
