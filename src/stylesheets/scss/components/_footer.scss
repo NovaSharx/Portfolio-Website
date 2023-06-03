@@ -16,7 +16,6 @@
 
         #footer-nav {
             margin: auto;
-
             width: 80%;
 
             ul {
@@ -134,7 +133,10 @@
 
                     li {
 
-                        a {}
+                        a {
+
+                            svg {}
+                        }
                     }
                 }
             }
@@ -180,7 +182,13 @@
 
                     li {
 
-                        a {}
+                        a {
+                            font-size: 1rem;
+
+                            svg {
+                                width: 1.2rem;
+                            }
+                        }
                     }
                 }
             }

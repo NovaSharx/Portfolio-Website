@@ -474,6 +474,12 @@ p {
   #footer #footer-content #footer-nav ul li a {
     font-size: 0.7rem;
   }
+  #footer #footer-content #footer-social-links ul li a {
+    font-size: 1rem;
+  }
+  #footer #footer-content #footer-social-links ul li a svg {
+    width: 1.2rem;
+  }
 }
 
 #projects-section .project-content .project-info .project-button-prompts .project-button {
@@ -528,7 +534,7 @@ p {
 }
 #hero-section #hero-section-content #role {
   font-size: 2.5rem;
-  color: #183642;
+  color: #ff5200;
 }
 #hero-section #hero-section-content #intro {
   font-size: 1.5rem;
@@ -546,7 +552,7 @@ p {
   align-items: center;
   color: #ff5200;
   text-decoration: none;
-  border: 0.3rem solid #ff5200;
+  border: 0.15rem solid #ff5200;
   border-radius: 0.3rem;
 }
 #hero-section #hero-section-content #call-to-action #call-to-action-button .button-content {
@@ -727,15 +733,16 @@ p {
   width: inherit;
   height: inherit;
   background: url("/public/portrait-crop-sketch4.png");
-  background-size: 100%;
+  background-size: 90%;
   background-position: center 75%;
   background-repeat: no-repeat;
 }
 #hero-section #grid #top-layer #bottom-layer {
   position: absolute;
   background: url("/public/portrait-crop-color4.png");
-  background-size: 100%;
+  background-size: 90%;
   background-position: center 75%;
+  background-repeat: no-repeat;
   height: inherit;
   width: inherit;
   mask-image: url("/public/cursor-mask.svg");
@@ -835,6 +842,10 @@ p {
   }
   #hero-section #hero-section-content #intro {
     font-size: 1rem;
+  }
+  #hero-section #hero-section-content #call-to-action #call-to-action-button .button-content {
+    padding: 0.8rem;
+    font-size: 1.2rem;
   }
   #hero-section #grid {
     width: 20rem;

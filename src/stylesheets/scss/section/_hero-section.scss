@@ -22,7 +22,7 @@
                 font-size: 4rem;
                 font-weight: 800;
                 color: $secondary-color;
-                background: linear-gradient(0deg, #ff5200 25%, #183642 60%);
+                background: linear-gradient(0deg, $secondary-color 25%, $primary-color 60%);
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
@@ -30,7 +30,7 @@
 
         #role {
             font-size: 2.5rem;
-            color: $primary-color
+            color: $secondary-color
         }
 
         #intro {
@@ -50,7 +50,7 @@
                 align-items: center;
                 color: $secondary-color;
                 text-decoration: none;
-                border: 0.3rem solid $secondary-color;
+                border: 0.15rem solid $secondary-color;
                 border-radius: 0.3rem;
 
                 .button-content {
@@ -133,15 +133,16 @@
             width: inherit;
             height: inherit;
             background: url('/public/portrait-crop-sketch4.png'); // sketch
-            background-size: 100%;
+            background-size: 90%;
             background-position: center 75%;
             background-repeat: no-repeat;
 
             #bottom-layer {
                 position: absolute;
                 background: url('/public/portrait-crop-color4.png');
-                background-size: 100%;
+                background-size: 90%;
                 background-position: center 75%;
+                background-repeat: no-repeat;
                 height: inherit;
                 width: inherit;
                 mask-image: url('/public/cursor-mask.svg');
@@ -313,7 +314,10 @@
             #call-to-action {
 
                 #call-to-action-button {
-                    .button-content {}
+                    .button-content {
+                        padding: 0.8rem;
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }
