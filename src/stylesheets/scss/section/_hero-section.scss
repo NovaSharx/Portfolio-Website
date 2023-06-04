@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     height: 50rem;
+    text-align: center;
 
     #hero-section-content {
         display: flex;
@@ -16,11 +17,12 @@
             font-family: $font-stack;
             font-size: 2.8rem;
             font-weight: 400;
+            color: #555;
 
             #name {
                 font-family: 'Bungee Shade';
                 font-size: 4rem;
-                font-weight: 800;
+                font-weight: 00;
                 color: $secondary-color;
                 background: linear-gradient(0deg, $secondary-color 25%, $primary-color 60%);
                 background-clip: text;
@@ -30,10 +32,19 @@
 
         #role {
             font-size: 2.5rem;
+            font-weight: 400;
+            color: #555;
 
-            span {
-                font-family: 'Bungee Shade';
+            #role-title {
+                font-size: 3rem;
+                font-weight: 900;
+                color: #333;
                 color: $secondary-color;
+
+                span {
+                    color: $secondary-color;
+                    font-weight: 900;
+                }
             }
         }
 
@@ -44,7 +55,8 @@
 
         #call-to-action {
             display: flex;
-            padding: 3rem 0rem;
+            justify-content: center;
+            padding-top: 3rem;
 
             #call-to-action-button {
                 position: relative;
@@ -138,14 +150,14 @@
             height: inherit;
             background: url('/public/portrait-crop-sketch4.png'); // sketch
             background-size: 90%;
-            background-position: center 75%;
+            background-position: center center;
             background-repeat: no-repeat;
 
             #bottom-layer {
                 position: absolute;
                 background: url('/public/portrait-crop-color4.png');
                 background-size: 90%;
-                background-position: center 75%;
+                background-position: center center;
                 background-repeat: no-repeat;
                 height: inherit;
                 width: inherit;
@@ -199,21 +211,15 @@
         #hero-section-content {
             height: 40rem;
             width: 40rem;
+            text-align: center;
 
-            #greeting {
-                text-align: center;
-            }
+            #greeting {}
 
-            #role {
-                text-align: center;
-            }
+            #role {}
 
-            #intro {
-                text-align: center;
-            }
+            #intro {}
 
             #call-to-action {
-                justify-content: center;
 
                 #call-to-action-button {
                     .button-content {}
@@ -265,6 +271,10 @@
 
             #role {
                 font-size: 2rem;
+
+                #role-title {
+                    font-size: 2.4rem;
+                }
             }
 
             #intro {
@@ -309,6 +319,10 @@
 
             #role {
                 font-size: 1.5rem;
+
+                #role-title {
+                    font-size: 1.9rem;
+                }
             }
 
             #intro {

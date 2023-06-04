@@ -5,9 +5,10 @@
         max-width: $tv-width;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 4.3rem;
+        padding-top: 8rem;
         padding-left: 1rem;
         padding-right: 1rem;
+        padding-bottom: 8rem;
 
         // border: 1px solid #eee; // GUIDE
 
@@ -47,24 +48,36 @@
 
         @media (max-width: $tv-width) {
             max-width: $desktop-width;
+
+            padding-top: 7rem;
+            padding-bottom: 7rem;
         }
 
         @media (max-width: $desktop-width) {
             max-width: $laptop-width;
+
+            padding-top: 6rem;
+            padding-bottom: 6rem;
         }
 
         @media (max-width: $laptop-width) {
             max-width: $tablet-width;
+
+            padding-top: 5rem;
+            padding-bottom: 5rem;
         }
 
         @media (max-width: $tablet-width) {
             max-width: $mobile-width;
 
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+
             .main-section-title {
-    
+
                 h2 {
                     font-size: 2.5rem;
-    
+
                     &::after,
                     &::before {
                         content: '';
@@ -78,12 +91,15 @@
         @media (max-width: $mobile-width) {
             max-width: 100%;
 
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+
             .main-section-title {
                 margin-bottom: 1rem;
-    
+
                 h2 {
                     font-size: 1.8rem;
-    
+
                     &::after,
                     &::before {
                         content: '';

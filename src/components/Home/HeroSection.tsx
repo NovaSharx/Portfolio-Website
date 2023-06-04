@@ -20,8 +20,8 @@ const HeroSection: FC = (): ReactElement => {
 
         [topLayer.style.background, bottomLayer.style.background] = [window.getComputedStyle(bottomLayer).background, window.getComputedStyle(topLayer).background];
 
-        topLayer.style.backgroundPosition = 'center 75%';
-        bottomLayer.style.backgroundPosition = 'center 75%';
+        topLayer.style.backgroundPosition = 'center center';
+        bottomLayer.style.backgroundPosition = 'center center';
     }
 
     return (
@@ -30,14 +30,18 @@ const HeroSection: FC = (): ReactElement => {
 
                 <div id='hero-section-content'>
 
-                    <h1 id='greeting'>Hi there, my name is
+                    <div id='greeting'>Hi there, my name is
                         <br />
-                        <span id='name'>Davin Jones</span>
-                    </h1>
+                        <h1 id='name'>Davin Jones</h1>
+                    </div>
 
                     <h2 id='role'>
-                        I am a <br/>
-                        <span>&lt; Web Developer &gt;</span>
+                        I am a <br />
+                        <span id='role-title'>
+                            <span>&lt; </span>
+                            Web Developer
+                            <span> &gt;</span>
+                        </span>
                     </h2>
 
                     <p id='intro'>I build functional web applications in order to create exceptional user experience, convenience and productivity.</p>
