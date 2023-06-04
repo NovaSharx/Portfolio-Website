@@ -613,7 +613,7 @@ p {
   background-color: #ff5200;
 }
 #hero-section #hero-section-content #call-to-action #call-to-action-button:hover .button-content {
-  border: 0.15rem solid #fff;
+  border-color: #fff;
 }
 #hero-section #hero-section-content #call-to-action #call-to-action-button:hover::before {
   width: 100%;
