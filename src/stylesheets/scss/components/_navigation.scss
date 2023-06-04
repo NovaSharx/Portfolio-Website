@@ -57,19 +57,19 @@
         #nav-menu-links {
             width: 0rem;
             height: inherit;
-            flex-grow: 1.2;
+            flex-grow: 2;
 
             ul {
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
                 height: inherit;
                 list-style-type: none;
 
                 li {
+                    flex-grow: 1;
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: flex-end;
                     height: 2.5rem;
                 }
 
@@ -77,10 +77,6 @@
                     color: inherit;
                     font-weight: 600;
                     text-decoration: none;
-
-                    &:hover {
-                        color: $secondary-color;
-                    }
 
                     &:after {
                         display: block;
@@ -90,10 +86,16 @@
                         transition: 0.2s;
                     }
 
-                    &:hover:after {
-                        margin-bottom: 0.3rem;
-                        transform: scaleX(1);
+                    &:hover {
+                        color: $secondary-color;
+
+                        &:after {
+                            padding-bottom: 0.3rem;
+                            transform: scaleX(1);
+                        }
                     }
+
+
 
 
                     &:visited {
@@ -271,18 +273,121 @@
         #nav-items-container {
 
             #nav-menu-links {
-                flex-grow: 1.5;
+                flex-grow: 2.5;
+
+                ul {
+
+                    li {}
+
+                    a {
+                        font-size: 0.9rem;
+
+                        &:after {
+                            border-bottom: 0.3rem solid $secondary-color;
+                        }
+
+                        &:hover {
+
+                            &:after {
+                                padding-bottom: 0.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #nav-social-links {
+
+                ul {
+
+                    li {
+
+                        a {
+
+                            .social-icon {
+
+                                svg {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 
-    @media (max-width: $desktop-width) {}
+    @media (max-width: $desktop-width) {
+
+        #nav-items-container {
+
+            #nav-menu-links {
+                flex-grow: 2.6;
+
+                ul {
+
+                    li {}
+
+                    a {
+
+                        &:after {
+                            border-bottom: 0.2rem solid $secondary-color;
+                        }
+
+                        &:hover {
+
+                            &:after {
+                                padding-bottom: 0.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     @media (max-width: $laptop-width) {
         #nav-items-container {
 
             #nav-menu-links {
-                flex-grow: 1.7;
+                flex-grow: 2.7;
+
+                ul {
+
+                    li {}
+
+                    a {
+                        font-size: 0.8rem;
+
+                        &:after {}
+
+                        &:hover {
+
+                            &:after {
+                                padding-bottom: 0.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #nav-social-links {
+
+                ul {
+
+                    li {
+
+                        a {
+
+                            .social-icon {
+
+                                svg {
+                                    font-size: 1.3rem;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

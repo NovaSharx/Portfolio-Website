@@ -208,28 +208,25 @@ p {
 #navigation #nav-items-container #nav-menu-links {
   width: 0rem;
   height: inherit;
-  flex-grow: 1.2;
+  flex-grow: 2;
 }
 #navigation #nav-items-container #nav-menu-links ul {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: inherit;
   list-style-type: none;
 }
 #navigation #nav-items-container #nav-menu-links ul li {
+  flex-grow: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   height: 2.5rem;
 }
 #navigation #nav-items-container #nav-menu-links ul a {
   color: inherit;
   font-weight: 600;
   text-decoration: none;
-}
-#navigation #nav-items-container #nav-menu-links ul a:hover {
-  color: #ff5200;
 }
 #navigation #nav-items-container #nav-menu-links ul a:after {
   display: block;
@@ -238,8 +235,11 @@ p {
   transform: scaleX(0);
   transition: 0.2s;
 }
+#navigation #nav-items-container #nav-menu-links ul a:hover {
+  color: #ff5200;
+}
 #navigation #nav-items-container #nav-menu-links ul a:hover:after {
-  margin-bottom: 0.3rem;
+  padding-bottom: 0.3rem;
   transform: scaleX(1);
 }
 #navigation #nav-items-container #nav-menu-links ul a:visited {
@@ -381,12 +381,44 @@ p {
 }
 @media (max-width: 1536px) {
   #navigation #nav-items-container #nav-menu-links {
-    flex-grow: 1.5;
+    flex-grow: 2.5;
+  }
+  #navigation #nav-items-container #nav-menu-links ul a {
+    font-size: 0.9rem;
+  }
+  #navigation #nav-items-container #nav-menu-links ul a:after {
+    border-bottom: 0.3rem solid #ff5200;
+  }
+  #navigation #nav-items-container #nav-menu-links ul a:hover:after {
+    padding-bottom: 0.3rem;
+  }
+  #navigation #nav-items-container #nav-social-links ul li a .social-icon svg {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1200px) {
+  #navigation #nav-items-container #nav-menu-links {
+    flex-grow: 2.6;
+  }
+  #navigation #nav-items-container #nav-menu-links ul a:after {
+    border-bottom: 0.2rem solid #ff5200;
+  }
+  #navigation #nav-items-container #nav-menu-links ul a:hover:after {
+    padding-bottom: 0.3rem;
   }
 }
 @media (max-width: 1024px) {
   #navigation #nav-items-container #nav-menu-links {
-    flex-grow: 1.7;
+    flex-grow: 2.7;
+  }
+  #navigation #nav-items-container #nav-menu-links ul a {
+    font-size: 0.8rem;
+  }
+  #navigation #nav-items-container #nav-menu-links ul a:hover:after {
+    padding-bottom: 0.2rem;
+  }
+  #navigation #nav-items-container #nav-social-links ul li a .social-icon svg {
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 768px) {
