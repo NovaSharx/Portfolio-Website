@@ -594,7 +594,7 @@ p {
   font-family: "Montserrat", "Trebuchet MS", Arial, sans-serif;
   font-size: 2.8rem;
   font-weight: 400;
-  color: #555;
+  color: #444;
 }
 #hero-section #hero-section-content #greeting #name {
   font-family: "Bungee Shade";
@@ -608,13 +608,12 @@ p {
 #hero-section #hero-section-content #role {
   font-size: 2.5rem;
   font-weight: 400;
-  color: #555;
+  color: #444;
 }
 #hero-section #hero-section-content #role #role-title {
   font-size: 3rem;
   font-weight: 900;
-  color: #333;
-  color: #ff5200;
+  color: #183642;
 }
 #hero-section #hero-section-content #role #role-title span {
   color: #ff5200;

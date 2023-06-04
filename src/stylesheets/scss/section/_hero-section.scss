@@ -17,7 +17,7 @@
             font-family: $font-stack;
             font-size: 2.8rem;
             font-weight: 400;
-            color: #555;
+            color: #444;
 
             #name {
                 font-family: 'Bungee Shade';
@@ -33,13 +33,12 @@
         #role {
             font-size: 2.5rem;
             font-weight: 400;
-            color: #555;
+            color: #444;
 
             #role-title {
                 font-size: 3rem;
                 font-weight: 900;
-                color: #333;
-                color: $secondary-color;
+                color: $primary-color;
 
                 span {
                     color: $secondary-color;
