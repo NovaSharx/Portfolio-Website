@@ -104,7 +104,7 @@ const Skills: FC = (): ReactElement => {
 
                         <div id='skills-description'>
                             <p>
-                                I <b>thrive</b> in this ever evolving coding environment by my sheer <b>love of learning</b> new technologies and seek to explore <b>new inovative</b> ways of getting the job done.
+                                I've found that I <b>thrive</b> in this ever evolving coding environment by my sheer <b>love of learning</b> new technologies and I seek to explore <b>new inovative</b> ways of getting the job done.
                             </p>
 
                             <p>
