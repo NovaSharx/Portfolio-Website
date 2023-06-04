@@ -87,23 +87,28 @@
 
 
     @media (max-width: $tv-width) {
-        .skills-category {
+        #skills-description {}
 
-            h3 {}
+        #skills-categories {
 
-            .skills-grid {
+            .skills-category {
 
-                .skill-cell {
+                h3 {}
 
-                    .skill-chip {
+                .skills-grid {
 
-                        .skill-icon {}
+                    .skill-cell {
 
-                        .skill-name {}
-
-                        &:hover {
+                        .skill-chip {
 
                             .skill-icon {}
+
+                            .skill-name {}
+
+                            &:hover {
+
+                                .skill-icon {}
+                            }
                         }
                     }
                 }
@@ -118,31 +123,37 @@
     @media (max-width: $tablet-width) {}
 
     @media (max-width: $mobile-width) {
-        .skills-category {
-            margin: 1rem;
-            padding: 1rem;
-            border-radius: 3rem;
 
-            h3 {
-                font-size: 1.2rem;
-            }
+        #skills-description {}
 
-            .skills-grid {
-                padding: 1rem 0rem;
-                column-gap: 0.6rem;
-                row-gap: 0.6rem;
+        #skills-categories {
 
-                .skill-cell {
+            .skills-category {
+                margin: 1rem;
+                padding: 1rem;
+                border-radius: 3rem;
 
-                    .skill-chip {
-                        width: 3rem;
-                        height: 3rem;
-                        border-radius: 3rem;
+                h3 {
+                    font-size: 1.2rem;
+                }
 
-                        .skill-icon {}
+                .skills-grid {
+                    padding: 1rem 0rem;
+                    column-gap: 0.6rem;
+                    row-gap: 0.6rem;
 
-                        .skill-name {
-                            font-size: 0.5rem;
+                    .skill-cell {
+
+                        .skill-chip {
+                            width: 3rem;
+                            height: 3rem;
+                            border-radius: 3rem;
+
+                            .skill-icon {}
+
+                            .skill-name {
+                                font-size: 0.5rem;
+                            }
                         }
                     }
                 }

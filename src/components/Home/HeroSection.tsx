@@ -35,7 +35,10 @@ const HeroSection: FC = (): ReactElement => {
                         <span id='name'>Davin Jones</span>
                     </h1>
 
-                    <h2 id='role'> &lt; Web Developer &gt; </h2>
+                    <h2 id='role'>
+                        I am a <br/>
+                        <span>&lt; Web Developer &gt;</span>
+                    </h2>
 
                     <p id='intro'>I build functional web applications in order to create exceptional user experience, convenience and productivity.</p>
 

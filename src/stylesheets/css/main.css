@@ -25,8 +25,7 @@ html body #app {
   line-height: 1.5;
 }
 
-h1,
-h2 {
+h1 {
   font-family: "Bungee Shade";
 }
 
@@ -84,6 +83,7 @@ p {
   background: linear-gradient(0deg, #ff5200 25%, #183642 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Bungee Shade";
   font-size: 3rem;
 }
 .main-section-container .main-section .main-section-title h2::after, .main-section-container .main-section .main-section-title h2::before {
@@ -562,6 +562,9 @@ p {
 }
 #hero-section #hero-section-content #role {
   font-size: 2.5rem;
+}
+#hero-section #hero-section-content #role span {
+  font-family: "Bungee Shade";
   color: #ff5200;
 }
 #hero-section #hero-section-content #intro {
@@ -1177,25 +1180,25 @@ p {
   opacity: 0;
 }
 @media (max-width: 480px) {
-  #skills-section .skills-category {
+  #skills-section #skills-categories .skills-category {
     margin: 1rem;
     padding: 1rem;
     border-radius: 3rem;
   }
-  #skills-section .skills-category h3 {
+  #skills-section #skills-categories .skills-category h3 {
     font-size: 1.2rem;
   }
-  #skills-section .skills-category .skills-grid {
+  #skills-section #skills-categories .skills-category .skills-grid {
     padding: 1rem 0rem;
     column-gap: 0.6rem;
     row-gap: 0.6rem;
   }
-  #skills-section .skills-category .skills-grid .skill-cell .skill-chip {
+  #skills-section #skills-categories .skills-category .skills-grid .skill-cell .skill-chip {
     width: 3rem;
     height: 3rem;
     border-radius: 3rem;
   }
-  #skills-section .skills-category .skills-grid .skill-cell .skill-chip .skill-name {
+  #skills-section #skills-categories .skills-category .skills-grid .skill-cell .skill-chip .skill-name {
     font-size: 0.5rem;
   }
 }/*# sourceMappingURL=main.css.map */

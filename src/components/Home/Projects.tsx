@@ -1,4 +1,4 @@
-import { FC, ReactElement } from 'react';
+import { FC, Fragment, ReactElement } from 'react';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import CodeIcon from '@mui/icons-material/Code';
 
@@ -7,7 +7,7 @@ const Projects: FC = (): ReactElement => {
     const projectsArray = [
         {
             name: 'TRIVINOVA',
-            description: `Educational trivia web application for users to test their knowledge on a variety of different topics.`,
+            description: <Fragment>Educational <b>trivia</b> web application for users to test their knowledge on a variety of different topics.</Fragment>,
             image: '/trivinova_laptop_image.png',
             techStack: [
                 {
@@ -36,7 +36,7 @@ const Projects: FC = (): ReactElement => {
         },
         {
             name: 'NOVABRATO',
-            description: `A guitar music theory learning web application designed to aid beginner guitar players through interactive exercises.`,
+            description: <Fragment>A guitar music theory learning web application designed to aid beginner guitar players through interactive exercises.</Fragment>,
             image: '/novabrato_laptop_image.png',
             techStack: [
                 {
@@ -69,7 +69,7 @@ const Projects: FC = (): ReactElement => {
         },
         {
             name: 'SUPERNOVA',
-            description: `A web based game application designed to challenge a user’s hand-eye coordination.`,
+            description: <Fragment>A web based game application designed to challenge a user’s hand-eye coordination.</Fragment>,
             image: '/supernova_laptop_image.png',
             techStack: [
                 {
@@ -124,13 +124,13 @@ const Projects: FC = (): ReactElement => {
                                         </div>
 
                                         <div className='project-button-prompts'>
-                                            <a className='project-button' href={project.livePreview} target='_blank'>
+                                            <a className='project-button' href={project.livePreview} target='_blank' rel='noreferrer'>
                                                 <div className='button-content'>
                                                     LIVE DEMO
                                                     <OpenInNewIcon sx={{ fontSize: '20px', ml: 1 }} />
                                                 </div>
                                             </a>
-                                            <a className='project-button' href={project.sourceCode} target='_blank'>
+                                            <a className='project-button' href={project.sourceCode} target='_blank' rel='noreferrer'>
                                                 <div className='button-content'>
                                                     SOURCE CODE
                                                     <CodeIcon sx={{ fontSize: '20px', ml: 1 }} />
