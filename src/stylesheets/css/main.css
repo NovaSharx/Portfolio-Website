@@ -817,14 +817,14 @@ p {
   width: inherit;
   height: inherit;
   background: url("/public/portrait-crop-sketch4.png");
-  background-size: 90%;
+  background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
 }
 #hero-section #grid #top-layer #bottom-layer {
   position: absolute;
   background: url("/public/portrait-crop-color4.png");
-  background-size: 90%;
+  background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   height: inherit;
