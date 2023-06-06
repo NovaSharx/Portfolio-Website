@@ -1,6 +1,10 @@
 #footer {
     min-height: 1.8rem;
-    @include set-bg-color(#333);
+    background: url('/public/bg_bggenerator_com4.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
 
     #footer-content {
         margin: auto;

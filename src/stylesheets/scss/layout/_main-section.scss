@@ -1,6 +1,6 @@
 .main-section-container {
     background: linear-gradient(0deg, $secondary-background-color 0%, $primary-background-color 5%);
-
+    
     .main-section {
         max-width: $tv-width;
         margin-left: auto;
@@ -90,9 +90,6 @@
 
         @media (max-width: $mobile-width) {
             max-width: 100%;
-
-            padding-top: 3rem;
-            padding-bottom: 3rem;
 
             .main-section-title {
                 margin-bottom: 1rem;

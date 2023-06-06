@@ -25,7 +25,7 @@ const HeroSection: FC = (): ReactElement => {
     }
 
     return (
-        <div className='main-section-container'>
+        <div className='main-section-container' id='hero-section-container'>
             <div id='hero-section' className='main-section'>
 
                 <div id='hero-section-content'>

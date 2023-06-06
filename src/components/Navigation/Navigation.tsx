@@ -58,10 +58,12 @@ const Navigation: FC = (): ReactElement => {
             navigation.style.paddingTop = '0rem';
             navigation.style.borderWidth = '0.0rem';
             navigation.style.boxShadow = '0rem 0.9rem 1.6rem 0rem rgba(0, 0, 0, 0.15)';
+            navigation.style.backdropFilter = 'blur(100px)';
         } else {
             navigation.style.paddingTop = '1.25rem';
-            navigation.style.borderWidth = '0rem';
-            navigation.style.boxShadow = 'none';
+            navigation.style.borderWidth = '';
+            navigation.style.boxShadow = '';
+            navigation.style.backdropFilter = '';
         }
     }
 

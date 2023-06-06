@@ -1,3 +1,10 @@
+#hero-section-container {
+    background: url('/public/bg_bggenerator_com12.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #hero-section {
     display: flex;
     justify-content: space-between;
@@ -17,7 +24,7 @@
             font-family: $font-stack;
             font-size: 2.8rem;
             font-weight: 400;
-            color: #444;
+            color: $primary-color;
 
             #name {
                 font-family: 'Bungee Shade';
@@ -33,7 +40,7 @@
         #role {
             font-size: 2.5rem;
             font-weight: 400;
-            color: #444;
+            color: $primary-color;
 
             #role-title {
                 font-size: 3rem;

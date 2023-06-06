@@ -140,8 +140,6 @@ p {
 @media (max-width: 480px) {
   .main-section-container .main-section {
     max-width: 100%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
   }
   .main-section-container .main-section .main-section-title {
     margin-bottom: 1rem;
@@ -441,7 +439,10 @@ p {
 }
 #footer {
   min-height: 1.8rem;
-  background-color: #333;
+  background: url("/public/bg_bggenerator_com4.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
 }
 #footer #footer-content {
@@ -575,6 +576,13 @@ p {
   flex-grow: 1;
 }
 
+#hero-section-container {
+  background: url("/public/bg_bggenerator_com12.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #hero-section {
   display: flex;
   justify-content: space-between;
@@ -594,7 +602,7 @@ p {
   font-family: "Montserrat", "Trebuchet MS", Arial, sans-serif;
   font-size: 2.8rem;
   font-weight: 400;
-  color: #444;
+  color: #183642;
 }
 #hero-section #hero-section-content #greeting #name {
   font-family: "Bungee Shade";
@@ -608,7 +616,7 @@ p {
 #hero-section #hero-section-content #role {
   font-size: 2.5rem;
   font-weight: 400;
-  color: #444;
+  color: #183642;
 }
 #hero-section #hero-section-content #role #role-title {
   font-size: 3rem;
