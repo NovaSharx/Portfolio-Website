@@ -458,22 +458,26 @@ p {
 }
 #footer #footer-content #footer-nav {
   margin: auto;
-  width: 80%;
+  width: 100%;
 }
 #footer #footer-content #footer-nav ul {
   width: 100%;
   display: flex;
-  justify-content: space-between;
 }
 #footer #footer-content #footer-nav ul li {
+  flex-grow: 1;
   list-style: none;
+  text-align: center;
 }
 #footer #footer-content #footer-nav ul li a {
   text-decoration: none;
   color: #fff;
   transition: 0.2s;
 }
-#footer #footer-content #footer-nav ul li a:hover {
+#footer #footer-content #footer-nav ul li:hover {
+  cursor: pointer;
+}
+#footer #footer-content #footer-nav ul li:hover a {
   color: #ff5200;
 }
 #footer #footer-content #footer-social-links {
@@ -602,13 +606,12 @@ p {
 #hero-section #hero-section-content #greeting {
   font-family: "Montserrat", "Trebuchet MS", Arial, sans-serif;
   font-size: 2.8rem;
-  font-weight: 400;
+  font-weight: 600;
   color: #183642;
 }
 #hero-section #hero-section-content #greeting #name {
   font-family: "Bungee Shade";
   font-size: 4rem;
-  font-weight: 0;
   color: #ff5200;
   background: linear-gradient(0deg, #ff5200 25%, #183642 60%);
   background-clip: text;
@@ -616,7 +619,7 @@ p {
 }
 #hero-section #hero-section-content #role {
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 600;
   color: #183642;
 }
 #hero-section #hero-section-content #role #role-title {
@@ -630,6 +633,7 @@ p {
 }
 #hero-section #hero-section-content #intro {
   font-size: 1.5rem;
+  font-weight: 600;
   color: #183642;
 }
 #hero-section #hero-section-content #call-to-action {

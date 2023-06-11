@@ -20,22 +20,27 @@
 
         #footer-nav {
             margin: auto;
-            width: 80%;
+            width: 100%;
 
             ul {
                 width: 100%;
                 display: flex;
-                justify-content: space-between;
 
                 li {
+                    flex-grow: 1;
                     list-style: none;
+                    text-align: center;
 
                     a {
                         text-decoration: none;
                         color: #fff;
                         transition: 0.2s;
+                    }
 
-                        &:hover {
+                    &:hover {
+                        cursor: pointer;
+
+                        a {
                             color: $secondary-color;
                         }
                     }

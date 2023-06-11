@@ -24,13 +24,12 @@
         #greeting {
             font-family: $font-stack;
             font-size: 2.8rem;
-            font-weight: 400;
+            font-weight: 600;
             color: $primary-color;
 
             #name {
                 font-family: 'Bungee Shade';
                 font-size: 4rem;
-                font-weight: 00;
                 color: $secondary-color;
                 background: linear-gradient(0deg, $secondary-color 25%, $primary-color 60%);
                 background-clip: text;
@@ -40,7 +39,7 @@
 
         #role {
             font-size: 2.5rem;
-            font-weight: 400;
+            font-weight: 600;
             color: $primary-color;
 
             #role-title {
@@ -57,6 +56,7 @@
 
         #intro {
             font-size: 1.5rem;
+            font-weight: 600;
             color: $primary-color;
         }
 
