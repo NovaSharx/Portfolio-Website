@@ -24,7 +24,7 @@
         #greeting {
             font-family: $font-stack;
             font-size: 2.8rem;
-            font-weight: 600;
+            font-weight: 500;
             color: $primary-color;
 
             #name {
@@ -39,7 +39,7 @@
 
         #role {
             font-size: 2.5rem;
-            font-weight: 600;
+            font-weight: 500;
             color: $primary-color;
 
             #role-title {
@@ -56,7 +56,7 @@
 
         #intro {
             font-size: 1.5rem;
-            font-weight: 600;
+            //font-weight: 500;
             color: $primary-color;
         }
 
