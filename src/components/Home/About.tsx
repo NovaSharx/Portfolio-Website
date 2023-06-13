@@ -11,7 +11,9 @@ const About: FC = (): ReactElement => {
                 <div className='main-section-content'>
 
                     <div id='about-section'>
-                        <img src='portrait-color.png' alt='about_section_image' id='about-image' />
+
+                        <div id='about-image' />
+
                         <div id='about-content'>
                             <p>
                                 I have a deep love for creating media whether that is drawing, painting, 3D modeling, music, or developing interactive websites with the goal of leaving positive, lasting, and memorable experiences for others. As a result, I have developed a passion for fostering new skills and sharpening my current ones.
@@ -29,6 +31,7 @@ const About: FC = (): ReactElement => {
                                 My love for coding came about as a result of a 2D computer fighting game called M.U.G.E.N which my brother and I would play. M.U.G.E.N allowed players to download and use community created characters
                             </p>
                         </div>
+
                     </div>
 
                 </div>
