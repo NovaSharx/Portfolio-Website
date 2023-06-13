@@ -588,7 +588,6 @@ p {
 }
 
 #hero-section {
-  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -596,6 +595,7 @@ p {
   text-align: center;
 }
 #hero-section #hero-section-content {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
