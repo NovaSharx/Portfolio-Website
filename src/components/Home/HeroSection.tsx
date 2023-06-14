@@ -2,9 +2,9 @@ import { FC, ReactElement } from 'react';
 
 const HeroSection: FC = (): ReactElement => {
 
-    function renderCells() {
-        let cellArray: any = []
-        for (let i = 0; i < 400; i++) {
+    function renderCells(): JSX.Element[] {
+        let cellArray: string[] = []
+        for (let i: number = 0; i < 400; i++) {
             cellArray.push('')
         }
         return cellArray.map((cell: string, index: number) => {
@@ -15,8 +15,8 @@ const HeroSection: FC = (): ReactElement => {
     }
 
     function swapLayerImage(): void {
-        const topLayer = document.getElementById('top-layer')!;
-        const bottomLayer = document.getElementById('bottom-layer')!;
+        const topLayer: HTMLElement = document.getElementById('top-layer')!;
+        const bottomLayer: HTMLElement = document.getElementById('bottom-layer')!;
 
         [topLayer.style.background, bottomLayer.style.background] = [window.getComputedStyle(bottomLayer).background, window.getComputedStyle(topLayer).background];
 
