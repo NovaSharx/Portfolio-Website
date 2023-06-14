@@ -2,9 +2,23 @@ import { FC, Fragment, ReactElement } from 'react';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import CodeIcon from '@mui/icons-material/Code';
 
+interface TechStack {
+    name: string,
+    icon: string
+}
+
+interface Project {
+    name: string,
+    description: JSX.Element,
+    image: string,
+    techStack: Array<TechStack>,
+    livePreview: string,
+    sourceCode: string
+}
+
 const Projects: FC = (): ReactElement => {
 
-    const projectsArray = [
+    const projectsArray: Array<Project> = [
         {
             name: 'TRIVINOVA',
             description: <Fragment>Educational <b>trivia</b> web application for users to test their knowledge on a variety of different topics.</Fragment>,
@@ -98,7 +112,7 @@ const Projects: FC = (): ReactElement => {
                 </div>
                 <div className='main-section-content'>
                     <div id='projects-section'>
-                        {projectsArray.map((project, index) => {
+                        {projectsArray.map((project: Project, index: number) => {
 
                             return (
                                 <div key={index} className='project-content'>
@@ -114,7 +128,7 @@ const Projects: FC = (): ReactElement => {
                                         <p className='project-description'>{project.description}</p>
 
                                         <div className='project-tech-stack'>
-                                            {project.techStack.map((tech, idx) => {
+                                            {project.techStack.map((tech: TechStack, idx: number) => {
                                                 return (
                                                     <div key={idx} className='tech-stack-item' style={{ backgroundImage: `url(${tech.icon})` }}>
                                                         <div className='tech-stack-popup'>{tech.name}</div>

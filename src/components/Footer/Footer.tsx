@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Footer: FC = (): ReactElement => {
 
-    const navMenuList = (
+    const navMenuList: JSX.Element = (
         <ul>
             <li>
                 <a href='#hero-section' id='nav-home'>HOME</a>

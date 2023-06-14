@@ -6,9 +6,9 @@ import FolderSharedIcon from '@mui/icons-material/FolderShared';
 
 const Navigation: FC = (): ReactElement => {
 
-    const [navMenuOpen, setNavMenuOpen] = useState(false)
+    const [navMenuOpen, setNavMenuOpen] = useState<boolean>(false)
 
-    const navMenuList = (
+    const navMenuList: JSX.Element = (
         <ul>
             <li>
                 <a href='#hero-section' id='nav-home'>HOME</a>
@@ -25,7 +25,7 @@ const Navigation: FC = (): ReactElement => {
         </ul>
     )
 
-    const navSocialLinks = (
+    const navSocialLinks: JSX.Element = (
         <ul>
             <li>
                 <a href='https://www.linkedin.com/in/davinjones/' target='_blank' rel='noreferrer'>
@@ -52,7 +52,7 @@ const Navigation: FC = (): ReactElement => {
     )
 
     function updateNavigationState(): void {
-        const navigation = document.getElementById('navigation')!;
+        const navigation: HTMLElement = document.getElementById('navigation')!;
 
         if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
             navigation.style.paddingTop = '0rem';
@@ -68,10 +68,10 @@ const Navigation: FC = (): ReactElement => {
     }
 
     function toggleNavMenu(): void {
-        const navMenu = document.getElementById('nav-dropdown-menu')!;
-        const hamburgerTop = document.getElementById('hamburger-top')!;
-        const hamburgerMiddle = document.getElementById('hamburger-middle')!;
-        const hamburgerBottom = document.getElementById('hamburger-bottom')!;
+        const navMenu: HTMLElement = document.getElementById('nav-dropdown-menu')!;
+        const hamburgerTop: HTMLElement = document.getElementById('hamburger-top')!;
+        const hamburgerMiddle: HTMLElement = document.getElementById('hamburger-middle')!;
+        const hamburgerBottom: HTMLElement = document.getElementById('hamburger-bottom')!;
 
         if (!navMenuOpen) {
             navMenu.style.height = '15rem';
@@ -91,7 +91,7 @@ const Navigation: FC = (): ReactElement => {
 
     }
 
-    window.onscroll = function () {
+    window.onscroll = function (): void {
         updateNavigationState();
     }
 

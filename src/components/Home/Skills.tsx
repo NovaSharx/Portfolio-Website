@@ -1,8 +1,18 @@
 import { FC, ReactElement } from 'react';
 
+interface Stack {
+    name: string,
+    icon: string
+}
+
+interface SkillsCategory {
+    name: string,
+    stacks: Array<Stack>
+}
+
 const Skills: FC = (): ReactElement => {
 
-    const skillsCategories = [
+    const skillsCategories: SkillsCategory[] = [
         {
             name: 'FRONTEND',
             stacks: [
@@ -113,13 +123,13 @@ const Skills: FC = (): ReactElement => {
                         </div>
 
                         <div id='skills-categories'>
-                            {skillsCategories.map((category, index) => {
+                            {skillsCategories.map((category: SkillsCategory, index: number) => {
                                 return (
                                     <div key={index} className='skills-category'>
                                         <h3>{category.name}</h3>
 
                                         <div className='skills-grid'>
-                                            {category.stacks.map((stack, idx) => {
+                                            {category.stacks.map((stack: Stack, idx: number) => {
                                                 return (
                                                     <div className='skill-cell' key={idx}>
                                                         <span className='skill-chip'>
