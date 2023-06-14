@@ -31,7 +31,7 @@ const Projects: FC = (): ReactElement => {
                     icon: '/tech_stack_icons/json-web-token.svg'
                 }
             ],
-            livePreview: 'https://trivinova-9jqfd.ondigitalocean.app/',
+            livePreview: 'https://trivinova.com',
             sourceCode: 'https://github.com/NovaSharx/Trivinova.git'
         },
         {
@@ -64,7 +64,7 @@ const Projects: FC = (): ReactElement => {
                     icon: '/tech_stack_icons/json-web-token.svg'
                 }
             ],
-            livePreview: 'https://novabrato-bh8y6.ondigitalocean.app/',
+            livePreview: 'https://novabrato.com',
             sourceCode: 'https://github.com/NovaSharx/Novabrato.git'
         },
         {
