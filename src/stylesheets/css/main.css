@@ -633,6 +633,7 @@ p {
 }
 #hero-section #hero-section-content #intro {
   font-size: 1.5rem;
+  font-weight: 500;
   color: #183642;
 }
 #hero-section #hero-section-content #call-to-action {

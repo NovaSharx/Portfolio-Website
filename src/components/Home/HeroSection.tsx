@@ -30,13 +30,13 @@ const HeroSection: FC = (): ReactElement => {
 
                 <div id='hero-section-content'>
 
-                    <div id='greeting'>Hi there, my name is
+                    <div id='greeting'>Hi, my name is
                         <br />
                         <h1 id='name'>Davin Jones</h1>
                     </div>
 
                     <h2 id='role'>
-                        I am a <br />
+                        and I am a <br />
                         <span id='role-title'>
                             <span>&lt; </span>
                             Web Developer
