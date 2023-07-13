@@ -1,7 +1,11 @@
 #about-section {
 
+    #about-description {
+        text-align: center;
+    }
+
     #about-image {
-        margin-bottom: 3rem;
+        margin: 3rem 0rem;
         position: relative;
         height: 40rem;
         background-image: url('/public/about_section_image2.jpg');
@@ -20,50 +24,192 @@
         }
     }
 
-    #about-content {}
+    #about-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+
+        .about-content-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .about-column-symbol {
+                margin-bottom: 1rem;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                opacity: 0.8;
+
+                &::before,
+                &::after {
+                    margin: 0rem 0.5rem;
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background-color: $primary-color;
+                }
+
+                svg {
+                    margin: 0rem 1rem;
+                    color: $primary-color;
+                    font-size: 3rem;
+                }
+            }
+
+            .about-column-text {}
+        }
+    }
 
     @media (max-width: $tv-width) {
+
+        #about-description {}
 
         #about-image {
             height: 35rem;
         }
 
-        #about-content {}
+        #about-content {
+
+            .about-content-column {
+
+                .about-column-symbol {
+
+                    &::before,
+                    &::after {
+                        margin: 0rem 0.4rem;
+                    }
+
+                    svg {
+                        margin: 0rem 0.8rem;
+                        font-size: 2.5rem;
+                    }
+                }
+
+                .about-column-text {}
+            }
+        }
     }
 
     @media (max-width: $desktop-width) {
+
+        #about-description {}
 
         #about-image {
             height: 30rem;
         }
 
-        #about-content {}
+        #about-content {
+
+            .about-content-column {
+
+                .about-column-symbol {
+
+                    &::before,
+                    &::after {
+                        margin: 0rem 0.3rem;
+                    }
+
+                    svg {
+                        margin: 0rem 0.6rem;
+                        font-size: 2rem;
+                    }
+                }
+
+                .about-column-text {}
+            }
+        }
     }
 
     @media (max-width: $laptop-width) {
+
+        #about-description {}
 
         #about-image {
             height: 25rem;
         }
 
-        #about-content {}
+        #about-content {
+
+            .about-content-column {
+
+                .about-column-symbol {
+
+                    &::before,
+                    &::after {
+                        margin: 0rem 0.2rem;
+                    }
+
+                    svg {
+                        margin: 0rem 0.5rem;
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .about-column-text {}
+            }
+        }
     }
 
     @media (max-width: $tablet-width) {
+
+        #about-description {}
 
         #about-image {
             height: 15rem;
         }
 
-        #about-content {}
+        #about-content {
+            grid-template-columns: 1fr;
+            row-gap: 2.5rem;
+
+            .about-content-column {
+
+                .about-column-symbol {
+
+                    &::before,
+                    &::after {
+                        margin: 0rem 0.5rem;
+                    }
+
+                    svg {
+                        margin: 0rem 1rem;
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .about-column-text {}
+            }
+        }
     }
 
     @media (max-width: $mobile-width) {
+
+        #about-description {}
 
         #about-image {
             height: 10rem;
         }
 
-        #about-content {}
+        #about-content {
+
+            .about-content-column {
+
+                .about-column-symbol {
+
+                    &::before,
+                    &::after {
+                        margin: 0rem 0.6rem;
+                    }
+
+                    svg {
+                        margin: 0rem 0.5rem;
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .about-column-text {}
+            }
+        }
     }
 }
