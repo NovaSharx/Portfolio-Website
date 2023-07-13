@@ -50,7 +50,7 @@ const Projects: FC = (): ReactElement => {
         },
         {
             name: 'NOVABRATO',
-            description: <Fragment>A guitar music theory learning web application designed to aid beginner guitar players through interactive exercises.</Fragment>,
+            description: <Fragment>A guitar <b>music theory</b> learning web application designed to aid beginner guitar players through <b>interactive exercises</b>.</Fragment>,
             image: '/novabrato_laptop_image.png',
             techStack: [
                 {
@@ -83,7 +83,7 @@ const Projects: FC = (): ReactElement => {
         },
         {
             name: 'SUPERNOVA',
-            description: <Fragment>A web based game application designed to challenge a user’s hand-eye coordination.</Fragment>,
+            description: <Fragment>A web based <b>game</b> application designed to challenge a user’s <b>hand-eye coordination</b>.</Fragment>,
             image: '/supernova_laptop_image.png',
             techStack: [
                 {
